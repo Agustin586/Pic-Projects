@@ -1,0 +1,36 @@
+MPLINK 5.09, LINKER
+Linker Map File - Created Tue Jun 02 12:45:22 2020
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x00001e
+                   .cinit    romdata   0x00000f    program   0x000004
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000010      
+            17 out of 1094 program addresses used, program memory utilization is 1%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   APAGAR   0x000009    program     static C:\Users\aguat\Documents\MPLAB PROJECTS\PROGRAMAS EN ASM\Primero.X\Main.asm
+                   INICIO   0x00000c    program     static C:\Users\aguat\Documents\MPLAB PROJECTS\PROGRAMAS EN ASM\Primero.X\Main.asm
+                 VERIFICA   0x000006    program     static C:\Users\aguat\Documents\MPLAB PROJECTS\PROGRAMAS EN ASM\Primero.X\Main.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                 VERIFICA   0x000006    program     static C:\Users\aguat\Documents\MPLAB PROJECTS\PROGRAMAS EN ASM\Primero.X\Main.asm
+                   APAGAR   0x000009    program     static C:\Users\aguat\Documents\MPLAB PROJECTS\PROGRAMAS EN ASM\Primero.X\Main.asm
+                   INICIO   0x00000c    program     static C:\Users\aguat\Documents\MPLAB PROJECTS\PROGRAMAS EN ASM\Primero.X\Main.asm
+
+
