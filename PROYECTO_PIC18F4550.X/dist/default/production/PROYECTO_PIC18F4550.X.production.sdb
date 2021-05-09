@@ -1,0 +1,1721 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"1 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"7 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"9 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+"9 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
+"72 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\doprnt.c
+[v _pad pad `(i  1 s 2 pad ]
+"274
+[v _dtoa dtoa `(i  1 s 2 dtoa ]
+"593
+[v _utoa utoa `(i  1 s 2 utoa ]
+"670
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+"1368
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\isdigit.c
+[v _isdigit isdigit `(i  1 e 2 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\isspace.c
+[v _isspace isspace `(i  1 e 2 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+"9 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\lodiv.c
+[v ___lodiv __lodiv `(uo  1 e 8 0 ]
+"9 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\lomod.c
+[v ___lomod __lomod `(uo  1 e 8 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"9 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"7 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"3 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\strcmp.c
+[v _strcmp strcmp `(i  1 e 2 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"3 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\strncmp.c
+[v _strncmp strncmp `(i  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+[v i2___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"8 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\EEPROM_EX.c
+[v _EEPROM_init EEPROM_init `(v  1 e 1 0 ]
+"86
+[v _M_Write M_Write `(v  1 e 1 0 ]
+"140
+[v _M_Read M_Read `(o  1 e 8 0 ]
+"195
+[v _User_Scan User_Scan `(a  1 e 1 0 ]
+"218
+[v _New_User_Pos New_User_Pos `(ui  1 e 2 0 ]
+"233
+[v _Num_User Num_User `(uc  1 e 1 0 ]
+"283
+[v _Pos_Num_User Pos_Num_User `(uc  1 e 1 0 ]
+"313
+[v _Read_Hash_ex Read_Hash_ex `(a  1 e 1 0 ]
+"339
+[v _Sum_Cant_Usuarios Sum_Cant_Usuarios `(v  1 e 1 0 ]
+"354
+[v _Write_User Write_User `(v  1 e 1 0 ]
+"388
+[v _Read_User Read_User `(uc  1 e 1 0 ]
+"6 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\LCD20X4_I2C.c
+[v _LCD_init LCD_init `(v  1 e 1 0 ]
+"37
+[v _LCD_command LCD_command `(v  1 e 1 0 ]
+"83
+[v _LCD_date LCD_date `(v  1 e 1 0 ]
+"128
+[v _LCD_array LCD_array `(v  1 e 1 0 ]
+"22 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\Main.c
+[v _main main `(v  1 e 1 0 ]
+"5 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\OS_Control.c
+[v _OS_init OS_init `(v  1 e 1 0 ]
+"29
+[v _ISR_HighP ISR_HighP `IIH(v  1 e 1 0 ]
+"108
+[v _ISR_LowP ISR_LowP `IIL(v  1 e 1 0 ]
+"150
+[v _TaskDetected TaskDetected `(v  1 e 1 0 ]
+"3 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\RC522.c
+[v _MFRC522_Wr MFRC522_Wr `(v  1 s 1 MFRC522_Wr ]
+"10
+[v _MFRC522_Rd MFRC522_Rd `(uc  1 s 1 MFRC522_Rd ]
+"20
+[v _MFRC522_Clear_Bit MFRC522_Clear_Bit `(v  1 s 1 MFRC522_Clear_Bit ]
+"24
+[v _MFRC522_Set_Bit MFRC522_Set_Bit `(v  1 s 1 MFRC522_Set_Bit ]
+"28
+[v _MFRC522_Reset MFRC522_Reset `(v  1 e 1 0 ]
+"32
+[v _MFRC522_AntennaOn MFRC522_AntennaOn `(v  1 e 1 0 ]
+"40
+[v _MFRC522_Init MFRC522_Init `(v  1 e 1 0 ]
+"62
+[v _MFRC522_ToCard MFRC522_ToCard `(uc  1 e 1 0 ]
+"163
+[v _MFRC522_Request MFRC522_Request `(uc  1 e 1 0 ]
+"176
+[v _MFRC522_CRC MFRC522_CRC `(v  1 e 1 0 ]
+"323
+[v _MFRC522_AntiColl MFRC522_AntiColl `(uc  1 e 1 0 ]
+"353
+[v _MFRC522_isCard MFRC522_isCard `(uc  1 e 1 0 ]
+"360
+[v _MFRC522_ReadCardSerial MFRC522_ReadCardSerial `(uc  1 e 1 0 ]
+"4 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\RTC_3231.c
+[v _RTC_send_hora RTC_send_hora `(v  1 e 1 0 ]
+"41
+[v _RTC_send_fecha RTC_send_fecha `(v  1 e 1 0 ]
+"79
+[v _RTC_read_time RTC_read_time `(v  1 e 1 0 ]
+"150
+[v _RTC_read_date RTC_read_date `(v  1 e 1 0 ]
+"6 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\SOFT_I2C.c
+[v _i2c_init i2c_init `(v  1 e 1 0 ]
+"17
+[v _i2c_start i2c_start `(v  1 e 1 0 ]
+[v i1_i2c_start i2c_start `(v  1 e 1 0 ]
+"40
+[v _i2c_stop i2c_stop `(v  1 e 1 0 ]
+[v i1_i2c_stop i2c_stop `(v  1 e 1 0 ]
+"61
+[v _i2c_write i2c_write `(v  1 e 1 0 ]
+[v i1_i2c_write i2c_write `(v  1 e 1 0 ]
+"108
+[v _i2c_array i2c_array `(v  1 e 1 0 ]
+"121
+[v _i2c_read i2c_read `(uc  1 e 1 0 ]
+[v i1_i2c_read i2c_read `(uc  1 e 1 0 ]
+"154
+[v _i2c_nack i2c_nack `(v  1 e 1 0 ]
+[v i1_i2c_nack i2c_nack `(v  1 e 1 0 ]
+"170
+[v _i2c_ack i2c_ack `(v  1 e 1 0 ]
+"191
+[v _i2c_restart i2c_restart `(v  1 e 1 0 ]
+[v i1_i2c_restart i2c_restart `(v  1 e 1 0 ]
+"3 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\SPI_SOFT.c
+[v _Soft_SPI_Init Soft_SPI_Init `(v  1 e 1 0 ]
+"19
+[v _Soft_SPI_Read Soft_SPI_Read `(uc  1 e 1 0 ]
+"41
+[v _Soft_SPI_Write Soft_SPI_Write `(v  1 e 1 0 ]
+"10 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\Task1.c
+[v _Task1 Task1 `(v  1 e 1 0 ]
+"39
+[v _E_pant1_Lcd E_pant1_Lcd `(v  1 e 1 0 ]
+"96
+[v _E_pant2_Lcd E_pant2_Lcd `(v  1 e 1 0 ]
+"150
+[v _E_Teclado_Lcd E_Teclado_Lcd `(v  1 e 1 0 ]
+"185
+[v _E_Rtc_Lcd E_Rtc_Lcd `(v  1 e 1 0 ]
+"265
+[v _Rfid_Lcd Rfid_Lcd `(v  1 e 1 0 ]
+"403
+[v _Erase_Eeprom Erase_Eeprom `(v  1 e 1 0 ]
+"419
+[v _Easter_Egg Easter_Egg `(v  1 e 1 0 ]
+"8 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\Task2.c
+[v _Task2 Task2 `(v  1 e 1 0 ]
+"26
+[v _Hash_algoritmo Hash_algoritmo `(ul  1 e 4 0 ]
+"42
+[v _E_Rfid_Proj E_Rfid_Proj `(v  1 e 1 0 ]
+"65
+[v _E_Ingresos E_Ingresos `(v  1 e 1 0 ]
+"43 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\Task_Com_USART.c
+[v _Task_Com_USART Task_Com_USART `(v  1 e 1 0 ]
+"76
+[v _Read_Com Read_Com `(v  1 e 1 0 ]
+"127
+[v _ACN_CR_Com ACN_CR_Com `(v  1 e 1 0 ]
+"161
+[v _ACN_PA_Com ACN_PA_Com `(v  1 e 1 0 ]
+"254
+[v _ACN_CO_Com ACN_CO_Com `(v  1 e 1 0 ]
+"3 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\TECLADO_4X4.c
+[v _TEC4x4_init TEC4x4_init `(v  1 e 1 0 ]
+"26
+[v _escaneo escaneo `(v  1 e 1 0 ]
+"62
+[v _antirrebote antirrebote `(v  1 e 1 0 ]
+"10 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\UART_com.c
+[v _UART_init UART_init `(v  1 e 1 0 ]
+"53
+[v _UART_write UART_write `(v  1 e 1 0 ]
+"67
+[v _UART_array UART_array `(v  1 e 1 0 ]
+"85
+[v _UART_read UART_read `(uc  1 e 1 0 ]
+"16 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X/EEPROM_EX.h
+[v _cant_user cant_user `uc  1 e 1 0 ]
+"43 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X/OS_CONFIG.h
+[v _Timer_Task1 Timer_Task1 `uc  1 e 1 0 ]
+[v _Timer_Task2 Timer_Task2 `uc  1 e 1 0 ]
+[v _Timer_Tec Timer_Tec `uc  1 e 1 0 ]
+"44
+[v _Timer_Rtc Timer_Rtc `ui  1 e 2 0 ]
+[v _Timer_DelayLcd Timer_DelayLcd `ui  1 e 2 0 ]
+[v _Timer_DelayMuestra Timer_DelayMuestra `ui  1 e 2 0 ]
+[v _Timer_Puerta1 Timer_Puerta1 `ui  1 e 2 0 ]
+[v _Timer_Puerta2 Timer_Puerta2 `ui  1 e 2 0 ]
+[v _Timer_Hash Timer_Hash `ui  1 e 2 0 ]
+[v _Timer_RX Timer_RX `ui  1 e 2 0 ]
+"46
+[v _key key `uc  1 e 1 0 ]
+[v _Task1_Est Task1_Est `uc  1 e 1 0 ]
+[v _Task2_Est Task2_Est `uc  1 e 1 0 ]
+[v _Running Running `uc  1 e 1 0 ]
+"47
+[v _puerta1 puerta1 `a  1 e 1 0 ]
+[v _puerta2 puerta2 `a  1 e 1 0 ]
+[v _Read_Eeprom Read_Eeprom `a  1 e 1 0 ]
+"11 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X/RTC_3231.h
+[v _mod_rtc mod_rtc `a  1 e 1 0 ]
+[v _esc_rtc esc_rtc `a  1 e 1 0 ]
+[v _val_rtc val_rtc `a  1 e 1 0 ]
+"12
+[v _hora hora `uc  1 e 1 0 ]
+[v _min min `uc  1 e 1 0 ]
+[v _seg seg `uc  1 e 1 0 ]
+[v _dia dia `uc  1 e 1 0 ]
+[v _mes mes `uc  1 e 1 0 ]
+[v _year year `uc  1 e 1 0 ]
+[v _pos_rtc pos_rtc `uc  1 e 1 0 ]
+"19 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X/SOFT_I2C.h
+[v _ACK_EST ACK_EST `a  1 e 1 0 ]
+"27 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X/Task1.h
+[v _mostrar mostrar `a  1 e 1 0 ]
+[v _aceptar aceptar `a  1 e 1 0 ]
+[v _I_Con_Rfid I_Con_Rfid `a  1 e 1 0 ]
+"28
+[v _opc_rfid opc_rfid `uc  1 e 1 0 ]
+"29
+[v _M_variable M_variable `uc  1 e 1 0 ]
+"19 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X/Task2.h
+[v _TagType TagType `ui  1 e 2 0 ]
+"20
+[v _codigo_rfid codigo_rfid `o  1 e 8 0 ]
+"21
+[v _UID UID `[10]uc  1 e 10 0 ]
+"32 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X/Task_Com_USART.h
+[v _word word `[20]uc  1 e 20 0 ]
+[v _llave llave `[4]uc  1 e 4 0 ]
+"33
+[v _xx xx `ui  1 e 2 0 ]
+[v _yy yy `ui  1 e 2 0 ]
+"34
+[v _address address `uc  1 e 1 0 ]
+[v _long_cad long_cad `uc  1 e 1 0 ]
+[v _N N `uc  1 e 1 0 ]
+[v _XX XX `uc  1 e 1 0 ]
+[v _YY YY `uc  1 e 1 0 ]
+"35
+[v _CO CO `a  1 e 1 0 ]
+[v _CR CR `a  1 e 1 0 ]
+[v _PA PA `a  1 e 1 0 ]
+[v _Fin_Cad Fin_Cad `a  1 e 1 0 ]
+"43
+[v _Tarj_Dect Tarj_Dect `a  1 e 1 0 ]
+[v _Ha_Pu Ha_Pu `a  1 e 1 0 ]
+"30 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X/TECLADO_4X4.h
+[v _numero numero `uc  1 e 1 0 ]
+"31
+[v _valor valor `ui  1 e 2 0 ]
+"32
+[v _tec_p tec_p `a  1 e 1 0 ]
+[s S752 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+]
+"2353 C:\Program Files (x86)\Microchip\xc8\pic\include\proc\pic18f4550.h
+[s S760 . 1 `uc 1 AN0 1 0 :1:0 
+`uc 1 AN1 1 0 :1:1 
+`uc 1 AN2 1 0 :1:2 
+`uc 1 AN3 1 0 :1:3 
+`uc 1 T0CKI 1 0 :1:4 
+`uc 1 AN4 1 0 :1:5 
+`uc 1 OSC2 1 0 :1:6 
+]
+[s S768 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 VREFM 1 0 :1:2 
+`uc 1 VREFP 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 LVDIN 1 0 :1:5 
+]
+[s S774 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 HLVDIN 1 0 :1:5 
+]
+[s S777 . 1 `uc 1 ULPWUIN 1 0 :1:0 
+]
+[u S779 . 1 `S752 1 . 1 0 `S760 1 . 1 0 `S768 1 . 1 0 `S774 1 . 1 0 `S777 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES779  1 e 1 @3968 ]
+[s S707 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"2483
+[s S716 . 1 `uc 1 INT0 1 0 :1:0 
+`uc 1 INT1 1 0 :1:1 
+`uc 1 INT2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 PGM 1 0 :1:5 
+`uc 1 PGC 1 0 :1:6 
+`uc 1 PGD 1 0 :1:7 
+]
+[s S724 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2_PA2 1 0 :1:3 
+]
+[u S727 . 1 `S707 1 . 1 0 `S716 1 . 1 0 `S724 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES727  1 e 1 @3969 ]
+[s S82 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"2605
+[s S91 . 1 `uc 1 T1OSO 1 0 :1:0 
+`uc 1 T1OSI 1 0 :1:1 
+`uc 1 CCP1 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 TX 1 0 :1:6 
+`uc 1 RX 1 0 :1:7 
+]
+[s S98 . 1 `uc 1 T13CKI 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 P1A 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 CK 1 0 :1:6 
+`uc 1 DT 1 0 :1:7 
+]
+[s S105 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 CCP2 1 0 :1:1 
+`uc 1 PA1 1 0 :1:2 
+]
+[s S109 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 PA2 1 0 :1:1 
+]
+[u S112 . 1 `S82 1 . 1 0 `S91 1 . 1 0 `S98 1 . 1 0 `S105 1 . 1 0 `S109 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES112  1 e 1 @3970 ]
+"2705
+[v _PORTD PORTD `VEuc  1 e 1 @3971 ]
+[s S1804 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"2736
+[s S1813 . 1 `uc 1 SPP0 1 0 :1:0 
+`uc 1 SPP1 1 0 :1:1 
+`uc 1 SPP2 1 0 :1:2 
+`uc 1 SPP3 1 0 :1:3 
+`uc 1 SPP4 1 0 :1:4 
+`uc 1 SPP5 1 0 :1:5 
+`uc 1 SPP6 1 0 :1:6 
+`uc 1 SPP7 1 0 :1:7 
+]
+[s S1822 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 SS2 1 0 :1:7 
+]
+[u S1825 . 1 `S1804 1 . 1 0 `S1813 1 . 1 0 `S1822 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES1825  1 e 1 @3971 ]
+[s S973 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+]
+"2998
+[s S981 . 1 `uc 1 LA0 1 0 :1:0 
+`uc 1 LA1 1 0 :1:1 
+`uc 1 LA2 1 0 :1:2 
+`uc 1 LA3 1 0 :1:3 
+`uc 1 LA4 1 0 :1:4 
+`uc 1 LA5 1 0 :1:5 
+`uc 1 LA6 1 0 :1:6 
+]
+[u S989 . 1 `S973 1 . 1 0 `S981 1 . 1 0 ]
+[v _LATAbits LATAbits `VES989  1 e 1 @3977 ]
+"3185
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
+"3263
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"3375
+[v _LATE LATE `VEuc  1 e 1 @3981 ]
+[s S833 . 1 `uc 1 LATE0 1 0 :1:0 
+`uc 1 LATE1 1 0 :1:1 
+`uc 1 LATE2 1 0 :1:2 
+]
+"3392
+[s S837 . 1 `uc 1 LE0 1 0 :1:0 
+`uc 1 LE1 1 0 :1:1 
+`uc 1 LE2 1 0 :1:2 
+]
+[u S841 . 1 `S833 1 . 1 0 `S837 1 . 1 0 ]
+[v _LATEbits LATEbits `VES841  1 e 1 @3981 ]
+"3427
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+[s S1049 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+]
+"3457
+[u S1065 . 1 `S1049 1 . 1 0 `S752 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES1065  1 e 1 @3986 ]
+[s S1009 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"3657
+[u S1027 . 1 `S1009 1 . 1 0 `S707 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES1027  1 e 1 @3987 ]
+"3847
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+[s S48 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"3875
+[s S55 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+[u S62 . 1 `S48 1 . 1 0 `S55 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES62  1 e 1 @3988 ]
+"4001
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+[s S2153 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"4033
+[u S2171 . 1 `S2153 1 . 1 0 `S1804 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES2171  1 e 1 @3989 ]
+"4223
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+[s S2282 . 1 `uc 1 TRISE0 1 0 :1:0 
+`uc 1 TRISE1 1 0 :1:1 
+`uc 1 TRISE2 1 0 :1:2 
+]
+"4245
+[s S2286 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+]
+[u S2290 . 1 `S2282 1 . 1 0 `S2286 1 . 1 0 ]
+[v _TRISEbits TRISEbits `VES2290  1 e 1 @3990 ]
+[s S355 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 SPPIE 1 0 :1:7 
+]
+"4408
+[s S364 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IE 1 0 :1:4 
+`uc 1 RC1IE 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 PSPIE 1 0 :1:7 
+]
+[u S370 . 1 `S355 1 . 1 0 `S364 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES370  1 e 1 @3997 ]
+[s S424 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 SPPIF 1 0 :1:7 
+]
+"4492
+[s S433 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+[u S439 . 1 `S424 1 . 1 0 `S433 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES439  1 e 1 @3998 ]
+[s S389 . 1 `uc 1 TMR1IP 1 0 :1:0 
+`uc 1 TMR2IP 1 0 :1:1 
+`uc 1 CCP1IP 1 0 :1:2 
+`uc 1 SSPIP 1 0 :1:3 
+`uc 1 TXIP 1 0 :1:4 
+`uc 1 RCIP 1 0 :1:5 
+`uc 1 ADIP 1 0 :1:6 
+`uc 1 SPPIP 1 0 :1:7 
+]
+"4576
+[s S398 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IP 1 0 :1:4 
+`uc 1 RC1IP 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 PSPIP 1 0 :1:7 
+]
+[u S404 . 1 `S389 1 . 1 0 `S398 1 . 1 0 ]
+[v _IPR1bits IPR1bits `VES404  1 e 1 @3999 ]
+[s S252 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"4977
+[s S261 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 ADEN 1 0 :1:3 
+]
+[s S264 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 SRENA 1 0 :1:5 
+]
+[s S267 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[s S270 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S273 . 1 `uc 1 RCD8 1 0 :1:0 
+]
+[u S275 . 1 `S252 1 . 1 0 `S261 1 . 1 0 `S264 1 . 1 0 `S267 1 . 1 0 `S270 1 . 1 0 `S273 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES275  1 e 1 @4011 ]
+[s S199 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"5185
+[s S208 . 1 `uc 1 TX9D1 1 0 :1:0 
+`uc 1 TRMT1 1 0 :1:1 
+`uc 1 BRGH1 1 0 :1:2 
+`uc 1 SENDB1 1 0 :1:3 
+`uc 1 SYNC1 1 0 :1:4 
+`uc 1 TXEN1 1 0 :1:5 
+`uc 1 TX91 1 0 :1:6 
+`uc 1 CSRC1 1 0 :1:7 
+]
+[s S217 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[s S220 . 1 `uc 1 TXD8 1 0 :1:0 
+]
+[u S222 . 1 `S199 1 . 1 0 `S208 1 . 1 0 `S217 1 . 1 0 `S220 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES222  1 e 1 @4012 ]
+"5402
+[v _TXREG TXREG `VEuc  1 e 1 @4013 ]
+"5414
+[v _RCREG RCREG `VEuc  1 e 1 @4014 ]
+"5426
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+"5587
+[v _CMCON CMCON `VEuc  1 e 1 @4020 ]
+[s S2193 . 1 `uc 1 PCFG 1 0 :4:0 
+`uc 1 VCFG 1 0 :2:4 
+]
+"6606
+[s S2196 . 1 `uc 1 PCFG0 1 0 :1:0 
+`uc 1 PCFG1 1 0 :1:1 
+`uc 1 PCFG2 1 0 :1:2 
+`uc 1 PCFG3 1 0 :1:3 
+`uc 1 VCFG0 1 0 :1:4 
+`uc 1 VCFG1 1 0 :1:5 
+]
+[s S2203 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CHSN3 1 0 :1:3 
+`uc 1 VCFG01 1 0 :1:4 
+`uc 1 VCFG11 1 0 :1:5 
+]
+[u S2208 . 1 `S2193 1 . 1 0 `S2196 1 . 1 0 `S2203 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES2208  1 e 1 @4033 ]
+[s S543 . 1 `uc 1 NOT_BOR 1 0 :1:0 
+]
+"7588
+[s S545 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_POR 1 0 :1:1 
+]
+[s S548 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_PD 1 0 :1:2 
+]
+[s S551 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_TO 1 0 :1:3 
+]
+[s S554 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 NOT_RI 1 0 :1:4 
+]
+[s S557 . 1 `uc 1 nBOR 1 0 :1:0 
+`uc 1 nPOR 1 0 :1:1 
+`uc 1 nPD 1 0 :1:2 
+`uc 1 nTO 1 0 :1:3 
+`uc 1 nRI 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 SBOREN 1 0 :1:6 
+`uc 1 IPEN 1 0 :1:7 
+]
+[s S566 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 NOT_IPEN 1 0 :1:7 
+]
+[s S569 . 1 `uc 1 BOR 1 0 :1:0 
+`uc 1 POR 1 0 :1:1 
+`uc 1 PD 1 0 :1:2 
+`uc 1 TO 1 0 :1:3 
+`uc 1 RI 1 0 :1:4 
+`uc 1 . 1 0 :2:5 
+`uc 1 nIPEN 1 0 :1:7 
+]
+[u S577 . 1 `S543 1 . 1 0 `S545 1 . 1 0 `S548 1 . 1 0 `S551 1 . 1 0 `S554 1 . 1 0 `S557 1 . 1 0 `S566 1 . 1 0 `S569 1 . 1 0 ]
+[v _RCONbits RCONbits `VES577  1 e 1 @4048 ]
+[s S516 . 1 `uc 1 T0PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 T08BIT 1 0 :1:6 
+`uc 1 TMR0ON 1 0 :1:7 
+]
+"8089
+[s S523 . 1 `uc 1 T0PS0 1 0 :1:0 
+`uc 1 T0PS1 1 0 :1:1 
+`uc 1 T0PS2 1 0 :1:2 
+]
+[u S527 . 1 `S516 1 . 1 0 `S523 1 . 1 0 ]
+[v _T0CONbits T0CONbits `VES527  1 e 1 @4053 ]
+"8139
+[v _TMR0 TMR0 `VEus  1 e 2 @4054 ]
+[s S648 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 NOT_RBPU 1 0 :1:7 
+]
+"8532
+[s S651 . 1 `uc 1 RBIP 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 TMR0IP 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INTEDG2 1 0 :1:4 
+`uc 1 INTEDG1 1 0 :1:5 
+`uc 1 INTEDG0 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+[s S660 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IP 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 RBPU 1 0 :1:7 
+]
+[u S665 . 1 `S648 1 . 1 0 `S651 1 . 1 0 `S660 1 . 1 0 ]
+[v _INTCON2bits INTCON2bits `VES665  1 e 1 @4081 ]
+"8582
+[v _INTCON INTCON `VEuc  1 e 1 @4082 ]
+[s S306 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"8614
+[s S315 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S324 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S328 . 1 `S306 1 . 1 0 `S315 1 . 1 0 `S324 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES328  1 e 1 @4082 ]
+"9744
+[v _GIEH GIEH `VEb  1 e 0 @32663 ]
+"9747
+[v _GIEL GIEL `VEb  1 e 0 @32662 ]
+"9939
+[v _LATA4 LATA4 `VEb  1 e 0 @31820 ]
+"9948
+[v _LATB0 LATB0 `VEb  1 e 0 @31824 ]
+"9954
+[v _LATB2 LATB2 `VEb  1 e 0 @31826 ]
+"9957
+[v _LATB3 LATB3 `VEb  1 e 0 @31827 ]
+"10353
+[v _RA5 RA5 `VEb  1 e 0 @31749 ]
+"10893
+[v _TRISA4 TRISA4 `VEb  1 e 0 @31892 ]
+"10896
+[v _TRISA5 TRISA5 `VEb  1 e 0 @31893 ]
+"10902
+[v _TRISB0 TRISB0 `VEb  1 e 0 @31896 ]
+"10908
+[v _TRISB2 TRISB2 `VEb  1 e 0 @31898 ]
+"10911
+[v _TRISB3 TRISB3 `VEb  1 e 0 @31899 ]
+"55 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\doprnt.c
+[v _flags flags `i  1 s 2 flags ]
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"66
+[v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
+"69
+[v _nout nout `i  1 s 2 nout ]
+"22 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\Main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"26
+[v main@Est_pant Est_pant `uc  1 a 1 143 ]
+[v main@Est_proj Est_proj `uc  1 a 1 142 ]
+[v main@aux_portd aux_portd `uc  1 a 1 141 ]
+"186
+} 0
+"6 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\SOFT_I2C.c
+[v _i2c_init i2c_init `(v  1 e 1 0 ]
+{
+"12
+} 0
+"10 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\UART_com.c
+[v _UART_init UART_init `(v  1 e 1 0 ]
+{
+[v UART_init@BAUD BAUD `ui  1 p 2 37 ]
+"44
+} 0
+"7 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 33 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 32 ]
+[v ___aldiv@counter counter `uc  1 a 1 31 ]
+"7
+[v ___aldiv@dividend dividend `l  1 p 4 23 ]
+[v ___aldiv@divisor divisor `l  1 p 4 27 ]
+"41
+} 0
+"43 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\Task_Com_USART.c
+[v _Task_Com_USART Task_Com_USART `(v  1 e 1 0 ]
+{
+"45
+[v Task_Com_USART@i i `uc  1 a 1 122 ]
+[v Task_Com_USART@aux2 aux2 `uc  1 a 1 121 ]
+"72
+} 0
+"76
+[v _Read_Com Read_Com `(v  1 e 1 0 ]
+{
+"83
+[v Read_Com@i i `uc  1 a 1 31 ]
+"118
+[v Read_Com@i_2100 i `uc  1 a 1 30 ]
+"123
+} 0
+"161
+[v _ACN_PA_Com ACN_PA_Com `(v  1 e 1 0 ]
+{
+"163
+[v ACN_PA_Com@buffer buffer `[10]uc  1 a 10 110 ]
+"250
+} 0
+"127
+[v _ACN_CR_Com ACN_CR_Com `(v  1 e 1 0 ]
+{
+"147
+[v ACN_CR_Com@cant_2113 cant `Cuc  1 a 1 72 ]
+"137
+[v ACN_CR_Com@cant cant `Cuc  1 a 1 71 ]
+"130
+[v ACN_CR_Com@texto2 texto2 `C[53]uc  1 a 53 0 ]
+"132
+[v ACN_CR_Com@buffer buffer `[10]uc  1 a 10 61 ]
+"129
+[v ACN_CR_Com@texto1 texto1 `C[8]uc  1 a 8 53 ]
+"128
+[v ACN_CR_Com@F3821 F3821 `C[8]uc  1 s 8 F3821 ]
+"129
+[v ACN_CR_Com@F3823 F3823 `C[53]uc  1 s 53 F3823 ]
+"157
+} 0
+"254
+[v _ACN_CO_Com ACN_CO_Com `(v  1 e 1 0 ]
+{
+"256
+[v ACN_CO_Com@buffer buffer `[10]uc  1 a 10 110 ]
+"313
+} 0
+"8 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\Task2.c
+[v _Task2 Task2 `(v  1 e 1 0 ]
+{
+[v Task2@Maquina_Estado Maquina_Estado `*.30uc  1 p 1 52 ]
+"22
+} 0
+"65
+[v _E_Ingresos E_Ingresos `(v  1 e 1 0 ]
+{
+"82
+} 0
+"10 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\Task1.c
+[v _Task1 Task1 `(v  1 e 1 0 ]
+{
+[v Task1@Pantalla Pantalla `*.30uc  1 p 1 137 ]
+"35
+} 0
+"96
+[v _E_pant2_Lcd E_pant2_Lcd `(v  1 e 1 0 ]
+{
+"98
+[v E_pant2_Lcd@buffer2 buffer2 `[10]uc  1 a 10 109 ]
+[v E_pant2_Lcd@buffer buffer `[5]uc  1 a 5 119 ]
+"146
+} 0
+"233 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\EEPROM_EX.c
+[v _Num_User Num_User `(uc  1 e 1 0 ]
+{
+"239
+[v Num_User@i i `uc  1 a 1 45 ]
+"235
+[v Num_User@pos_h pos_h `uc  1 a 1 46 ]
+[v Num_User@num_user num_user `uc  1 a 1 44 ]
+"233
+[v Num_User@hash hash `o  1 p 8 52 ]
+"254
+} 0
+"39 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\Task1.c
+[v _E_pant1_Lcd E_pant1_Lcd `(v  1 e 1 0 ]
+{
+"41
+[v E_pant1_Lcd@buffer buffer `[20]uc  1 a 20 110 ]
+[v E_pant1_Lcd@llave llave `[5]uc  1 a 5 130 ]
+[v E_pant1_Lcd@i i `uc  1 a 1 136 ]
+[v E_pant1_Lcd@aux2 aux2 `uc  1 a 1 135 ]
+"92
+} 0
+"150
+[v _E_Teclado_Lcd E_Teclado_Lcd `(v  1 e 1 0 ]
+{
+"152
+[v E_Teclado_Lcd@buffer buffer `[10]uc  1 a 10 121 ]
+"181
+} 0
+"265
+[v _Rfid_Lcd Rfid_Lcd `(v  1 e 1 0 ]
+{
+"353
+[v Rfid_Lcd@buffer_1766 buffer `[20]uc  1 a 20 20 ]
+"341
+[v Rfid_Lcd@ubicacion ubicacion `ui  1 a 2 43 ]
+"295
+[v Rfid_Lcd@paso paso `uc  1 a 1 42 ]
+"267
+[v Rfid_Lcd@buffer buffer `[20]uc  1 a 20 0 ]
+"268
+[v Rfid_Lcd@num_usuario num_usuario `uc  1 a 1 41 ]
+[v Rfid_Lcd@Fin_Config Fin_Config `uc  1 a 1 40 ]
+"399
+} 0
+"195 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\EEPROM_EX.c
+[v _User_Scan User_Scan `(a  1 e 1 0 ]
+{
+[v User_Scan@num_user num_user `uc  1 a 1 wreg ]
+"204
+[v User_Scan@i i `uc  1 a 1 43 ]
+"198
+[v User_Scan@pos pos `uc  1 a 1 44 ]
+"197
+[v User_Scan@user_exist user_exist `a  1 a 1 42 ]
+"195
+[v User_Scan@num_user num_user `uc  1 a 1 wreg ]
+"197
+[v User_Scan@num_user num_user `uc  1 a 1 41 ]
+"214
+} 0
+"53 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\UART_com.c
+[v _UART_write UART_write `(v  1 e 1 0 ]
+{
+[v UART_write@dato dato `uc  1 a 1 wreg ]
+[v UART_write@dato dato `uc  1 a 1 wreg ]
+"55
+[v UART_write@dato dato `uc  1 a 1 23 ]
+"58
+} 0
+"67
+[v _UART_array UART_array `(v  1 e 1 0 ]
+{
+[v UART_array@cadena cadena `*.35Cuc  1 p 2 23 ]
+"76
+} 0
+"339 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\EEPROM_EX.c
+[v _Sum_Cant_Usuarios Sum_Cant_Usuarios `(v  1 e 1 0 ]
+{
+"341
+[v Sum_Cant_Usuarios@cant_usuario cant_usuario `uc  1 a 1 118 ]
+"350
+} 0
+"354
+[v _Write_User Write_User `(v  1 e 1 0 ]
+{
+"356
+[v Write_User@buffer buffer `[5]uc  1 a 5 111 ]
+"357
+[v Write_User@MD_2 MD_2 `uc  1 a 1 117 ]
+[v Write_User@MD_1 MD_1 `uc  1 a 1 116 ]
+"354
+[v Write_User@dir dir `ui  1 p 2 108 ]
+[v Write_User@usuario usuario `uc  1 p 1 110 ]
+"386
+} 0
+"313
+[v _Read_Hash_ex Read_Hash_ex `(a  1 e 1 0 ]
+{
+"321
+[v Read_Hash_ex@i i `uc  1 a 1 42 ]
+"316
+[v Read_Hash_ex@pos_hash pos_hash `uc  1 a 1 43 ]
+"315
+[v Read_Hash_ex@OK_HASH OK_HASH `a  1 a 1 41 ]
+"313
+[v Read_Hash_ex@cod_rfid cod_rfid `o  1 p 8 36 ]
+"335
+} 0
+"218
+[v _New_User_Pos New_User_Pos `(ui  1 e 2 0 ]
+{
+"221
+[v New_User_Pos@Posicion Posicion `ui  1 a 2 34 ]
+"220
+[v New_User_Pos@cant_user cant_user `uc  1 a 1 36 ]
+"229
+} 0
+"86
+[v _M_Write M_Write `(v  1 e 1 0 ]
+{
+"88
+[v M_Write@buffer buffer `[11]uc  1 a 11 56 ]
+"90
+[v M_Write@dec1 dec1 `o  1 a 8 101 ]
+[v M_Write@dec2 dec2 `o  1 a 8 93 ]
+[v M_Write@dec3 dec3 `o  1 a 8 85 ]
+[v M_Write@dec4 dec4 `o  1 a 8 77 ]
+[v M_Write@dec5 dec5 `o  1 a 8 67 ]
+"89
+[v M_Write@MD_2 MD_2 `uc  1 a 1 76 ]
+[v M_Write@MD_1 MD_1 `uc  1 a 1 75 ]
+"86
+[v M_Write@dir dir `ui  1 p 2 108 ]
+[v M_Write@mw_dato mw_dato `o  1 p 8 110 ]
+"136
+} 0
+"108 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\SOFT_I2C.c
+[v _i2c_array i2c_array `(v  1 e 1 0 ]
+{
+[v i2c_array@cadena cadena `*.39Cuc  1 p 2 25 ]
+"116
+} 0
+"42 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\Task2.c
+[v _E_Rfid_Proj E_Rfid_Proj `(v  1 e 1 0 ]
+{
+"61
+} 0
+"353 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\RC522.c
+[v _MFRC522_isCard MFRC522_isCard `(uc  1 e 1 0 ]
+{
+[v MFRC522_isCard@TagType TagType `*.39uc  1 p 2 46 ]
+"359
+} 0
+"163
+[v _MFRC522_Request MFRC522_Request `(uc  1 e 1 0 ]
+{
+[v MFRC522_Request@reqMode reqMode `uc  1 a 1 wreg ]
+"166
+[v MFRC522_Request@backBits backBits `ui  1 a 2 10 ]
+"165
+[v MFRC522_Request@_status _status `uc  1 a 1 9 ]
+"163
+[v MFRC522_Request@reqMode reqMode `uc  1 a 1 wreg ]
+[v MFRC522_Request@TagType TagType `*.39uc  1 p 2 44 ]
+"167
+[v MFRC522_Request@reqMode reqMode `uc  1 a 1 8 ]
+"175
+} 0
+"360
+[v _MFRC522_ReadCardSerial MFRC522_ReadCardSerial `(uc  1 e 1 0 ]
+{
+"362
+[v MFRC522_ReadCardSerial@_status _status `uc  1 a 1 47 ]
+"360
+[v MFRC522_ReadCardSerial@str str `*.39uc  1 p 2 13 ]
+"370
+} 0
+"323
+[v _MFRC522_AntiColl MFRC522_AntiColl `(uc  1 e 1 0 ]
+{
+"328
+[v MFRC522_AntiColl@unLen unLen `ui  1 a 2 9 ]
+"326
+[v MFRC522_AntiColl@i i `uc  1 a 1 12 ]
+"325
+[v MFRC522_AntiColl@_status _status `uc  1 a 1 11 ]
+"327
+[v MFRC522_AntiColl@serNumCheck serNumCheck `uc  1 a 1 8 ]
+"323
+[v MFRC522_AntiColl@serNum serNum `*.39uc  1 p 2 44 ]
+"347
+} 0
+"62
+[v _MFRC522_ToCard MFRC522_ToCard `(uc  1 e 1 0 ]
+{
+[v MFRC522_ToCard@command command `uc  1 a 1 wreg ]
+"69
+[v MFRC522_ToCard@i i `ui  1 a 2 5 ]
+"68
+[v MFRC522_ToCard@n n `uc  1 a 1 7 ]
+"65
+[v MFRC522_ToCard@irqEn irqEn `uc  1 a 1 3 ]
+"67
+[v MFRC522_ToCard@lastBits lastBits `uc  1 a 1 2 ]
+"64
+[v MFRC522_ToCard@_status _status `uc  1 a 1 1 ]
+"66
+[v MFRC522_ToCard@waitIRq waitIRq `uc  1 a 1 0 ]
+"62
+[v MFRC522_ToCard@command command `uc  1 a 1 wreg ]
+[v MFRC522_ToCard@sendData sendData `*.39uc  1 p 2 34 ]
+[v MFRC522_ToCard@sendLen sendLen `uc  1 p 1 36 ]
+[v MFRC522_ToCard@backData backData `*.39uc  1 p 2 37 ]
+[v MFRC522_ToCard@backLen backLen `*.30ui  1 p 1 39 ]
+"64
+[v MFRC522_ToCard@command command `uc  1 a 1 4 ]
+"162
+} 0
+"20
+[v _MFRC522_Clear_Bit MFRC522_Clear_Bit `(v  1 s 1 MFRC522_Clear_Bit ]
+{
+[v MFRC522_Clear_Bit@addr addr `uc  1 a 1 wreg ]
+[v MFRC522_Clear_Bit@addr addr `uc  1 a 1 wreg ]
+[v MFRC522_Clear_Bit@mask mask `uc  1 p 1 31 ]
+"22
+[v MFRC522_Clear_Bit@addr addr `uc  1 a 1 33 ]
+"23
+} 0
+"26 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\Task2.c
+[v _Hash_algoritmo Hash_algoritmo `(ul  1 e 4 0 ]
+{
+"31
+[v Hash_algoritmo@cont cont `uc  1 a 1 44 ]
+"28
+[v Hash_algoritmo@hash_acum hash_acum `ul  1 a 4 40 ]
+"38
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+{
+"17
+[v ___lmul@product product `ul  1 a 4 31 ]
+"15
+[v ___lmul@multiplier multiplier `ul  1 p 4 23 ]
+[v ___lmul@multiplicand multiplicand `ul  1 p 4 27 ]
+"129
+} 0
+"403 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\Task1.c
+[v _Erase_Eeprom Erase_Eeprom `(v  1 e 1 0 ]
+{
+"415
+} 0
+"8 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\EEPROM_EX.c
+[v _EEPROM_init EEPROM_init `(v  1 e 1 0 ]
+{
+"57
+[v EEPROM_init@j j `ui  1 a 2 43 ]
+"11
+[v EEPROM_init@c_ok c_ok `a  1 a 1 45 ]
+"10
+[v EEPROM_init@MD_2 MD_2 `uc  1 a 1 42 ]
+"82
+} 0
+"388
+[v _Read_User Read_User `(uc  1 e 1 0 ]
+{
+"391
+[v Read_User@MR_Dato MR_Dato `uc  1 a 1 29 ]
+"390
+[v Read_User@MD_2 MD_2 `uc  1 a 1 28 ]
+[v Read_User@MD_1 MD_1 `uc  1 a 1 27 ]
+"388
+[v Read_User@dir dir `ui  1 p 2 25 ]
+"431
+} 0
+"140
+[v _M_Read M_Read `(o  1 e 8 0 ]
+{
+"171
+[v M_Read@i i `uc  1 a 1 35 ]
+"143
+[v M_Read@MR_Dato MR_Dato `o  1 a 8 27 ]
+"142
+[v M_Read@MD_2 MD_2 `uc  1 a 1 26 ]
+[v M_Read@MD_1 MD_1 `uc  1 a 1 25 ]
+"140
+[v M_Read@dir dir `ui  1 p 2 8 ]
+[v M_Read@c_m_r c_m_r `uc  1 p 1 10 ]
+"191
+} 0
+"191 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\SOFT_I2C.c
+[v _i2c_restart i2c_restart `(v  1 e 1 0 ]
+{
+"197
+} 0
+"121
+[v _i2c_read i2c_read `(uc  1 e 1 0 ]
+{
+"135
+[v i2c_read@i i `uc  1 a 1 24 ]
+"123
+[v i2c_read@dato dato `uc  1 a 1 23 ]
+"152
+} 0
+"154
+[v _i2c_nack i2c_nack `(v  1 e 1 0 ]
+{
+"168
+} 0
+"170
+[v _i2c_ack i2c_ack `(v  1 e 1 0 ]
+{
+"189
+} 0
+"91 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+{
+"93
+[v ___omul@product product `uo  1 a 8 0 ]
+"91
+[v ___omul@multiplier multiplier `uo  1 p 8 25 ]
+[v ___omul@multiplicand multiplicand `uo  1 p 8 33 ]
+"354
+} 0
+"419 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\Task1.c
+[v _Easter_Egg Easter_Egg `(v  1 e 1 0 ]
+{
+"444
+} 0
+"185
+[v _E_Rtc_Lcd E_Rtc_Lcd `(v  1 e 1 0 ]
+{
+"187
+[v E_Rtc_Lcd@buffer buffer `[10]uc  1 a 10 110 ]
+"261
+} 0
+"9 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[s S2849 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+"13
+[v sprintf@f f `S2849  1 a 6 102 ]
+"12
+[v sprintf@ap ap `[1]*.30v  1 a 1 101 ]
+"9
+[v sprintf@s s `*.39uc  1 p 2 87 ]
+[v sprintf@fmt fmt `*.25Cuc  1 p 2 89 ]
+"23
+} 0
+"1368 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+"1371
+[v vfprintf@cfmt cfmt `*.25uc  1 a 2 85 ]
+[s S2875 _IO_FILE 0 ]
+"1368
+[v vfprintf@fp fp `*.30S2875  1 p 1 81 ]
+[v vfprintf@fmt fmt `*.25Cuc  1 p 2 82 ]
+[v vfprintf@ap ap `*.30*.30v  1 p 1 84 ]
+"1382
+} 0
+"670
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+{
+"675
+[v vfpfcnvrt@llu llu `uo  1 a 8 73 ]
+"674
+[v vfpfcnvrt@ll ll `o  1 a 8 65 ]
+"673
+[v vfpfcnvrt@done done `i  1 a 2 61 ]
+[s S2875 _IO_FILE 0 ]
+"670
+[v vfpfcnvrt@fp fp `*.30S2875  1 p 1 45 ]
+[v vfpfcnvrt@fmt fmt `*.30*.25uc  1 p 1 46 ]
+[v vfpfcnvrt@ap ap `*.30*.30v  1 p 1 47 ]
+"1365
+} 0
+"593
+[v _utoa utoa `(i  1 s 2 utoa ]
+{
+"596
+[v utoa@n n `uo  1 a 8 21 ]
+"595
+[v utoa@i i `i  1 a 2 29 ]
+[v utoa@w w `i  1 a 2 19 ]
+[v utoa@p p `i  1 a 2 17 ]
+[s S2875 _IO_FILE 0 ]
+"593
+[v utoa@fp fp `*.30S2875  1 p 1 0 ]
+[v utoa@d d `uo  1 p 8 1 ]
+"619
+} 0
+"9 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\lomod.c
+[v ___lomod __lomod `(uo  1 e 8 0 ]
+{
+"12
+[v ___lomod@counter counter `uc  1 a 1 39 ]
+"9
+[v ___lomod@dividend dividend `uo  1 p 8 23 ]
+[v ___lomod@divisor divisor `uo  1 p 8 31 ]
+"27
+} 0
+"9 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\lodiv.c
+[v ___lodiv __lodiv `(uo  1 e 8 0 ]
+{
+"12
+[v ___lodiv@quotient quotient `uo  1 a 8 39 ]
+"13
+[v ___lodiv@counter counter `uc  1 a 1 47 ]
+"9
+[v ___lodiv@dividend dividend `uo  1 p 8 23 ]
+[v ___lodiv@divisor divisor `uo  1 p 8 31 ]
+"32
+} 0
+"3 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\strncmp.c
+[v _strncmp strncmp `(i  1 e 2 0 ]
+{
+"5
+[v strncmp@r r `*.25Cuc  1 a 2 32 ]
+[v strncmp@l l `*.25Cuc  1 a 2 30 ]
+"3
+[v strncmp@_l _l `*.25Cuc  1 p 2 23 ]
+[v strncmp@_r _r `*.25Cuc  1 p 2 25 ]
+[v strncmp@n n `ui  1 p 2 27 ]
+"9
+} 0
+"274 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\doprnt.c
+[v _dtoa dtoa `(i  1 s 2 dtoa ]
+{
+"277
+[v dtoa@n n `o  1 a 8 35 ]
+"276
+[v dtoa@i i `i  1 a 2 43 ]
+[v dtoa@s s `i  1 a 2 33 ]
+[v dtoa@w w `i  1 a 2 31 ]
+[v dtoa@p p `i  1 a 2 29 ]
+[s S2875 _IO_FILE 0 ]
+"274
+[v dtoa@fp fp `*.30S2875  1 p 1 10 ]
+[v dtoa@d d `o  1 p 8 11 ]
+"315
+} 0
+"72
+[v _pad pad `(i  1 s 2 pad ]
+{
+"74
+[v pad@w w `i  1 a 2 45 ]
+[v pad@i i `i  1 a 2 43 ]
+[s S2875 _IO_FILE 0 ]
+"72
+[v pad@fp fp `*.30S2875  1 p 1 37 ]
+[v pad@buf buf `*.39uc  1 p 2 38 ]
+[v pad@p p `i  1 p 2 40 ]
+"95
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+"7
+[v strlen@a a `*.39Cuc  1 a 2 25 ]
+"5
+[v strlen@s s `*.39Cuc  1 p 2 23 ]
+"12
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+{
+"11
+[v fputs@i i `i  1 a 2 35 ]
+"10
+[v fputs@c c `uc  1 a 1 34 ]
+"8
+[v fputs@s s `*.39Cuc  1 p 2 31 ]
+[s S2849 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+[v fputs@fp fp `*.30S2849  1 p 1 33 ]
+"19
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 23 ]
+[s S2849 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+[v fputc@fp fp `*.30S2849  1 p 1 25 ]
+"21
+} 0
+"7 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+"9
+} 0
+"1 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 41 ]
+"4
+} 0
+"9 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+{
+"12
+[v ___aomod@sign sign `uc  1 a 1 40 ]
+[v ___aomod@counter counter `uc  1 a 1 39 ]
+"9
+[v ___aomod@dividend dividend `o  1 p 8 23 ]
+[v ___aomod@divisor divisor `o  1 p 8 31 ]
+"36
+} 0
+"9 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+{
+"12
+[v ___aodiv@quotient quotient `o  1 a 8 2 ]
+"13
+[v ___aodiv@sign sign `uc  1 a 1 1 ]
+[v ___aodiv@counter counter `uc  1 a 1 0 ]
+"9
+[v ___aodiv@dividend dividend `o  1 p 8 23 ]
+[v ___aodiv@divisor divisor `o  1 p 8 31 ]
+"43
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
+{
+"6
+[v atoi@n n `i  1 a 2 43 ]
+[v atoi@neg neg `i  1 a 2 36 ]
+"4
+[v atoi@s s `*.25Cuc  1 p 2 30 ]
+"16
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\isspace.c
+[v _isspace isspace `(i  1 e 2 0 ]
+{
+[v isspace@c c `i  1 p 2 23 ]
+"8
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\isdigit.c
+[v _isdigit isdigit `(i  1 e 2 0 ]
+{
+[v isdigit@c c `i  1 p 2 23 ]
+"8
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 27 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 23 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 25 ]
+"53
+} 0
+"4 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\RTC_3231.c
+[v _RTC_send_hora RTC_send_hora `(v  1 e 1 0 ]
+{
+"6
+[v RTC_send_hora@dec dec `uc  1 a 1 28 ]
+[v RTC_send_hora@uni uni `uc  1 a 1 27 ]
+"40
+} 0
+"41
+[v _RTC_send_fecha RTC_send_fecha `(v  1 e 1 0 ]
+{
+"43
+[v RTC_send_fecha@dec dec `uc  1 a 1 28 ]
+[v RTC_send_fecha@uni uni `uc  1 a 1 27 ]
+"77
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+{
+[v ___lbdiv@dividend dividend `uc  1 a 1 wreg ]
+"6
+[v ___lbdiv@quotient quotient `uc  1 a 1 26 ]
+"7
+[v ___lbdiv@counter counter `uc  1 a 1 25 ]
+"4
+[v ___lbdiv@dividend dividend `uc  1 a 1 wreg ]
+[v ___lbdiv@divisor divisor `uc  1 p 1 23 ]
+"9
+[v ___lbdiv@dividend dividend `uc  1 a 1 24 ]
+"26
+} 0
+"128 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\LCD20X4_I2C.c
+[v _LCD_array LCD_array `(v  1 e 1 0 ]
+{
+[v LCD_array@x x `i  1 p 2 27 ]
+[v LCD_array@y y `i  1 p 2 29 ]
+[v LCD_array@date date `*.35Cuc  1 p 2 31 ]
+"153
+} 0
+"83
+[v _LCD_date LCD_date `(v  1 e 1 0 ]
+{
+[v LCD_date@date date `uc  1 a 1 wreg ]
+[v LCD_date@date date `uc  1 a 1 wreg ]
+"86
+[v LCD_date@date date `uc  1 a 1 26 ]
+"123
+} 0
+"3 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\TECLADO_4X4.c
+[v _TEC4x4_init TEC4x4_init `(v  1 e 1 0 ]
+{
+"23
+} 0
+"3 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\SPI_SOFT.c
+[v _Soft_SPI_Init Soft_SPI_Init `(v  1 e 1 0 ]
+{
+"17
+} 0
+"5 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\OS_Control.c
+[v _OS_init OS_init `(v  1 e 1 0 ]
+{
+"25
+} 0
+"40 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\RC522.c
+[v _MFRC522_Init MFRC522_Init `(v  1 e 1 0 ]
+{
+"61
+} 0
+"28
+[v _MFRC522_Reset MFRC522_Reset `(v  1 e 1 0 ]
+{
+"31
+} 0
+"32
+[v _MFRC522_AntennaOn MFRC522_AntennaOn `(v  1 e 1 0 ]
+{
+"35
+} 0
+"24
+[v _MFRC522_Set_Bit MFRC522_Set_Bit `(v  1 s 1 MFRC522_Set_Bit ]
+{
+[v MFRC522_Set_Bit@addr addr `uc  1 a 1 wreg ]
+[v MFRC522_Set_Bit@addr addr `uc  1 a 1 wreg ]
+[v MFRC522_Set_Bit@mask mask `uc  1 p 1 31 ]
+"26
+[v MFRC522_Set_Bit@addr addr `uc  1 a 1 32 ]
+"27
+} 0
+"3
+[v _MFRC522_Wr MFRC522_Wr `(v  1 s 1 MFRC522_Wr ]
+{
+[v MFRC522_Wr@addr addr `uc  1 a 1 wreg ]
+[v MFRC522_Wr@addr addr `uc  1 a 1 wreg ]
+[v MFRC522_Wr@value value `uc  1 p 1 29 ]
+"5
+[v MFRC522_Wr@addr addr `uc  1 a 1 30 ]
+"9
+} 0
+"10
+[v _MFRC522_Rd MFRC522_Rd `(uc  1 s 1 MFRC522_Rd ]
+{
+[v MFRC522_Rd@addr addr `uc  1 a 1 wreg ]
+"12
+[v MFRC522_Rd@value value `uc  1 a 1 28 ]
+"10
+[v MFRC522_Rd@addr addr `uc  1 a 1 wreg ]
+"14
+[v MFRC522_Rd@addr addr `uc  1 a 1 27 ]
+"19
+} 0
+"41 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\SPI_SOFT.c
+[v _Soft_SPI_Write Soft_SPI_Write `(v  1 e 1 0 ]
+{
+[v Soft_SPI_Write@dato_ dato_ `uc  1 a 1 wreg ]
+"43
+[v Soft_SPI_Write@cont_s cont_s `uc  1 a 1 24 ]
+"41
+[v Soft_SPI_Write@dato_ dato_ `uc  1 a 1 wreg ]
+"43
+[v Soft_SPI_Write@dato_ dato_ `uc  1 a 1 23 ]
+"58
+} 0
+"19
+[v _Soft_SPI_Read Soft_SPI_Read `(uc  1 e 1 0 ]
+{
+"21
+[v Soft_SPI_Read@cont_s cont_s `uc  1 a 1 26 ]
+"22
+[v Soft_SPI_Read@dato_ dato_ `uc  1 a 1 25 ]
+"39
+} 0
+"6 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\LCD20X4_I2C.c
+[v _LCD_init LCD_init `(v  1 e 1 0 ]
+{
+"11
+[v LCD_init@i i `uc  1 a 1 29 ]
+"32
+} 0
+"37
+[v _LCD_command LCD_command `(v  1 e 1 0 ]
+{
+[v LCD_command@cmd cmd `uc  1 a 1 wreg ]
+[v LCD_command@cmd cmd `uc  1 a 1 wreg ]
+"40
+[v LCD_command@cmd cmd `uc  1 a 1 26 ]
+"77
+} 0
+"61 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\SOFT_I2C.c
+[v _i2c_write i2c_write `(v  1 e 1 0 ]
+{
+[v i2c_write@date date `uc  1 a 1 wreg ]
+"73
+[v i2c_write@i i `uc  1 a 1 24 ]
+"61
+[v i2c_write@date date `uc  1 a 1 wreg ]
+"64
+[v i2c_write@date date `uc  1 a 1 23 ]
+"106
+} 0
+"40
+[v _i2c_stop i2c_stop `(v  1 e 1 0 ]
+{
+"56
+} 0
+"17
+[v _i2c_start i2c_start `(v  1 e 1 0 ]
+{
+"35
+} 0
+"108 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\OS_Control.c
+[v _ISR_LowP ISR_LowP `IIL(v  1 e 1 0 ]
+{
+"146
+} 0
+"150
+[v _TaskDetected TaskDetected `(v  1 e 1 0 ]
+{
+"194
+[v TaskDetected@i i `uc  1 a 1 15 ]
+"199
+} 0
+"26 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\TECLADO_4X4.c
+[v _escaneo escaneo `(v  1 e 1 0 ]
+{
+"34
+[v escaneo@i i `uc  1 a 1 12 ]
+"32
+[v escaneo@j j `uc  1 a 1 11 ]
+"59
+} 0
+"79 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\RTC_3231.c
+[v _RTC_read_time RTC_read_time `(v  1 e 1 0 ]
+{
+"81
+[v RTC_read_time@aux2 aux2 `uc  1 a 1 14 ]
+[v RTC_read_time@aux1 aux1 `uc  1 a 1 13 ]
+"149
+} 0
+"150
+[v _RTC_read_date RTC_read_date `(v  1 e 1 0 ]
+{
+"152
+[v RTC_read_date@aux2 aux2 `uc  1 a 1 14 ]
+[v RTC_read_date@aux1 aux1 `uc  1 a 1 13 ]
+"211
+} 0
+"61 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\SOFT_I2C.c
+[v i1_i2c_write i2c_write `(v  1 e 1 0 ]
+{
+[v i1i2c_write@date date `uc  1 a 1 wreg ]
+"73
+[v i1i2c_write@i i `uc  1 a 1 12 ]
+"61
+[v i1i2c_write@date date `uc  1 a 1 wreg ]
+"64
+[v i1i2c_write@date date `uc  1 a 1 11 ]
+"106
+} 0
+"191
+[v i1_i2c_restart i2c_restart `(v  1 e 1 0 ]
+{
+"197
+} 0
+"40
+[v i1_i2c_stop i2c_stop `(v  1 e 1 0 ]
+{
+"56
+} 0
+"17
+[v i1_i2c_start i2c_start `(v  1 e 1 0 ]
+{
+"35
+} 0
+"121
+[v i1_i2c_read i2c_read `(uc  1 e 1 0 ]
+{
+"135
+[v i1i2c_read@i i `uc  1 a 1 12 ]
+"123
+[v i1i2c_read@dato dato `uc  1 a 1 11 ]
+"152
+} 0
+"154
+[v i1_i2c_nack i2c_nack `(v  1 e 1 0 ]
+{
+"168
+} 0
+"29 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\OS_Control.c
+[v _ISR_HighP ISR_HighP `IIH(v  1 e 1 0 ]
+{
+"104
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\pic\sources\c99\common\Umul16.c
+[v i2___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v i2___wmul@product product `ui  1 a 2 4 ]
+"15
+[v i2___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v i2___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"62 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\TECLADO_4X4.c
+[v _antirrebote antirrebote `(v  1 e 1 0 ]
+{
+"68
+} 0
+"85 C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\PROYECTO_PIC18F4550.X\UART_com.c
+[v _UART_read UART_read `(uc  1 e 1 0 ]
+{
+"89
+} 0
