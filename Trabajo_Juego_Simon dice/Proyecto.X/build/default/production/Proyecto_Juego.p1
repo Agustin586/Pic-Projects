@@ -1,0 +1,977 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[p mainexit ]
+"907 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 907: extern volatile unsigned char TRISA __attribute__((address(0x085)));
+[v _TRISA `Vuc ~T0 @X0 0 e@133 ]
+"969
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 969: extern volatile unsigned char TRISB __attribute__((address(0x086)));
+[v _TRISB `Vuc ~T0 @X0 0 e@134 ]
+"767
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 767: extern volatile unsigned char CMCON __attribute__((address(0x01F)));
+[v _CMCON `Vuc ~T0 @X0 0 e@31 ]
+"1485
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 1485: extern volatile __bit RB1 __attribute__((address(0x31)));
+[v _RB1 `Vb ~T0 @X0 0 e@49 ]
+"1482
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 1482: extern volatile __bit RB0 __attribute__((address(0x30)));
+[v _RB0 `Vb ~T0 @X0 0 e@48 ]
+"1488
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 1488: extern volatile __bit RB2 __attribute__((address(0x32)));
+[v _RB2 `Vb ~T0 @X0 0 e@50 ]
+"1491
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 1491: extern volatile __bit RB3 __attribute__((address(0x33)));
+[v _RB3 `Vb ~T0 @X0 0 e@51 ]
+[v F461 `(v ~T0 @X0 1 tf1`ul ]
+"92 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic.h
+[v __delay `JF461 ~T0 @X0 0 e ]
+[p i __delay ]
+"1467 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 1467: extern volatile __bit RA3 __attribute__((address(0x2B)));
+[v _RA3 `Vb ~T0 @X0 0 e@43 ]
+"1464
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 1464: extern volatile __bit RA2 __attribute__((address(0x2A)));
+[v _RA2 `Vb ~T0 @X0 0 e@42 ]
+"1461
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 1461: extern volatile __bit RA1 __attribute__((address(0x29)));
+[v _RA1 `Vb ~T0 @X0 0 e@41 ]
+"1458
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 1458: extern volatile __bit RA0 __attribute__((address(0x28)));
+[v _RA0 `Vb ~T0 @X0 0 e@40 ]
+"34 Proyecto_Juego.c
+[; ;Proyecto_Juego.c: 34: void antirrebote(void);
+[v _antirrebote `(v ~T0 @X0 0 ef ]
+"37
+[; ;Proyecto_Juego.c: 37: void inicio(int tiempo);
+[v _inicio `(v ~T0 @X0 0 ef1`i ]
+"33
+[; ;Proyecto_Juego.c: 33: void secuencia(int [],int tiempo,char contador);
+[v _secuencia `(v ~T0 @X0 0 ef3`*i`i`uc ]
+"39
+[; ;Proyecto_Juego.c: 39: void valor_aleatorio(char contador,int valor);
+[v _valor_aleatorio `(v ~T0 @X0 0 ef2`uc`i ]
+"76 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\c90\stdlib.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\c90\stdlib.h: 76: extern void srand(unsigned int);
+[v _srand `(v ~T0 @X0 0 ef1`ui ]
+"75
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\c90\stdlib.h: 75: extern int rand(void);
+[v _rand `(i ~T0 @X0 0 ef ]
+"35 Proyecto_Juego.c
+[; ;Proyecto_Juego.c: 35: char verificacion(int [],char cantidad);
+[v _verificacion `(uc ~T0 @X0 0 ef2`*i`uc ]
+"36
+[; ;Proyecto_Juego.c: 36: void reseteo(void);
+[v _reseteo `(v ~T0 @X0 0 ef ]
+"1497 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 1497: extern volatile __bit RB5 __attribute__((address(0x35)));
+[v _RB5 `Vb ~T0 @X0 0 e@53 ]
+"38 Proyecto_Juego.c
+[; ;Proyecto_Juego.c: 38: void Delay_ms(int tiempo_de_delay);
+[v _Delay_ms `(v ~T0 @X0 0 ef1`i ]
+"54 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 54: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"61
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 61: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"68
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 68: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"75
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 75: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"161
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 161: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"168
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 168: __asm("PORTA equ 05h");
+[; <" PORTA equ 05h ;# ">
+"230
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 230: __asm("PORTB equ 06h");
+[; <" PORTB equ 06h ;# ">
+"292
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 292: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"312
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 312: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"390
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 390: __asm("PIR1 equ 0Ch");
+[; <" PIR1 equ 0Ch ;# ">
+"447
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 447: __asm("TMR1 equ 0Eh");
+[; <" TMR1 equ 0Eh ;# ">
+"454
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 454: __asm("TMR1L equ 0Eh");
+[; <" TMR1L equ 0Eh ;# ">
+"461
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 461: __asm("TMR1H equ 0Fh");
+[; <" TMR1H equ 0Fh ;# ">
+"468
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 468: __asm("T1CON equ 010h");
+[; <" T1CON equ 010h ;# ">
+"527
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 527: __asm("TMR2 equ 011h");
+[; <" TMR2 equ 011h ;# ">
+"534
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 534: __asm("T2CON equ 012h");
+[; <" T2CON equ 012h ;# ">
+"605
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 605: __asm("CCPR1 equ 015h");
+[; <" CCPR1 equ 015h ;# ">
+"612
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 612: __asm("CCPR1L equ 015h");
+[; <" CCPR1L equ 015h ;# ">
+"619
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 619: __asm("CCPR1H equ 016h");
+[; <" CCPR1H equ 016h ;# ">
+"626
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 626: __asm("CCP1CON equ 017h");
+[; <" CCP1CON equ 017h ;# ">
+"684
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 684: __asm("RCSTA equ 018h");
+[; <" RCSTA equ 018h ;# ">
+"755
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 755: __asm("TXREG equ 019h");
+[; <" TXREG equ 019h ;# ">
+"762
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 762: __asm("RCREG equ 01Ah");
+[; <" RCREG equ 01Ah ;# ">
+"769
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 769: __asm("CMCON equ 01Fh");
+[; <" CMCON equ 01Fh ;# ">
+"839
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 839: __asm("OPTION_REG equ 081h");
+[; <" OPTION_REG equ 081h ;# ">
+"909
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 909: __asm("TRISA equ 085h");
+[; <" TRISA equ 085h ;# ">
+"971
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 971: __asm("TRISB equ 086h");
+[; <" TRISB equ 086h ;# ">
+"1033
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 1033: __asm("PIE1 equ 08Ch");
+[; <" PIE1 equ 08Ch ;# ">
+"1090
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 1090: __asm("PCON equ 08Eh");
+[; <" PCON equ 08Eh ;# ">
+"1139
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 1139: __asm("PR2 equ 092h");
+[; <" PR2 equ 092h ;# ">
+"1146
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 1146: __asm("TXSTA equ 098h");
+[; <" TXSTA equ 098h ;# ">
+"1203
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 1203: __asm("SPBRG equ 099h");
+[; <" SPBRG equ 099h ;# ">
+"1210
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 1210: __asm("EEDATA equ 09Ah");
+[; <" EEDATA equ 09Ah ;# ">
+"1217
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 1217: __asm("EEADR equ 09Bh");
+[; <" EEADR equ 09Bh ;# ">
+"1224
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 1224: __asm("EECON1 equ 09Ch");
+[; <" EECON1 equ 09Ch ;# ">
+"1262
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 1262: __asm("EECON2 equ 09Dh");
+[; <" EECON2 equ 09Dh ;# ">
+"1269
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f628a.h: 1269: __asm("VRCON equ 09Fh");
+[; <" VRCON equ 09Fh ;# ">
+"7 Proyecto_Juego.c
+[p x FOSC = INTOSCIO ]
+"8
+[p x WDTE = OFF ]
+"9
+[p x PWRTE = OFF ]
+"10
+[p x MCLRE = ON ]
+"11
+[p x BOREN = OFF ]
+"12
+[p x LVP = OFF ]
+"13
+[p x CPD = OFF ]
+"14
+[p x CP = OFF ]
+"42
+[; ;Proyecto_Juego.c: 42: int sec[40];
+[v _sec `i ~T0 @X0 -> 40 `i e ]
+"43
+[; ;Proyecto_Juego.c: 43: int t=0;
+[v _t `i ~T0 @X0 1 e ]
+[i _t
+-> 0 `i
+]
+"44
+[; ;Proyecto_Juego.c: 44: int valor_aleat=1;
+[v _valor_aleat `i ~T0 @X0 1 e ]
+[i _valor_aleat
+-> 1 `i
+]
+"45
+[; ;Proyecto_Juego.c: 45: int valores;
+[v _valores `i ~T0 @X0 1 e ]
+"46
+[; ;Proyecto_Juego.c: 46: int ult_valor=0;
+[v _ult_valor `i ~T0 @X0 1 e ]
+[i _ult_valor
+-> 0 `i
+]
+"47
+[; ;Proyecto_Juego.c: 47: char cont=0;
+[v _cont `uc ~T0 @X0 1 e ]
+[i _cont
+-> -> 0 `i `uc
+]
+[v $root$_main `(v ~T0 @X0 0 e ]
+"49
+[; ;Proyecto_Juego.c: 49: void main(void) {
+[v _main `(v ~T0 @X0 1 ef ]
+{
+[e :U _main ]
+[f ]
+"50
+[; ;Proyecto_Juego.c: 50:     TRISA=0b11111111;
+[e = _TRISA -> -> 255 `i `uc ]
+"51
+[; ;Proyecto_Juego.c: 51:     TRISB=0b11010000;
+[e = _TRISB -> -> 208 `i `uc ]
+"52
+[; ;Proyecto_Juego.c: 52:     CMCON=0b00000111;
+[e = _CMCON -> -> 7 `i `uc ]
+"54
+[; ;Proyecto_Juego.c: 54:     while(1){
+[e :U 58 ]
+{
+"55
+[; ;Proyecto_Juego.c: 55:         int nivel=0;
+[v _nivel `i ~T0 @X0 1 a ]
+[e = _nivel -> 0 `i ]
+"57
+[; ;Proyecto_Juego.c: 57:         valor_aleat=1;
+[e = _valor_aleat -> 1 `i ]
+"59
+[; ;Proyecto_Juego.c: 59:         while(RA3==0 && RA2==0 && RA1==0 && RA0==0){
+[e $U 60  ]
+[e :U 61 ]
+{
+"60
+[; ;Proyecto_Juego.c: 60:             RB1=1,RB0=1,RB2=1,RB3=1;
+[e ; -> ; -> ; -> = _RB1 -> -> 1 `i `b `i -> = _RB0 -> -> 1 `i `b `i `i -> = _RB2 -> -> 1 `i `b `i `i -> = _RB3 -> -> 1 `i `b `i ]
+"61
+[; ;Proyecto_Juego.c: 61:             _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"62
+[; ;Proyecto_Juego.c: 62:             RB1=0,RB0=0,RB2=0,RB3=0;
+[e ; -> ; -> ; -> = _RB1 -> -> 0 `i `b `i -> = _RB0 -> -> 0 `i `b `i `i -> = _RB2 -> -> 0 `i `b `i `i -> = _RB3 -> -> 0 `i `b `i ]
+"63
+[; ;Proyecto_Juego.c: 63:             _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"64
+[; ;Proyecto_Juego.c: 64:         }
+}
+[e :U 60 ]
+"59
+[; ;Proyecto_Juego.c: 59:         while(RA3==0 && RA2==0 && RA1==0 && RA0==0){
+[e $ && && && == -> _RA3 `i -> 0 `i == -> _RA2 `i -> 0 `i == -> _RA1 `i -> 0 `i == -> _RA0 `i -> 0 `i 61  ]
+[e :U 62 ]
+"65
+[; ;Proyecto_Juego.c: 65:         if(RA3==1) nivel=1;
+[e $ ! == -> _RA3 `i -> 1 `i 63  ]
+[e = _nivel -> 1 `i ]
+[e :U 63 ]
+"66
+[; ;Proyecto_Juego.c: 66:         if(RA2==1) nivel=2;
+[e $ ! == -> _RA2 `i -> 1 `i 64  ]
+[e = _nivel -> 2 `i ]
+[e :U 64 ]
+"67
+[; ;Proyecto_Juego.c: 67:         if(RA1==1) nivel=3;
+[e $ ! == -> _RA1 `i -> 1 `i 65  ]
+[e = _nivel -> 3 `i ]
+[e :U 65 ]
+"68
+[; ;Proyecto_Juego.c: 68:         if(RA0==1) nivel=4;
+[e $ ! == -> _RA0 `i -> 1 `i 66  ]
+[e = _nivel -> 4 `i ]
+[e :U 66 ]
+"70
+[; ;Proyecto_Juego.c: 70:         antirrebote();
+[e ( _antirrebote ..  ]
+"72
+[; ;Proyecto_Juego.c: 72:         switch(nivel){
+[e $U 68  ]
+{
+"73
+[; ;Proyecto_Juego.c: 73:             case 1: t=200;
+[e :U 69 ]
+[e = _t -> 200 `i ]
+"74
+[; ;Proyecto_Juego.c: 74:                 break;
+[e $U 67  ]
+"75
+[; ;Proyecto_Juego.c: 75:             case 2: t=170;
+[e :U 70 ]
+[e = _t -> 170 `i ]
+"76
+[; ;Proyecto_Juego.c: 76:                 break;
+[e $U 67  ]
+"77
+[; ;Proyecto_Juego.c: 77:             case 3: t=140;
+[e :U 71 ]
+[e = _t -> 140 `i ]
+"78
+[; ;Proyecto_Juego.c: 78:                 break;
+[e $U 67  ]
+"79
+[; ;Proyecto_Juego.c: 79:             case 4: t=110;
+[e :U 72 ]
+[e = _t -> 110 `i ]
+"80
+[; ;Proyecto_Juego.c: 80:                 break;
+[e $U 67  ]
+"81
+[; ;Proyecto_Juego.c: 81:             default:
+[e :U 73 ]
+"82
+[; ;Proyecto_Juego.c: 82:                 break;
+[e $U 67  ]
+"83
+[; ;Proyecto_Juego.c: 83:         }
+}
+[e $U 67  ]
+[e :U 68 ]
+[e [\ _nivel , $ -> 1 `i 69
+ , $ -> 2 `i 70
+ , $ -> 3 `i 71
+ , $ -> 4 `i 72
+ 73 ]
+[e :U 67 ]
+"84
+[; ;Proyecto_Juego.c: 84:         inicio(t);
+[e ( _inicio (1 _t ]
+"85
+[; ;Proyecto_Juego.c: 85:         secuencia(sec,t,cont);
+[e ( _secuencia (3 , , &U _sec _t _cont ]
+"86
+[; ;Proyecto_Juego.c: 86:     }
+}
+[e :U 57 ]
+[e $U 58  ]
+[e :U 59 ]
+"87
+[; ;Proyecto_Juego.c: 87:     return;
+[e $UE 56  ]
+"88
+[; ;Proyecto_Juego.c: 88: }
+[e :UE 56 ]
+}
+"90
+[; ;Proyecto_Juego.c: 90: void inicio(int tiempo){
+[v _inicio `(v ~T0 @X0 1 ef1`i ]
+{
+[e :U _inicio ]
+[v _tiempo `i ~T0 @X0 1 r1 ]
+[f ]
+"92
+[; ;Proyecto_Juego.c: 92:     char i=1,error=0;
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 1 `i `uc ]
+[v _error `uc ~T0 @X0 1 a ]
+[e = _error -> -> 0 `i `uc ]
+"93
+[; ;Proyecto_Juego.c: 93:     int tiempo_delay=tiempo;
+[v _tiempo_delay `i ~T0 @X0 1 a ]
+[e = _tiempo_delay _tiempo ]
+"95
+[; ;Proyecto_Juego.c: 95:     cont=0;
+[e = _cont -> -> 0 `i `uc ]
+"97
+[; ;Proyecto_Juego.c: 97:     while(error==0 && i<=40){
+[e $U 75  ]
+[e :U 76 ]
+{
+"99
+[; ;Proyecto_Juego.c: 99:         cont++;
+[e ++ _cont -> -> 1 `i `uc ]
+"101
+[; ;Proyecto_Juego.c: 101:         valor_aleatorio(cont,valores);
+[e ( _valor_aleatorio (2 , _cont _valores ]
+"103
+[; ;Proyecto_Juego.c: 103:         srand(valor_aleat);
+[e ( _srand (1 -> _valor_aleat `ui ]
+"105
+[; ;Proyecto_Juego.c: 105:         ult_valor=rand() % (4-1+1) + 1;
+[e = _ult_valor + % ( _rand ..  + - -> 4 `i -> 1 `i -> 1 `i -> 1 `i ]
+"107
+[; ;Proyecto_Juego.c: 107:         sec[i]=ult_valor;
+[e = *U + &U _sec * -> _i `ux -> -> # *U &U _sec `ui `ux _ult_valor ]
+"109
+[; ;Proyecto_Juego.c: 109:         antirrebote();
+[e ( _antirrebote ..  ]
+"111
+[; ;Proyecto_Juego.c: 111:         secuencia(sec,tiempo_delay,cont);
+[e ( _secuencia (3 , , &U _sec _tiempo_delay _cont ]
+"113
+[; ;Proyecto_Juego.c: 113:         error=verificacion(sec,cont);
+[e = _error ( _verificacion (2 , &U _sec _cont ]
+"115
+[; ;Proyecto_Juego.c: 115:         if(i==40){
+[e $ ! == -> _i `i -> 40 `i 78  ]
+{
+"116
+[; ;Proyecto_Juego.c: 116:             while(RA3==0){
+[e $U 79  ]
+[e :U 80 ]
+{
+"117
+[; ;Proyecto_Juego.c: 117:                 RB1=1,RB0=1,RB2=1,RB3=1;
+[e ; -> ; -> ; -> = _RB1 -> -> 1 `i `b `i -> = _RB0 -> -> 1 `i `b `i `i -> = _RB2 -> -> 1 `i `b `i `i -> = _RB3 -> -> 1 `i `b `i ]
+"118
+[; ;Proyecto_Juego.c: 118:                 _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"119
+[; ;Proyecto_Juego.c: 119:                 RB1=0,RB0=0,RB2=0,RB3=0;
+[e ; -> ; -> ; -> = _RB1 -> -> 0 `i `b `i -> = _RB0 -> -> 0 `i `b `i `i -> = _RB2 -> -> 0 `i `b `i `i -> = _RB3 -> -> 0 `i `b `i ]
+"120
+[; ;Proyecto_Juego.c: 120:                 _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"121
+[; ;Proyecto_Juego.c: 121:             }
+}
+[e :U 79 ]
+"116
+[; ;Proyecto_Juego.c: 116:             while(RA3==0){
+[e $ == -> _RA3 `i -> 0 `i 80  ]
+[e :U 81 ]
+"122
+[; ;Proyecto_Juego.c: 122:         }
+}
+[e :U 78 ]
+"124
+[; ;Proyecto_Juego.c: 124:         reseteo();
+[e ( _reseteo ..  ]
+"126
+[; ;Proyecto_Juego.c: 126:         i++;
+[e ++ _i -> -> 1 `i `uc ]
+"128
+[; ;Proyecto_Juego.c: 128:     }
+}
+[e :U 75 ]
+"97
+[; ;Proyecto_Juego.c: 97:     while(error==0 && i<=40){
+[e $ && == -> _error `i -> 0 `i <= -> _i `i -> 40 `i 76  ]
+[e :U 77 ]
+"130
+[; ;Proyecto_Juego.c: 130: }
+[e :UE 74 ]
+}
+"132
+[; ;Proyecto_Juego.c: 132: void reseteo(void){
+[v _reseteo `(v ~T0 @X0 1 ef ]
+{
+[e :U _reseteo ]
+[f ]
+"134
+[; ;Proyecto_Juego.c: 134:     RB1=1,RB0=1,RB2=1,RB3=1,RB5=1;
+[e ; -> ; -> ; -> ; -> = _RB1 -> -> 1 `i `b `i -> = _RB0 -> -> 1 `i `b `i `i -> = _RB2 -> -> 1 `i `b `i `i -> = _RB3 -> -> 1 `i `b `i `i -> = _RB5 -> -> 1 `i `b `i ]
+"136
+[; ;Proyecto_Juego.c: 136:     _delay((unsigned long)((1000)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"138
+[; ;Proyecto_Juego.c: 138:     RB1=0,RB0=0,RB2=0,RB3=0,RB5=0;
+[e ; -> ; -> ; -> ; -> = _RB1 -> -> 0 `i `b `i -> = _RB0 -> -> 0 `i `b `i `i -> = _RB2 -> -> 0 `i `b `i `i -> = _RB3 -> -> 0 `i `b `i `i -> = _RB5 -> -> 0 `i `b `i ]
+"140
+[; ;Proyecto_Juego.c: 140:     _delay((unsigned long)((500)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"141
+[; ;Proyecto_Juego.c: 141: }
+[e :UE 82 ]
+}
+"143
+[; ;Proyecto_Juego.c: 143: void secuencia(int arreglo[],int tiempo,char contador){
+[v _secuencia `(v ~T0 @X0 1 ef3`*i`i`uc ]
+{
+[e :U _secuencia ]
+[v _arreglo `*i ~T0 @X0 1 r1 ]
+[v _tiempo `i ~T0 @X0 1 r2 ]
+[v _contador `uc ~T0 @X0 1 r3 ]
+[f ]
+"144
+[; ;Proyecto_Juego.c: 144:     for(int j=0;j<=contador;j++){
+{
+[v _j `i ~T0 @X0 1 a ]
+[e = _j -> 0 `i ]
+[e $U 87  ]
+[e :U 84 ]
+{
+"146
+[; ;Proyecto_Juego.c: 146:         if(arreglo[j]==1){
+[e $ ! == *U + _arreglo * -> _j `x -> -> # *U _arreglo `i `x -> 1 `i 88  ]
+{
+"147
+[; ;Proyecto_Juego.c: 147:             RB1=1,RB5=1;
+[e ; -> = _RB1 -> -> 1 `i `b `i -> = _RB5 -> -> 1 `i `b `i ]
+"148
+[; ;Proyecto_Juego.c: 148:             Delay_ms(tiempo);
+[e ( _Delay_ms (1 _tiempo ]
+"149
+[; ;Proyecto_Juego.c: 149:             RB1=0,RB5=0;
+[e ; -> = _RB1 -> -> 0 `i `b `i -> = _RB5 -> -> 0 `i `b `i ]
+"150
+[; ;Proyecto_Juego.c: 150:         }
+}
+[e :U 88 ]
+"152
+[; ;Proyecto_Juego.c: 152:         if(arreglo[j]==2){
+[e $ ! == *U + _arreglo * -> _j `x -> -> # *U _arreglo `i `x -> 2 `i 89  ]
+{
+"153
+[; ;Proyecto_Juego.c: 153:             RB0=1,RB5=1;
+[e ; -> = _RB0 -> -> 1 `i `b `i -> = _RB5 -> -> 1 `i `b `i ]
+"154
+[; ;Proyecto_Juego.c: 154:             Delay_ms(tiempo);
+[e ( _Delay_ms (1 _tiempo ]
+"155
+[; ;Proyecto_Juego.c: 155:             RB0=0,RB5=0;
+[e ; -> = _RB0 -> -> 0 `i `b `i -> = _RB5 -> -> 0 `i `b `i ]
+"156
+[; ;Proyecto_Juego.c: 156:         }
+}
+[e :U 89 ]
+"158
+[; ;Proyecto_Juego.c: 158:         if(arreglo[j]==3){
+[e $ ! == *U + _arreglo * -> _j `x -> -> # *U _arreglo `i `x -> 3 `i 90  ]
+{
+"159
+[; ;Proyecto_Juego.c: 159:             RB2=1,RB5=1;
+[e ; -> = _RB2 -> -> 1 `i `b `i -> = _RB5 -> -> 1 `i `b `i ]
+"160
+[; ;Proyecto_Juego.c: 160:             Delay_ms(tiempo);
+[e ( _Delay_ms (1 _tiempo ]
+"161
+[; ;Proyecto_Juego.c: 161:             RB2=0,RB5=0;
+[e ; -> = _RB2 -> -> 0 `i `b `i -> = _RB5 -> -> 0 `i `b `i ]
+"162
+[; ;Proyecto_Juego.c: 162:         }
+}
+[e :U 90 ]
+"164
+[; ;Proyecto_Juego.c: 164:         if(arreglo[j]==4){
+[e $ ! == *U + _arreglo * -> _j `x -> -> # *U _arreglo `i `x -> 4 `i 91  ]
+{
+"165
+[; ;Proyecto_Juego.c: 165:             RB3=1,RB5=1;
+[e ; -> = _RB3 -> -> 1 `i `b `i -> = _RB5 -> -> 1 `i `b `i ]
+"166
+[; ;Proyecto_Juego.c: 166:             Delay_ms(tiempo);
+[e ( _Delay_ms (1 _tiempo ]
+"167
+[; ;Proyecto_Juego.c: 167:             RB3=0,RB5=0;
+[e ; -> = _RB3 -> -> 0 `i `b `i -> = _RB5 -> -> 0 `i `b `i ]
+"168
+[; ;Proyecto_Juego.c: 168:         }
+}
+[e :U 91 ]
+"170
+[; ;Proyecto_Juego.c: 170:         Delay_ms(tiempo);
+[e ( _Delay_ms (1 _tiempo ]
+"171
+[; ;Proyecto_Juego.c: 171:     }
+}
+[e ++ _j -> 1 `i ]
+[e :U 87 ]
+[e $ <= _j -> _contador `i 84  ]
+[e :U 85 ]
+}
+"172
+[; ;Proyecto_Juego.c: 172: }
+[e :UE 83 ]
+}
+"174
+[; ;Proyecto_Juego.c: 174: char verificacion(int arreglo[],char cantidad){
+[v _verificacion `(uc ~T0 @X0 1 ef2`*i`uc ]
+{
+[e :U _verificacion ]
+[v _arreglo `*i ~T0 @X0 1 r1 ]
+[v _cantidad `uc ~T0 @X0 1 r2 ]
+[f ]
+"175
+[; ;Proyecto_Juego.c: 175:     char aux=0;
+[v _aux `uc ~T0 @X0 1 a ]
+[e = _aux -> -> 0 `i `uc ]
+"176
+[; ;Proyecto_Juego.c: 176:     char x=1;
+[v _x `uc ~T0 @X0 1 a ]
+[e = _x -> -> 1 `i `uc ]
+"178
+[; ;Proyecto_Juego.c: 178:     while(x<=cantidad && aux==0){
+[e $U 93  ]
+[e :U 94 ]
+{
+"180
+[; ;Proyecto_Juego.c: 180:         if(sec[x]==1){
+[e $ ! == *U + &U _sec * -> _x `ux -> -> # *U &U _sec `ui `ux -> 1 `i 96  ]
+{
+"182
+[; ;Proyecto_Juego.c: 182:             _delay((unsigned long)((1)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"184
+[; ;Proyecto_Juego.c: 184:             while(RA3==0 && RA2==0 && RA1==0 && RA0==0){
+[e $U 97  ]
+[e :U 98 ]
+{
+"185
+[; ;Proyecto_Juego.c: 185:             }
+}
+[e :U 97 ]
+"184
+[; ;Proyecto_Juego.c: 184:             while(RA3==0 && RA2==0 && RA1==0 && RA0==0){
+[e $ && && && == -> _RA3 `i -> 0 `i == -> _RA2 `i -> 0 `i == -> _RA1 `i -> 0 `i == -> _RA0 `i -> 0 `i 98  ]
+[e :U 99 ]
+"187
+[; ;Proyecto_Juego.c: 187:             if(RA3==1){
+[e $ ! == -> _RA3 `i -> 1 `i 100  ]
+{
+"188
+[; ;Proyecto_Juego.c: 188:                 antirrebote();
+[e ( _antirrebote ..  ]
+"189
+[; ;Proyecto_Juego.c: 189:                 RB1=1,RB5=1;
+[e ; -> = _RB1 -> -> 1 `i `b `i -> = _RB5 -> -> 1 `i `b `i ]
+"190
+[; ;Proyecto_Juego.c: 190:                 _delay((unsigned long)((120)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 120 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"191
+[; ;Proyecto_Juego.c: 191:                 RB1=0,RB5=0;
+[e ; -> = _RB1 -> -> 0 `i `b `i -> = _RB5 -> -> 0 `i `b `i ]
+"192
+[; ;Proyecto_Juego.c: 192:                 aux=0;
+[e = _aux -> -> 0 `i `uc ]
+"193
+[; ;Proyecto_Juego.c: 193:             }
+}
+[e $U 101  ]
+"195
+[; ;Proyecto_Juego.c: 195:             else if(RA2==1 || RA1==1 || RA0==1) aux=1;
+[e :U 100 ]
+[e $ ! || || == -> _RA2 `i -> 1 `i == -> _RA1 `i -> 1 `i == -> _RA0 `i -> 1 `i 102  ]
+[e = _aux -> -> 1 `i `uc ]
+[e :U 102 ]
+[e :U 101 ]
+"197
+[; ;Proyecto_Juego.c: 197:             antirrebote();
+[e ( _antirrebote ..  ]
+"199
+[; ;Proyecto_Juego.c: 199:         }
+}
+[e :U 96 ]
+"201
+[; ;Proyecto_Juego.c: 201:         if(sec[x]==2){
+[e $ ! == *U + &U _sec * -> _x `ux -> -> # *U &U _sec `ui `ux -> 2 `i 103  ]
+{
+"203
+[; ;Proyecto_Juego.c: 203:             _delay((unsigned long)((1)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"205
+[; ;Proyecto_Juego.c: 205:             while(RA3==0 && RA2==0 && RA1==0 && RA0==0){
+[e $U 104  ]
+[e :U 105 ]
+{
+"206
+[; ;Proyecto_Juego.c: 206:             }
+}
+[e :U 104 ]
+"205
+[; ;Proyecto_Juego.c: 205:             while(RA3==0 && RA2==0 && RA1==0 && RA0==0){
+[e $ && && && == -> _RA3 `i -> 0 `i == -> _RA2 `i -> 0 `i == -> _RA1 `i -> 0 `i == -> _RA0 `i -> 0 `i 105  ]
+[e :U 106 ]
+"208
+[; ;Proyecto_Juego.c: 208:             if(RA2==1){
+[e $ ! == -> _RA2 `i -> 1 `i 107  ]
+{
+"209
+[; ;Proyecto_Juego.c: 209:                 antirrebote();
+[e ( _antirrebote ..  ]
+"210
+[; ;Proyecto_Juego.c: 210:                 RB0=1,RB5=1;
+[e ; -> = _RB0 -> -> 1 `i `b `i -> = _RB5 -> -> 1 `i `b `i ]
+"211
+[; ;Proyecto_Juego.c: 211:                 _delay((unsigned long)((120)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 120 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"212
+[; ;Proyecto_Juego.c: 212:                 RB0=0,RB5=0;
+[e ; -> = _RB0 -> -> 0 `i `b `i -> = _RB5 -> -> 0 `i `b `i ]
+"213
+[; ;Proyecto_Juego.c: 213:                 aux=0;
+[e = _aux -> -> 0 `i `uc ]
+"214
+[; ;Proyecto_Juego.c: 214:             }
+}
+[e $U 108  ]
+"216
+[; ;Proyecto_Juego.c: 216:             else if(RA3==1 || RA1==1 || RA0==1) aux=1;
+[e :U 107 ]
+[e $ ! || || == -> _RA3 `i -> 1 `i == -> _RA1 `i -> 1 `i == -> _RA0 `i -> 1 `i 109  ]
+[e = _aux -> -> 1 `i `uc ]
+[e :U 109 ]
+[e :U 108 ]
+"218
+[; ;Proyecto_Juego.c: 218:             antirrebote();
+[e ( _antirrebote ..  ]
+"220
+[; ;Proyecto_Juego.c: 220:         }
+}
+[e :U 103 ]
+"222
+[; ;Proyecto_Juego.c: 222:         if(sec[x]==3){
+[e $ ! == *U + &U _sec * -> _x `ux -> -> # *U &U _sec `ui `ux -> 3 `i 110  ]
+{
+"224
+[; ;Proyecto_Juego.c: 224:             _delay((unsigned long)((1)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"226
+[; ;Proyecto_Juego.c: 226:             while(RA3==0 && RA2==0 && RA1==0 && RA0==0){
+[e $U 111  ]
+[e :U 112 ]
+{
+"227
+[; ;Proyecto_Juego.c: 227:             }
+}
+[e :U 111 ]
+"226
+[; ;Proyecto_Juego.c: 226:             while(RA3==0 && RA2==0 && RA1==0 && RA0==0){
+[e $ && && && == -> _RA3 `i -> 0 `i == -> _RA2 `i -> 0 `i == -> _RA1 `i -> 0 `i == -> _RA0 `i -> 0 `i 112  ]
+[e :U 113 ]
+"229
+[; ;Proyecto_Juego.c: 229:             if(RA1==1){
+[e $ ! == -> _RA1 `i -> 1 `i 114  ]
+{
+"230
+[; ;Proyecto_Juego.c: 230:                 antirrebote();
+[e ( _antirrebote ..  ]
+"231
+[; ;Proyecto_Juego.c: 231:                 RB2=1,RB5=1;
+[e ; -> = _RB2 -> -> 1 `i `b `i -> = _RB5 -> -> 1 `i `b `i ]
+"232
+[; ;Proyecto_Juego.c: 232:                 _delay((unsigned long)((120)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 120 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"233
+[; ;Proyecto_Juego.c: 233:                 RB2=0,RB5=0;
+[e ; -> = _RB2 -> -> 0 `i `b `i -> = _RB5 -> -> 0 `i `b `i ]
+"234
+[; ;Proyecto_Juego.c: 234:                 aux=0;
+[e = _aux -> -> 0 `i `uc ]
+"235
+[; ;Proyecto_Juego.c: 235:             }
+}
+[e $U 115  ]
+"237
+[; ;Proyecto_Juego.c: 237:             else if(RA3==1 || RA2==1 || RA0==1) aux=1;
+[e :U 114 ]
+[e $ ! || || == -> _RA3 `i -> 1 `i == -> _RA2 `i -> 1 `i == -> _RA0 `i -> 1 `i 116  ]
+[e = _aux -> -> 1 `i `uc ]
+[e :U 116 ]
+[e :U 115 ]
+"239
+[; ;Proyecto_Juego.c: 239:             antirrebote();
+[e ( _antirrebote ..  ]
+"241
+[; ;Proyecto_Juego.c: 241:         }
+}
+[e :U 110 ]
+"243
+[; ;Proyecto_Juego.c: 243:         if(sec[x]==4){
+[e $ ! == *U + &U _sec * -> _x `ux -> -> # *U &U _sec `ui `ux -> 4 `i 117  ]
+{
+"245
+[; ;Proyecto_Juego.c: 245:             _delay((unsigned long)((1)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"247
+[; ;Proyecto_Juego.c: 247:             while(RA3==0 && RA2==0 && RA1==0 && RA0==0){
+[e $U 118  ]
+[e :U 119 ]
+{
+"248
+[; ;Proyecto_Juego.c: 248:             }
+}
+[e :U 118 ]
+"247
+[; ;Proyecto_Juego.c: 247:             while(RA3==0 && RA2==0 && RA1==0 && RA0==0){
+[e $ && && && == -> _RA3 `i -> 0 `i == -> _RA2 `i -> 0 `i == -> _RA1 `i -> 0 `i == -> _RA0 `i -> 0 `i 119  ]
+[e :U 120 ]
+"250
+[; ;Proyecto_Juego.c: 250:             if(RA0==1){
+[e $ ! == -> _RA0 `i -> 1 `i 121  ]
+{
+"251
+[; ;Proyecto_Juego.c: 251:                 antirrebote();
+[e ( _antirrebote ..  ]
+"252
+[; ;Proyecto_Juego.c: 252:                 RB3=1,RB5=1;
+[e ; -> = _RB3 -> -> 1 `i `b `i -> = _RB5 -> -> 1 `i `b `i ]
+"253
+[; ;Proyecto_Juego.c: 253:                 _delay((unsigned long)((120)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 120 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"254
+[; ;Proyecto_Juego.c: 254:                 RB3=0,RB5=0;
+[e ; -> = _RB3 -> -> 0 `i `b `i -> = _RB5 -> -> 0 `i `b `i ]
+"255
+[; ;Proyecto_Juego.c: 255:                 aux=0;
+[e = _aux -> -> 0 `i `uc ]
+"256
+[; ;Proyecto_Juego.c: 256:             }
+}
+[e $U 122  ]
+"258
+[; ;Proyecto_Juego.c: 258:             else if(RA3==1 || RA1==1 || RA2==1) aux=1;
+[e :U 121 ]
+[e $ ! || || == -> _RA3 `i -> 1 `i == -> _RA1 `i -> 1 `i == -> _RA2 `i -> 1 `i 123  ]
+[e = _aux -> -> 1 `i `uc ]
+[e :U 123 ]
+[e :U 122 ]
+"260
+[; ;Proyecto_Juego.c: 260:             antirrebote();
+[e ( _antirrebote ..  ]
+"262
+[; ;Proyecto_Juego.c: 262:         }
+}
+[e :U 117 ]
+"264
+[; ;Proyecto_Juego.c: 264:         x++;
+[e ++ _x -> -> 1 `i `uc ]
+"265
+[; ;Proyecto_Juego.c: 265:     }
+}
+[e :U 93 ]
+"178
+[; ;Proyecto_Juego.c: 178:     while(x<=cantidad && aux==0){
+[e $ && <= -> _x `i -> _cantidad `i == -> _aux `i -> 0 `i 94  ]
+[e :U 95 ]
+"266
+[; ;Proyecto_Juego.c: 266:     return aux;
+[e ) _aux ]
+[e $UE 92  ]
+"267
+[; ;Proyecto_Juego.c: 267: }
+[e :UE 92 ]
+}
+"269
+[; ;Proyecto_Juego.c: 269: void antirrebote(void){
+[v _antirrebote `(v ~T0 @X0 1 ef ]
+{
+[e :U _antirrebote ]
+[f ]
+"270
+[; ;Proyecto_Juego.c: 270:     _delay((unsigned long)((30)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"271
+[; ;Proyecto_Juego.c: 271:     valores++;
+[e ++ _valores -> 1 `i ]
+"272
+[; ;Proyecto_Juego.c: 272:     while(RA3==1 || RA2==1 || RA1==1 || RA0==1){
+[e $U 125  ]
+[e :U 126 ]
+{
+"273
+[; ;Proyecto_Juego.c: 273:         _delay((unsigned long)((30)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"274
+[; ;Proyecto_Juego.c: 274:         valores++;
+[e ++ _valores -> 1 `i ]
+"275
+[; ;Proyecto_Juego.c: 275:     }
+}
+[e :U 125 ]
+"272
+[; ;Proyecto_Juego.c: 272:     while(RA3==1 || RA2==1 || RA1==1 || RA0==1){
+[e $ || || || == -> _RA3 `i -> 1 `i == -> _RA2 `i -> 1 `i == -> _RA1 `i -> 1 `i == -> _RA0 `i -> 1 `i 126  ]
+[e :U 127 ]
+"276
+[; ;Proyecto_Juego.c: 276: }
+[e :UE 124 ]
+}
+"278
+[; ;Proyecto_Juego.c: 278: void Delay_ms(int tiempo_de_delay){
+[v _Delay_ms `(v ~T0 @X0 1 ef1`i ]
+{
+[e :U _Delay_ms ]
+[v _tiempo_de_delay `i ~T0 @X0 1 r1 ]
+[f ]
+"279
+[; ;Proyecto_Juego.c: 279:     char i=1;
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 1 `i `uc ]
+"280
+[; ;Proyecto_Juego.c: 280:     while(i<=tiempo_de_delay){
+[e $U 129  ]
+[e :U 130 ]
+{
+"281
+[; ;Proyecto_Juego.c: 281:         _delay((unsigned long)((1)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"282
+[; ;Proyecto_Juego.c: 282:         i++;
+[e ++ _i -> -> 1 `i `uc ]
+"283
+[; ;Proyecto_Juego.c: 283:     }
+}
+[e :U 129 ]
+"280
+[; ;Proyecto_Juego.c: 280:     while(i<=tiempo_de_delay){
+[e $ <= -> _i `i _tiempo_de_delay 130  ]
+[e :U 131 ]
+"284
+[; ;Proyecto_Juego.c: 284: }
+[e :UE 128 ]
+}
+"286
+[; ;Proyecto_Juego.c: 286: void valor_aleatorio(char contador,int valor){
+[v _valor_aleatorio `(v ~T0 @X0 1 ef2`uc`i ]
+{
+[e :U _valor_aleatorio ]
+[v _contador `uc ~T0 @X0 1 r1 ]
+[v _valor `i ~T0 @X0 1 r2 ]
+[f ]
+"287
+[; ;Proyecto_Juego.c: 287:     int c=1;
+[v _c `i ~T0 @X0 1 a ]
+[e = _c -> 1 `i ]
+"288
+[; ;Proyecto_Juego.c: 288:     while(c<contador+valores){
+[e $U 133  ]
+[e :U 134 ]
+{
+"289
+[; ;Proyecto_Juego.c: 289:         c=c+valor_aleat;
+[e = _c + _c _valor_aleat ]
+"290
+[; ;Proyecto_Juego.c: 290:         c++;
+[e ++ _c -> 1 `i ]
+"291
+[; ;Proyecto_Juego.c: 291:         valor_aleat++;
+[e ++ _valor_aleat -> 1 `i ]
+"292
+[; ;Proyecto_Juego.c: 292:         if(valor_aleat==5){
+[e $ ! == _valor_aleat -> 5 `i 136  ]
+{
+"293
+[; ;Proyecto_Juego.c: 293:             valor_aleat=1;
+[e = _valor_aleat -> 1 `i ]
+"294
+[; ;Proyecto_Juego.c: 294:         }
+}
+[e :U 136 ]
+"295
+[; ;Proyecto_Juego.c: 295:     }
+}
+[e :U 133 ]
+"288
+[; ;Proyecto_Juego.c: 288:     while(c<contador+valores){
+[e $ < _c + -> _contador `i _valores 134  ]
+[e :U 135 ]
+"296
+[; ;Proyecto_Juego.c: 296: }
+[e :UE 132 ]
+}

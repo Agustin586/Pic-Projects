@@ -1,0 +1,231 @@
+// PIC16F877A Configuration Bit Settings
+
+// 'C' source line config statements
+
+// CONFIG
+#pragma config FOSC = XT        // Oscillator Selection bits (HS oscillator)
+#pragma config WDTE = OFF       // Watchdog Timer Enable bit (WDT disabled)
+#pragma config PWRTE = ON       // Power-up Timer Enable bit (PWRT enabled)
+#pragma config BOREN = OFF      // Brown-out Reset Enable bit (BOR disabled)
+#pragma config LVP = OFF        // Low-Voltage (Single-Supply) In-Circuit Serial Programming Enable bit (RB3 is digital I/O, HV on MCLR must be used for programming)
+#pragma config CPD = OFF        // Data EEPROM Memory Code Protection bit (Data EEPROM code protection off)
+#pragma config WRT = OFF        // Flash Program Memory Write Enable bits (Write protection off; all program memory may be written to by EECON control)
+#pragma config CP = OFF         // Flash Program Memory Code Protection bit (Code protection off)
+
+// #pragma config statements should precede project file includes.
+// Use project enums instead of #define for ON and OFF.
+
+#include <xc.h>
+#define _XTAL_FREQ 4000000
+#define up RC7
+#define down RC6
+#define init_stop RC5
+#define asc_desc RC4 
+
+void antirrebote(void);
+void tabla_datos(int num);
+void datos_act(unsigned char digito);
+void display(void);
+void contador(void);
+void timer(void);
+
+int valor=0;
+unsigned char banda=0,bandera_t=0;
+
+void main(void)
+{
+    TRISA=0XFF;
+    TRISB=0X00;
+    TRISC=0XFF;
+    TRISD=0b00011111;
+    CMCON=0b00000111;
+    PORTB=0X00;
+    PORTD=0X0F;
+    
+    T0CS=0;
+    PSA=0;
+    PS2=1;
+    PS1=1;
+    PS0=0;
+    T0IF=0;
+    
+    while(1)
+    {
+        valor=0;
+        while(init_stop==0)
+        {   
+            if(up==1)
+            {
+                antirrebote();
+                valor++;
+                if(valor>999)
+                {
+                    valor=0;
+                }
+            }
+            else if(down==1)
+            {
+                antirrebote();
+                valor--;
+                if(valor<0)
+                {
+                    valor=999;
+                }
+            }
+            display();
+        }
+        antirrebote();
+        contador();
+        RB0=1;
+        __delay_ms(200);
+    }
+    return;
+}
+
+void display(void)
+{
+    unsigned char banda2=0;
+    while(up==0 && down==0 && banda2==0 && init_stop==0)
+    {
+        int uni=0,dec=0,cent=0;
+        unsigned char cont=1;
+        cent=valor/100;
+        dec=(valor-((int)cent*100))/10;
+        uni=(valor-((int)cent*100+(int)dec*10));
+        
+        while(cont<4)
+        {
+            if(cont==1){
+                tabla_datos(cent);
+            }
+            else if(cont==2){
+                tabla_datos(dec);
+            }
+            else if(cont==3){
+                tabla_datos(uni);
+            }
+            datos_act(cont);
+            __delay_ms(2);
+            cont++;
+            if(banda==1){
+                    banda2=1;
+                }
+            else if(banda==0)
+            {
+                banda2=0;
+            }
+        }
+        cont=1;
+    }
+}
+
+void antirrebote(void)
+{
+    __delay_ms(30);
+    while(up==1 || down==1 || init_stop==1 || asc_desc==1)
+    {
+        __delay_ms(30);
+    }
+}
+
+void tabla_datos(int num)
+{
+    if(num==0)  PORTB=0b01111110;
+    else if(num==1)  PORTB=0b00010010;
+    else if(num==2)  PORTB=0b10111100;
+    else if(num==3)  PORTB=0b10110110;
+    else if(num==4)  PORTB=0b11010010;
+    else if(num==5)  PORTB=0b11100110;
+    else if(num==6)  PORTB=0b11101110;
+    else if(num==7)  PORTB=0b00110010;
+    else if(num==8)  PORTB=0b11111110;
+    else if(num==9)  PORTB=0b11110010;
+}
+
+void datos_act(unsigned char digito)
+{
+    if(digito==1)   PORTD=0b10000000;
+    else if(digito==2)  PORTD=0b01000000;
+    else if(digito==3)  PORTD=0b00100000;
+}
+
+void contador(void)
+{
+    unsigned char banda3=0,banda4=0,banda5=0;
+    while(banda4==0)
+    {
+        if(banda3==0 && banda5==0)
+        {
+            banda=1;
+            bandera_t=1;
+            timer();
+            if(valor==999)
+            {
+                banda4=1;
+            }
+        }
+        else if(banda3==1 && banda5==0)
+        {
+            banda=1;
+            bandera_t=0;
+            timer();
+            if(valor==0)
+            {
+                banda4=1;
+            }
+        }
+        else if(banda5==1)
+        {
+            display();
+            banda=1;
+        }
+        
+        if(asc_desc==1)
+        {
+            antirrebote();
+            if(banda3==0)
+            {
+                banda3=1;
+            }
+            else if(banda3==1)
+            {
+                banda3=0;
+            }
+        }
+        if(init_stop==1)
+        {
+            antirrebote();
+            if(banda5==0)
+            {
+                banda5=1;
+            }
+            else if(banda5==1)
+            {
+                banda5=0;
+            }
+        }
+        display();
+    }
+    banda=0;
+    valor=0;
+}
+
+void timer(void)
+{
+    unsigned char cont=0;
+    TMR0=99;
+    T0IF=0;
+    cont=0;
+    while(cont<5)
+    {
+        if(T0IF==1)
+        {
+            T0IF=0;
+            TMR0=TMR0+99;
+            cont++;
+        }
+        display();
+    }
+    if(bandera_t==1)    valor++;
+    else if(bandera_t==0)   valor--;
+}

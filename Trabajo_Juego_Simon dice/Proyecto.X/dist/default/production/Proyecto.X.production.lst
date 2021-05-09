@@ -1,0 +1,2467 @@
+
+
+Microchip MPLAB XC8 Assembler V2.05 build -831301201 
+                                                                                               Mon Sep 09 19:18:35 2019
+
+Microchip MPLAB XC8 C Compiler v2.05 (Free license) build 20181220022703 Og1 
+     1                           	processor	16F628A
+     2                           	opt	pw 120
+     3                           	opt	flic
+     4                           	psect	idataBANK0,global,class=CODE,delta=2
+     5                           	psect	cinit,global,class=CODE,merge=1,delta=2
+     6                           	psect	bssBANK0,global,class=BANK0,space=1,delta=1
+     7                           	psect	dataBANK0,global,class=BANK0,space=1,delta=1
+     8                           	psect	bssBANK1,global,class=BANK1,space=1,delta=1
+     9                           	psect	clrtext,global,class=CODE,delta=2
+    10                           	psect	cstackCOMMON,global,class=COMMON,space=1,delta=1
+    11                           	psect	cstackBANK0,global,class=BANK0,space=1,delta=1
+    12                           	psect	maintext,global,class=CODE,split=1,delta=2
+    13                           	psect	text1,local,class=CODE,merge=1,delta=2
+    14                           	psect	text2,local,class=CODE,merge=1,delta=2
+    15                           	psect	text3,local,class=CODE,merge=1,delta=2
+    16                           	psect	text4,local,class=CODE,merge=1,delta=2
+    17                           	psect	text5,local,class=CODE,merge=1,delta=2,group=2
+    18                           	psect	text6,local,class=CODE,merge=1,delta=2
+    19                           	psect	text7,local,class=CODE,merge=1,delta=2
+    20                           	psect	text8,local,class=CODE,merge=1,delta=2
+    21                           	psect	text9,local,class=CODE,merge=1,delta=2,group=2
+    22                           	psect	text10,local,class=CODE,merge=1,delta=2,group=1
+    23                           	dabs	1,0x7E,2
+    24  0000                     
+    25                           ; Version 2.05
+    26                           ; Generated 20/12/2018 GMT
+    27                           ; 
+    28                           ; Copyright © 2018, Microchip Technology Inc. and its subsidiaries ("Microchip")
+    29                           ; All rights reserved.
+    30                           ; 
+    31                           ; This software is developed by Microchip Technology Inc. and its subsidiaries ("Microch
+      +                          ip").
+    32                           ; 
+    33                           ; Redistribution and use in source and binary forms, with or without modification, are
+    34                           ; permitted provided that the following conditions are met:
+    35                           ; 
+    36                           ;     1. Redistributions of source code must retain the above copyright notice, this lis
+      +                          t of
+    37                           ;        conditions and the following disclaimer.
+    38                           ; 
+    39                           ;     2. Redistributions in binary form must reproduce the above copyright notice, this 
+      +                          list
+    40                           ;        of conditions and the following disclaimer in the documentation and/or other
+    41                           ;        materials provided with the distribution.
+    42                           ; 
+    43                           ;     3. Microchip's name may not be used to endorse or promote products derived from th
+      +                          is
+    44                           ;        software without specific prior written permission.
+    45                           ; 
+    46                           ; THIS SOFTWARE IS PROVIDED BY MICROCHIP "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+    47                           ; INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS F
+      +                          OR
+    48                           ; PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL MICROCHIP BE LIABLE FOR ANY DIRECT, INDIREC
+      +                          T,
+    49                           ; INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING BUT NOT LIMITED TO
+    50                           ; PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA OR PROFITS; OR BUSINESS
+    51                           ; INTERRUPTION) HOWSOEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, ST
+      +                          RICT
+    52                           ; LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE U
+      +                          SE OF
+    53                           ; THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+    54                           ; 
+    55                           ; 
+    56                           ; Code-generator required, PIC16F628A Definitions
+    57                           ; 
+    58                           ; SFR Addresses
+    59  0000                     	;# 
+    60  0001                     	;# 
+    61  0002                     	;# 
+    62  0003                     	;# 
+    63  0004                     	;# 
+    64  0005                     	;# 
+    65  0006                     	;# 
+    66  000A                     	;# 
+    67  000B                     	;# 
+    68  000C                     	;# 
+    69  000E                     	;# 
+    70  000E                     	;# 
+    71  000F                     	;# 
+    72  0010                     	;# 
+    73  0011                     	;# 
+    74  0012                     	;# 
+    75  0015                     	;# 
+    76  0015                     	;# 
+    77  0016                     	;# 
+    78  0017                     	;# 
+    79  0018                     	;# 
+    80  0019                     	;# 
+    81  001A                     	;# 
+    82  001F                     	;# 
+    83  0081                     	;# 
+    84  0085                     	;# 
+    85  0086                     	;# 
+    86  008C                     	;# 
+    87  008E                     	;# 
+    88  0092                     	;# 
+    89  0098                     	;# 
+    90  0099                     	;# 
+    91  009A                     	;# 
+    92  009B                     	;# 
+    93  009C                     	;# 
+    94  009D                     	;# 
+    95  009F                     	;# 
+    96  0000                     	;# 
+    97  0001                     	;# 
+    98  0002                     	;# 
+    99  0003                     	;# 
+   100  0004                     	;# 
+   101  0005                     	;# 
+   102  0006                     	;# 
+   103  000A                     	;# 
+   104  000B                     	;# 
+   105  000C                     	;# 
+   106  000E                     	;# 
+   107  000E                     	;# 
+   108  000F                     	;# 
+   109  0010                     	;# 
+   110  0011                     	;# 
+   111  0012                     	;# 
+   112  0015                     	;# 
+   113  0015                     	;# 
+   114  0016                     	;# 
+   115  0017                     	;# 
+   116  0018                     	;# 
+   117  0019                     	;# 
+   118  001A                     	;# 
+   119  001F                     	;# 
+   120  0081                     	;# 
+   121  0085                     	;# 
+   122  0086                     	;# 
+   123  008C                     	;# 
+   124  008E                     	;# 
+   125  0092                     	;# 
+   126  0098                     	;# 
+   127  0099                     	;# 
+   128  009A                     	;# 
+   129  009B                     	;# 
+   130  009C                     	;# 
+   131  009D                     	;# 
+   132  009F                     	;# 
+   133                           
+   134                           	psect	idataBANK0
+   135  0404                     __pidataBANK0:	
+   136                           
+   137                           ;initializer for _randx
+   138  0404  3401               	retlw	1
+   139  0405  3400               	retlw	0
+   140  0406  3400               	retlw	0
+   141  0407  3400               	retlw	0
+   142                           
+   143                           ;initializer for _valor_aleat
+   144  0408  3401               	retlw	1
+   145  0409  3400               	retlw	0
+   146  001F                     _CMCON	set	31
+   147  0035                     _RB5	set	53
+   148  0028                     _RA0	set	40
+   149  0029                     _RA1	set	41
+   150  002A                     _RA2	set	42
+   151  002B                     _RA3	set	43
+   152  0033                     _RB3	set	51
+   153  0032                     _RB2	set	50
+   154  0030                     _RB0	set	48
+   155  0031                     _RB1	set	49
+   156  0086                     _TRISB	set	134
+   157  0085                     _TRISA	set	133
+   158                           
+   159                           ; #config settings
+   160  0000                     
+   161                           	psect	cinit
+   162  07E9                     start_initialization:	
+   163  07E9                     __initialization:	
+   164                           
+   165                           ; Initialize objects allocated to BANK0
+   166  07E9  2404               	fcall	__pidataBANK0	;fetch initializer
+   167  07EA  00BC               	movwf	__pdataBANK0& (0+127)
+   168  07EB  2405               	fcall	__pidataBANK0+1	;fetch initializer
+   169  07EC  00BD               	movwf	(__pdataBANK0+1)& (0+127)
+   170  07ED  2406               	fcall	__pidataBANK0+2	;fetch initializer
+   171  07EE  00BE               	movwf	(__pdataBANK0+2)& (0+127)
+   172  07EF  2407               	fcall	__pidataBANK0+3	;fetch initializer
+   173  07F0  00BF               	movwf	(__pdataBANK0+3)& (0+127)
+   174  07F1  2408               	fcall	__pidataBANK0+4	;fetch initializer
+   175  07F2  00C0               	movwf	(__pdataBANK0+4)& (0+127)
+   176  07F3  2409               	fcall	__pidataBANK0+5	;fetch initializer
+   177  07F4  00C1               	movwf	(__pdataBANK0+5)& (0+127)
+   178                           
+   179                           ; Clear objects allocated to BANK1
+   180  07F5  1383               	bcf	3,7	;select IRP bank0
+   181  07F6  30A0               	movlw	low __pbssBANK1
+   182  07F7  0084               	movwf	4
+   183  07F8  30F0               	movlw	low (__pbssBANK1+80)
+   184  07F9  240A               	fcall	clear_ram0
+   185                           
+   186                           ; Clear objects allocated to BANK0
+   187  07FA  3035               	movlw	low __pbssBANK0
+   188  07FB  0084               	movwf	4
+   189  07FC  303C               	movlw	low (__pbssBANK0+7)
+   190  07FD  240A               	fcall	clear_ram0
+   191  07FE                     end_of_initialization:	
+   192                           ;End of C runtime variable initialization code
+   193                           
+   194  07FE                     __end_of__initialization:	
+   195  07FE  0183               	clrf	3
+   196  07FF  2D31               	ljmp	_main	;jump to C main() function
+   197                           
+   198                           	psect	bssBANK0
+   199  0035                     __pbssBANK0:	
+   200  0035                     _ult_valor:	
+   201  0035                     	ds	2
+   202  0037                     _valores:	
+   203  0037                     	ds	2
+   204  0039                     _t:	
+   205  0039                     	ds	2
+   206  003B                     _cont:	
+   207  003B                     	ds	1
+   208                           
+   209                           	psect	dataBANK0
+   210  003C                     __pdataBANK0:	
+   211  003C                     _randx:	
+   212  003C                     	ds	4
+   213  0040                     _valor_aleat:	
+   214  0040                     	ds	2
+   215                           
+   216                           	psect	bssBANK1
+   217  00A0                     __pbssBANK1:	
+   218  00A0                     _sec:	
+   219  00A0                     	ds	80
+   220                           
+   221                           	psect	clrtext
+   222  040A                     clear_ram0:	
+   223                           ;	Called with FSR containing the base address, and
+   224                           ;	W with the last address+1
+   225                           
+   226  040A  0064               	clrwdt	;clear the watchdog before getting into this loop
+   227  040B                     clrloop0:	
+   228  040B  0180               	clrf	0	;clear RAM location pointed to by FSR
+   229  040C  0A84               	incf	4,f	;increment pointer
+   230  040D  0604               	xorwf	4,w	;XOR with final address
+   231  040E  1903               	btfsc	3,2	;have we reached the end yet?
+   232  040F  3400               	retlw	0	;all done for this memory range, return
+   233  0410  0604               	xorwf	4,w	;XOR again to restore value
+   234  0411  2C0B               	goto	clrloop0	;do the next byte
+   235                           
+   236                           	psect	cstackCOMMON
+   237  0070                     __pcstackCOMMON:	
+   238  0070                     ?_antirrebote:	
+   239  0070                     ??_antirrebote:	
+   240                           ; 1 bytes @ 0x0
+   241                           
+   242  0070                     ?_valor_aleatorio:	
+   243                           ; 1 bytes @ 0x0
+   244                           
+   245  0070                     ?_srand:	
+   246                           ; 1 bytes @ 0x0
+   247                           
+   248  0070                     ?_reseteo:	
+   249                           ; 1 bytes @ 0x0
+   250                           
+   251  0070                     ??_reseteo:	
+   252                           ; 1 bytes @ 0x0
+   253                           
+   254  0070                     ?_Delay_ms:	
+   255                           ; 1 bytes @ 0x0
+   256                           
+   257  0070                     ?_main:	
+   258                           ; 1 bytes @ 0x0
+   259                           
+   260  0070                     ?___lmul:	
+   261                           ; 1 bytes @ 0x0
+   262                           
+   263  0070                     Delay_ms@tiempo_de_delay:	
+   264                           ; 4 bytes @ 0x0
+   265                           
+   266  0070                     valor_aleatorio@valor:	
+   267                           ; 2 bytes @ 0x0
+   268                           
+   269  0070                     srand@x:	
+   270                           ; 2 bytes @ 0x0
+   271                           
+   272  0070                     ___lmul@multiplier:	
+   273                           ; 2 bytes @ 0x0
+   274                           
+   275                           
+   276                           ; 4 bytes @ 0x0
+   277  0070                     	ds	2
+   278  0072                     ??_valor_aleatorio:	
+   279  0072                     ??_srand:	
+   280                           ; 1 bytes @ 0x2
+   281                           
+   282  0072                     ?_verificacion:	
+   283                           ; 1 bytes @ 0x2
+   284                           
+   285  0072                     ??_Delay_ms:	
+   286                           ; 1 bytes @ 0x2
+   287                           
+   288  0072                     verificacion@cantidad:	
+   289                           ; 1 bytes @ 0x2
+   290                           
+   291                           
+   292                           ; 1 bytes @ 0x2
+   293  0072                     	ds	1
+   294  0073                     ??_verificacion:	
+   295  0073                     Delay_ms@i:	
+   296                           ; 1 bytes @ 0x3
+   297                           
+   298                           
+   299                           ; 1 bytes @ 0x3
+   300  0073                     	ds	1
+   301  0074                     ?_secuencia:	
+   302  0074                     secuencia@tiempo:	
+   303                           ; 1 bytes @ 0x4
+   304                           
+   305  0074                     ___lmul@multiplicand:	
+   306                           ; 2 bytes @ 0x4
+   307                           
+   308                           
+   309                           ; 4 bytes @ 0x4
+   310  0074                     	ds	1
+   311  0075                     valor_aleatorio@contador:	
+   312                           
+   313                           ; 1 bytes @ 0x5
+   314  0075                     	ds	1
+   315  0076                     secuencia@contador:	
+   316  0076                     verificacion@arreglo:	
+   317                           ; 1 bytes @ 0x6
+   318                           
+   319  0076                     valor_aleatorio@c:	
+   320                           ; 1 bytes @ 0x6
+   321                           
+   322                           
+   323                           ; 2 bytes @ 0x6
+   324  0076                     	ds	1
+   325  0077                     ??_secuencia:	
+   326  0077                     verificacion@aux:	
+   327                           ; 1 bytes @ 0x7
+   328                           
+   329                           
+   330                           ; 1 bytes @ 0x7
+   331  0077                     	ds	1
+   332  0078                     ??___lmul:	
+   333  0078                     verificacion@x:	
+   334                           ; 1 bytes @ 0x8
+   335                           
+   336                           
+   337                           ; 1 bytes @ 0x8
+   338  0078                     	ds	1
+   339  0079                     ___lmul@product:	
+   340                           
+   341                           ; 4 bytes @ 0x9
+   342  0079                     	ds	2
+   343  007B                     secuencia@arreglo:	
+   344                           
+   345                           ; 1 bytes @ 0xB
+   346  007B                     	ds	1
+   347  007C                     secuencia@j:	
+   348                           
+   349                           ; 2 bytes @ 0xC
+   350  007C                     	ds	2
+   351                           
+   352                           	psect	cstackBANK0
+   353  0020                     __pcstackBANK0:	
+   354  0020                     ?_rand:	
+   355                           
+   356                           ; 2 bytes @ 0x0
+   357  0020                     	ds	2
+   358  0022                     ??_rand:	
+   359                           
+   360                           ; 1 bytes @ 0x2
+   361  0022                     	ds	5
+   362  0027                     ?_inicio:	
+   363  0027                     inicio@tiempo:	
+   364                           ; 1 bytes @ 0x7
+   365                           
+   366                           
+   367                           ; 2 bytes @ 0x7
+   368  0027                     	ds	2
+   369  0029                     ??_inicio:	
+   370                           
+   371                           ; 1 bytes @ 0x9
+   372  0029                     	ds	3
+   373  002C                     inicio@tiempo_delay:	
+   374                           
+   375                           ; 2 bytes @ 0xC
+   376  002C                     	ds	2
+   377  002E                     inicio@error:	
+   378                           
+   379                           ; 1 bytes @ 0xE
+   380  002E                     	ds	1
+   381  002F                     inicio@i:	
+   382                           
+   383                           ; 1 bytes @ 0xF
+   384  002F                     	ds	1
+   385  0030                     ??_main:	
+   386                           
+   387                           ; 1 bytes @ 0x10
+   388  0030                     	ds	3
+   389  0033                     main@nivel:	
+   390                           
+   391                           ; 2 bytes @ 0x13
+   392  0033                     	ds	2
+   393                           
+   394                           	psect	maintext
+   395  0531                     __pmaintext:	
+   396 ;;
+   397 ;;Main: autosize = 0, tempsize = 3, incstack = 0, save=0
+   398 ;;
+   399 ;; *************** function _main *****************
+   400 ;; Defined at:
+   401 ;;		line 49 in file "Proyecto_Juego.c"
+   402 ;; Parameters:    Size  Location     Type
+   403 ;;		None
+   404 ;; Auto vars:     Size  Location     Type
+   405 ;;  nivel           2   19[BANK0 ] int 
+   406 ;; Return value:  Size  Location     Type
+   407 ;;                  1    wreg      void 
+   408 ;; Registers used:
+   409 ;;		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+   410 ;; Tracked objects:
+   411 ;;		On entry : B00/0
+   412 ;;		On exit  : 0/0
+   413 ;;		Unchanged: 0/0
+   414 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+   415 ;;      Params:         0       0       0       0
+   416 ;;      Locals:         0       2       0       0
+   417 ;;      Temps:          0       3       0       0
+   418 ;;      Totals:         0       5       0       0
+   419 ;;Total ram usage:        5 bytes
+   420 ;; Hardware stack levels required when called:    3
+   421 ;; This function calls:
+   422 ;;		_antirrebote
+   423 ;;		_inicio
+   424 ;;		_secuencia
+   425 ;; This function is called by:
+   426 ;;		Startup code after reset
+   427 ;; This function uses a non-reentrant model
+   428 ;;
+   429                           
+   430                           
+   431                           ;psect for function _main
+   432  0531                     _main:	
+   433                           
+   434                           ;Proyecto_Juego.c: 50:     TRISA=0b11111111;
+   435                           
+   436                           ;incstack = 0
+   437                           ; Regs used in _main: [wreg-fsr0h+status,2+status,0+pclath+cstack]
+   438  0531  30FF               	movlw	255
+   439  0532  1683               	bsf	3,5	;RP0=1, select bank1
+   440  0533  1303               	bcf	3,6	;RP1=0, select bank1
+   441  0534  0085               	movwf	5	;volatile
+   442                           
+   443                           ;Proyecto_Juego.c: 51:     TRISB=0b11010000;
+   444  0535  30D0               	movlw	208
+   445  0536  0086               	movwf	6	;volatile
+   446                           
+   447                           ;Proyecto_Juego.c: 52:     CMCON=0b00000111;
+   448  0537  3007               	movlw	7
+   449  0538  1283               	bcf	3,5	;RP0=0, select bank0
+   450  0539  1303               	bcf	3,6	;RP1=0, select bank0
+   451  053A  009F               	movwf	31	;volatile
+   452  053B                     l1460:	
+   453                           
+   454                           ;Proyecto_Juego.c: 55:         int nivel=0;
+   455  053B  1283               	bcf	3,5	;RP0=0, select bank0
+   456  053C  1303               	bcf	3,6	;RP1=0, select bank0
+   457  053D  01B3               	clrf	main@nivel
+   458  053E  01B4               	clrf	main@nivel+1
+   459                           
+   460                           ;Proyecto_Juego.c: 57:         valor_aleat=1;
+   461  053F  3001               	movlw	1
+   462  0540  00C0               	movwf	_valor_aleat
+   463  0541  3000               	movlw	0
+   464  0542  00C1               	movwf	_valor_aleat+1
+   465                           
+   466                           ;Proyecto_Juego.c: 59:         while(RA3==0 && RA2==0 && RA1==0 && RA0==0){
+   467  0543  2D6F               	goto	l1474
+   468  0544                     l1476:	
+   469  0544  1D05               	btfss	5,2	;volatile
+   470  0545  1885               	btfsc	5,1	;volatile
+   471  0546  2D73               	goto	l66
+   472  0547  1805               	btfsc	5,0	;volatile
+   473  0548  2D73               	goto	l66
+   474                           
+   475                           ;Proyecto_Juego.c: 60:             RB1=1,RB0=1,RB2=1,RB3=1;
+   476  0549  1486               	bsf	6,1	;volatile
+   477  054A  1406               	bsf	6,0	;volatile
+   478  054B  1506               	bsf	6,2	;volatile
+   479  054C  1586               	bsf	6,3	;volatile
+   480                           
+   481                           ;Proyecto_Juego.c: 61:             _delay((unsigned long)((200)*(4000000/4000.0)));
+   482  054D  3002               	movlw	2
+   483  054E  1283               	bcf	3,5	;RP0=0, select bank0
+   484  054F  1303               	bcf	3,6	;RP1=0, select bank0
+   485  0550  00B2               	movwf	??_main+2
+   486  0551  3004               	movlw	4
+   487  0552  00B1               	movwf	??_main+1
+   488  0553  30BA               	movlw	186
+   489  0554  00B0               	movwf	??_main
+   490  0555                     u1377:	
+   491  0555  0BB0               	decfsz	??_main,f
+   492  0556  2D55               	goto	u1377
+   493  0557  0BB1               	decfsz	??_main+1,f
+   494  0558  2D55               	goto	u1377
+   495  0559  0BB2               	decfsz	??_main+2,f
+   496  055A  2D55               	goto	u1377
+   497                           
+   498                           ;Proyecto_Juego.c: 62:             RB1=0,RB0=0,RB2=0,RB3=0;
+   499  055B  1283               	bcf	3,5	;RP0=0, select bank0
+   500  055C  1303               	bcf	3,6	;RP1=0, select bank0
+   501  055D  1086               	bcf	6,1	;volatile
+   502  055E  1006               	bcf	6,0	;volatile
+   503  055F  1106               	bcf	6,2	;volatile
+   504  0560  1186               	bcf	6,3	;volatile
+   505                           
+   506                           ;Proyecto_Juego.c: 63:             _delay((unsigned long)((200)*(4000000/4000.0)));
+   507  0561  3002               	movlw	2
+   508  0562  1283               	bcf	3,5	;RP0=0, select bank0
+   509  0563  1303               	bcf	3,6	;RP1=0, select bank0
+   510  0564  00B2               	movwf	??_main+2
+   511  0565  3004               	movlw	4
+   512  0566  00B1               	movwf	??_main+1
+   513  0567  30BA               	movlw	186
+   514  0568  00B0               	movwf	??_main
+   515  0569                     u1387:	
+   516  0569  0BB0               	decfsz	??_main,f
+   517  056A  2D69               	goto	u1387
+   518  056B  0BB1               	decfsz	??_main+1,f
+   519  056C  2D69               	goto	u1387
+   520  056D  0BB2               	decfsz	??_main+2,f
+   521  056E  2D69               	goto	u1387
+   522  056F                     l1474:	
+   523                           
+   524                           ;Proyecto_Juego.c: 59:         while(RA3==0 && RA2==0 && RA1==0 && RA0==0){
+   525  056F  1283               	bcf	3,5	;RP0=0, select bank0
+   526  0570  1303               	bcf	3,6	;RP1=0, select bank0
+   527  0571  1D85               	btfss	5,3	;volatile
+   528  0572  2D44               	goto	l1476
+   529  0573                     l66:	
+   530                           
+   531                           ;Proyecto_Juego.c: 65:         if(RA3==1) nivel=1;
+   532  0573  1D85               	btfss	5,3	;volatile
+   533  0574  2D79               	goto	l1484
+   534  0575  3001               	movlw	1
+   535  0576  00B3               	movwf	main@nivel
+   536  0577  3000               	movlw	0
+   537  0578  00B4               	movwf	main@nivel+1
+   538  0579                     l1484:	
+   539                           
+   540                           ;Proyecto_Juego.c: 66:         if(RA2==1) nivel=2;
+   541  0579  1D05               	btfss	5,2	;volatile
+   542  057A  2D7F               	goto	l1488
+   543  057B  3002               	movlw	2
+   544  057C  00B3               	movwf	main@nivel
+   545  057D  3000               	movlw	0
+   546  057E  00B4               	movwf	main@nivel+1
+   547  057F                     l1488:	
+   548                           
+   549                           ;Proyecto_Juego.c: 67:         if(RA1==1) nivel=3;
+   550  057F  1C85               	btfss	5,1	;volatile
+   551  0580  2D85               	goto	l1492
+   552  0581  3003               	movlw	3
+   553  0582  00B3               	movwf	main@nivel
+   554  0583  3000               	movlw	0
+   555  0584  00B4               	movwf	main@nivel+1
+   556  0585                     l1492:	
+   557                           
+   558                           ;Proyecto_Juego.c: 68:         if(RA0==1) nivel=4;
+   559  0585  1C05               	btfss	5,0	;volatile
+   560  0586  2D8B               	goto	l1496
+   561  0587  3004               	movlw	4
+   562  0588  00B3               	movwf	main@nivel
+   563  0589  3000               	movlw	0
+   564  058A  00B4               	movwf	main@nivel+1
+   565  058B                     l1496:	
+   566                           
+   567                           ;Proyecto_Juego.c: 70:         antirrebote();
+   568  058B  241B               	fcall	_antirrebote
+   569                           
+   570                           ;Proyecto_Juego.c: 72:         switch(nivel){
+   571  058C  2D98               	goto	l1508
+   572  058D                     l1498:	
+   573  058D  30C8               	movlw	200
+   574  058E  2D94               	goto	L3
+   575  058F                     l1500:	
+   576                           ;Proyecto_Juego.c: 74:                 break;
+   577                           
+   578  058F  30AA               	movlw	170
+   579  0590  2D94               	goto	L3
+   580  0591                     l1502:	
+   581                           ;Proyecto_Juego.c: 76:                 break;
+   582                           
+   583  0591  308C               	movlw	140
+   584  0592  2D94               	goto	L3
+   585  0593                     l1504:	
+   586                           ;Proyecto_Juego.c: 78:                 break;
+   587                           
+   588  0593  306E               	movlw	110
+   589  0594                     L3:	
+   590  0594  00B9               	movwf	_t
+   591  0595  3000               	movlw	0
+   592  0596  00BA               	movwf	_t+1
+   593                           
+   594                           ;Proyecto_Juego.c: 80:                 break;
+   595  0597  2DAD               	goto	l1510
+   596  0598                     l1508:	
+   597                           
+   598                           ; Switch on 2 bytes has been partitioned into a top level switch of size 1, and 1 sub-sw
+      +                          itches
+   599                           ; Switch size 1, requested type "simple"
+   600                           ; Number of cases is 1, Range of values is 0 to 0
+   601                           ; switch strategies available:
+   602                           ; Name         Instructions Cycles
+   603                           ; simple_byte            4     3 (average)
+   604                           ; direct_byte            7     6 (fixed)
+   605                           ; jumptable            260     6 (fixed)
+   606                           ;	Chosen strategy is simple_byte
+   607  0598  1283               	bcf	3,5	;RP0=0, select bank0
+   608  0599  1303               	bcf	3,6	;RP1=0, select bank0
+   609  059A  0834               	movf	main@nivel+1,w
+   610  059B  3A00               	xorlw	0	; case 0
+   611  059C  1903               	skipnz
+   612  059D  2D9F               	goto	l1548
+   613  059E  2DAD               	goto	l1510
+   614  059F                     l1548:	
+   615                           
+   616                           ; Switch size 1, requested type "simple"
+   617                           ; Number of cases is 4, Range of values is 1 to 4
+   618                           ; switch strategies available:
+   619                           ; Name         Instructions Cycles
+   620                           ; simple_byte           13     7 (average)
+   621                           ; direct_byte           13     9 (fixed)
+   622                           ; jumptable            263     9 (fixed)
+   623                           ;	Chosen strategy is simple_byte
+   624  059F  0833               	movf	main@nivel,w
+   625  05A0  3A01               	xorlw	1	; case 1
+   626  05A1  1903               	skipnz
+   627  05A2  2D8D               	goto	l1498
+   628  05A3  3A03               	xorlw	3	; case 2
+   629  05A4  1903               	skipnz
+   630  05A5  2D8F               	goto	l1500
+   631  05A6  3A01               	xorlw	1	; case 3
+   632  05A7  1903               	skipnz
+   633  05A8  2D91               	goto	l1502
+   634  05A9  3A07               	xorlw	7	; case 4
+   635  05AA  1903               	skipnz
+   636  05AB  2D93               	goto	l1504
+   637  05AC  2DAD               	goto	l1510
+   638  05AD                     l1510:	
+   639                           
+   640                           ;Proyecto_Juego.c: 84:         inicio(t);
+   641  05AD  083A               	movf	_t+1,w
+   642  05AE  00A8               	movwf	inicio@tiempo+1
+   643  05AF  0839               	movf	_t,w
+   644  05B0  00A7               	movwf	inicio@tiempo
+   645  05B1  25BF               	fcall	_inicio
+   646                           
+   647                           ;Proyecto_Juego.c: 85:         secuencia(sec,t,cont);
+   648  05B2  1283               	bcf	3,5	;RP0=0, select bank0
+   649  05B3  1303               	bcf	3,6	;RP1=0, select bank0
+   650  05B4  083A               	movf	_t+1,w
+   651  05B5  00F5               	movwf	secuencia@tiempo+1
+   652  05B6  0839               	movf	_t,w
+   653  05B7  00F4               	movwf	secuencia@tiempo
+   654  05B8  083B               	movf	_cont,w
+   655  05B9  00B0               	movwf	??_main
+   656  05BA  0830               	movf	??_main,w
+   657  05BB  00F6               	movwf	secuencia@contador
+   658  05BC  30A0               	movlw	(low (_sec| 0))& (0+255)
+   659  05BD  264E               	fcall	_secuencia
+   660  05BE  2D3B               	goto	l1460
+   661  05BF                     __end_of_main:	
+   662                           
+   663                           	psect	text1
+   664  05BF                     __ptext1:	
+   665 ;; *************** function _inicio *****************
+   666 ;; Defined at:
+   667 ;;		line 90 in file "Proyecto_Juego.c"
+   668 ;; Parameters:    Size  Location     Type
+   669 ;;  tiempo          2    7[BANK0 ] int 
+   670 ;; Auto vars:     Size  Location     Type
+   671 ;;  tiempo_delay    2   12[BANK0 ] int 
+   672 ;;  i               1   15[BANK0 ] unsigned char 
+   673 ;;  error           1   14[BANK0 ] unsigned char 
+   674 ;; Return value:  Size  Location     Type
+   675 ;;                  1    wreg      void 
+   676 ;; Registers used:
+   677 ;;		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+   678 ;; Tracked objects:
+   679 ;;		On entry : 0/0
+   680 ;;		On exit  : 0/0
+   681 ;;		Unchanged: 0/0
+   682 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+   683 ;;      Params:         0       2       0       0
+   684 ;;      Locals:         0       4       0       0
+   685 ;;      Temps:          0       3       0       0
+   686 ;;      Totals:         0       9       0       0
+   687 ;;Total ram usage:        9 bytes
+   688 ;; Hardware stack levels used:    1
+   689 ;; Hardware stack levels required when called:    2
+   690 ;; This function calls:
+   691 ;;		_antirrebote
+   692 ;;		_rand
+   693 ;;		_reseteo
+   694 ;;		_secuencia
+   695 ;;		_srand
+   696 ;;		_valor_aleatorio
+   697 ;;		_verificacion
+   698 ;; This function is called by:
+   699 ;;		_main
+   700 ;; This function uses a non-reentrant model
+   701 ;;
+   702                           
+   703                           
+   704                           ;psect for function _inicio
+   705  05BF                     _inicio:	
+   706                           
+   707                           ;Proyecto_Juego.c: 92:     char i=1,error=0;
+   708                           
+   709                           ;incstack = 0
+   710                           ; Regs used in _inicio: [wreg-fsr0h+status,2+status,0+pclath+cstack]
+   711  05BF  1283               	bcf	3,5	;RP0=0, select bank0
+   712  05C0  1303               	bcf	3,6	;RP1=0, select bank0
+   713  05C1  01AF               	clrf	inicio@i
+   714  05C2  0AAF               	incf	inicio@i,f
+   715  05C3  01AE               	clrf	inicio@error
+   716                           
+   717                           ;Proyecto_Juego.c: 93:     int tiempo_delay=tiempo;
+   718  05C4  0828               	movf	inicio@tiempo+1,w
+   719  05C5  00AD               	movwf	inicio@tiempo_delay+1
+   720  05C6  0827               	movf	inicio@tiempo,w
+   721  05C7  00AC               	movwf	inicio@tiempo_delay
+   722                           
+   723                           ;Proyecto_Juego.c: 95:     cont=0;
+   724  05C8  01BB               	clrf	_cont
+   725  05C9                     l1454:	
+   726                           ;Proyecto_Juego.c: 97:     while(error==0 && i<=40){
+   727                           
+   728                           
+   729                           ;Proyecto_Juego.c: 97:     while(error==0 && i<=40){
+   730  05C9  082E               	movf	inicio@error,w
+   731  05CA  1D03               	btfss	3,2
+   732  05CB  0008               	return
+   733  05CC  3029               	movlw	41
+   734  05CD  022F               	subwf	inicio@i,w
+   735  05CE  1803               	btfsc	3,0
+   736  05CF  0008               	return
+   737                           
+   738                           ;Proyecto_Juego.c: 99:         cont++;
+   739  05D0  3001               	movlw	1
+   740  05D1  00A9               	movwf	??_inicio
+   741  05D2  0829               	movf	??_inicio,w
+   742  05D3  07BB               	addwf	_cont,f
+   743                           
+   744                           ;Proyecto_Juego.c: 101:         valor_aleatorio(cont,valores);
+   745  05D4  0838               	movf	_valores+1,w
+   746  05D5  00F1               	movwf	valor_aleatorio@valor+1
+   747  05D6  0837               	movf	_valores,w
+   748  05D7  00F0               	movwf	valor_aleatorio@valor
+   749  05D8  083B               	movf	_cont,w
+   750  05D9  2475               	fcall	_valor_aleatorio
+   751                           
+   752                           ;Proyecto_Juego.c: 103:         srand(valor_aleat);
+   753  05DA  1283               	bcf	3,5	;RP0=0, select bank0
+   754  05DB  1303               	bcf	3,6	;RP1=0, select bank0
+   755  05DC  0841               	movf	_valor_aleat+1,w
+   756  05DD  00F1               	movwf	srand@x+1
+   757  05DE  0840               	movf	_valor_aleat,w
+   758  05DF  00F0               	movwf	srand@x
+   759  05E0  2412               	fcall	_srand
+   760                           
+   761                           ;Proyecto_Juego.c: 105:         ult_valor=rand() % (4-1+1) + 1;
+   762  05E1  24EE               	fcall	_rand
+   763  05E2  3003               	movlw	3
+   764  05E3  1283               	bcf	3,5	;RP0=0, select bank0
+   765  05E4  1303               	bcf	3,6	;RP1=0, select bank0
+   766  05E5  0520               	andwf	?_rand,w
+   767  05E6  00A9               	movwf	??_inicio
+   768  05E7  3000               	movlw	0
+   769  05E8  0521               	andwf	?_rand+1,w
+   770  05E9  00AA               	movwf	??_inicio+1
+   771  05EA  0829               	movf	??_inicio,w
+   772  05EB  3E01               	addlw	1
+   773  05EC  00B5               	movwf	_ult_valor
+   774  05ED  082A               	movf	??_inicio+1,w
+   775  05EE  1803               	skipnc
+   776  05EF  3E01               	addlw	1
+   777  05F0  3E00               	addlw	0
+   778  05F1  00B6               	movwf	_ult_valor+1
+   779                           
+   780                           ;Proyecto_Juego.c: 107:         sec[i]=ult_valor;
+   781  05F2  082F               	movf	inicio@i,w
+   782  05F3  00A9               	movwf	??_inicio
+   783  05F4  0729               	addwf	??_inicio,w
+   784  05F5  3EA0               	addlw	(low (_sec| 0))& (0+255)
+   785  05F6  0084               	movwf	4
+   786  05F7  0835               	movf	_ult_valor,w
+   787  05F8  1383               	bcf	3,7	;select IRP bank1
+   788  05F9  0080               	movwf	0
+   789  05FA  0A84               	incf	4,f
+   790  05FB  0836               	movf	_ult_valor+1,w
+   791  05FC  0080               	movwf	0
+   792                           
+   793                           ;Proyecto_Juego.c: 109:         antirrebote();
+   794  05FD  241B               	fcall	_antirrebote
+   795                           
+   796                           ;Proyecto_Juego.c: 111:         secuencia(sec,tiempo_delay,cont);
+   797  05FE  1283               	bcf	3,5	;RP0=0, select bank0
+   798  05FF  1303               	bcf	3,6	;RP1=0, select bank0
+   799  0600  082D               	movf	inicio@tiempo_delay+1,w
+   800  0601  00F5               	movwf	secuencia@tiempo+1
+   801  0602  082C               	movf	inicio@tiempo_delay,w
+   802  0603  00F4               	movwf	secuencia@tiempo
+   803  0604  083B               	movf	_cont,w
+   804  0605  00A9               	movwf	??_inicio
+   805  0606  0829               	movf	??_inicio,w
+   806  0607  00F6               	movwf	secuencia@contador
+   807  0608  30A0               	movlw	(low (_sec| 0))& (0+255)
+   808  0609  264E               	fcall	_secuencia
+   809                           
+   810                           ;Proyecto_Juego.c: 113:         error=verificacion(sec,cont);
+   811  060A  1283               	bcf	3,5	;RP0=0, select bank0
+   812  060B  1303               	bcf	3,6	;RP1=0, select bank0
+   813  060C  083B               	movf	_cont,w
+   814  060D  00A9               	movwf	??_inicio
+   815  060E  0829               	movf	??_inicio,w
+   816  060F  00F2               	movwf	verificacion@cantidad
+   817  0610  30A0               	movlw	(low (_sec| 0))& (0+255)
+   818  0611  26E1               	fcall	_verificacion
+   819  0612  1283               	bcf	3,5	;RP0=0, select bank0
+   820  0613  1303               	bcf	3,6	;RP1=0, select bank0
+   821  0614  00AA               	movwf	??_inicio+1
+   822  0615  082A               	movf	??_inicio+1,w
+   823  0616  00AE               	movwf	inicio@error
+   824                           
+   825                           ;Proyecto_Juego.c: 115:         if(i==40){
+   826  0617  3028               	movlw	40
+   827  0618  062F               	xorwf	inicio@i,w
+   828  0619  1903               	btfsc	3,2
+   829  061A  2E42               	goto	l1448
+   830  061B  2E46               	goto	l1450
+   831  061C                     l87:	
+   832                           
+   833                           ;Proyecto_Juego.c: 117:                 RB1=1,RB0=1,RB2=1,RB3=1;
+   834  061C  1486               	bsf	6,1	;volatile
+   835  061D  1406               	bsf	6,0	;volatile
+   836  061E  1506               	bsf	6,2	;volatile
+   837  061F  1586               	bsf	6,3	;volatile
+   838                           
+   839                           ;Proyecto_Juego.c: 118:                 _delay((unsigned long)((200)*(4000000/4000.0)));
+   840  0620  3002               	movlw	2
+   841  0621  1283               	bcf	3,5	;RP0=0, select bank0
+   842  0622  1303               	bcf	3,6	;RP1=0, select bank0
+   843  0623  00AB               	movwf	??_inicio+2
+   844  0624  3004               	movlw	4
+   845  0625  00AA               	movwf	??_inicio+1
+   846  0626  30BA               	movlw	186
+   847  0627  00A9               	movwf	??_inicio
+   848  0628                     u1397:	
+   849  0628  0BA9               	decfsz	??_inicio,f
+   850  0629  2E28               	goto	u1397
+   851  062A  0BAA               	decfsz	??_inicio+1,f
+   852  062B  2E28               	goto	u1397
+   853  062C  0BAB               	decfsz	??_inicio+2,f
+   854  062D  2E28               	goto	u1397
+   855                           
+   856                           ;Proyecto_Juego.c: 119:                 RB1=0,RB0=0,RB2=0,RB3=0;
+   857  062E  1283               	bcf	3,5	;RP0=0, select bank0
+   858  062F  1303               	bcf	3,6	;RP1=0, select bank0
+   859  0630  1086               	bcf	6,1	;volatile
+   860  0631  1006               	bcf	6,0	;volatile
+   861  0632  1106               	bcf	6,2	;volatile
+   862  0633  1186               	bcf	6,3	;volatile
+   863                           
+   864                           ;Proyecto_Juego.c: 120:                 _delay((unsigned long)((200)*(4000000/4000.0)));
+   865  0634  3002               	movlw	2
+   866  0635  1283               	bcf	3,5	;RP0=0, select bank0
+   867  0636  1303               	bcf	3,6	;RP1=0, select bank0
+   868  0637  00AB               	movwf	??_inicio+2
+   869  0638  3004               	movlw	4
+   870  0639  00AA               	movwf	??_inicio+1
+   871  063A  30BA               	movlw	186
+   872  063B  00A9               	movwf	??_inicio
+   873  063C                     u1407:	
+   874  063C  0BA9               	decfsz	??_inicio,f
+   875  063D  2E3C               	goto	u1407
+   876  063E  0BAA               	decfsz	??_inicio+1,f
+   877  063F  2E3C               	goto	u1407
+   878  0640  0BAB               	decfsz	??_inicio+2,f
+   879  0641  2E3C               	goto	u1407
+   880  0642                     l1448:	
+   881                           
+   882                           ;Proyecto_Juego.c: 116:             while(RA3==0){
+   883  0642  1283               	bcf	3,5	;RP0=0, select bank0
+   884  0643  1303               	bcf	3,6	;RP1=0, select bank0
+   885  0644  1D85               	btfss	5,3	;volatile
+   886  0645  2E1C               	goto	l87
+   887  0646                     l1450:	
+   888                           
+   889                           ;Proyecto_Juego.c: 124:         reseteo();
+   890  0646  244C               	fcall	_reseteo
+   891                           
+   892                           ;Proyecto_Juego.c: 126:         i++;
+   893  0647  3001               	movlw	1
+   894  0648  1283               	bcf	3,5	;RP0=0, select bank0
+   895  0649  1303               	bcf	3,6	;RP1=0, select bank0
+   896  064A  00A9               	movwf	??_inicio
+   897  064B  0829               	movf	??_inicio,w
+   898  064C  07AF               	addwf	inicio@i,f
+   899  064D  2DC9               	goto	l1454
+   900  064E                     __end_of_inicio:	
+   901                           
+   902                           	psect	text2
+   903  06E1                     __ptext2:	
+   904 ;; *************** function _verificacion *****************
+   905 ;; Defined at:
+   906 ;;		line 174 in file "Proyecto_Juego.c"
+   907 ;; Parameters:    Size  Location     Type
+   908 ;;  arreglo         1    wreg     PTR int 
+   909 ;;		 -> sec(80), 
+   910 ;;  cantidad        1    2[COMMON] unsigned char 
+   911 ;; Auto vars:     Size  Location     Type
+   912 ;;  arreglo         1    6[COMMON] PTR int 
+   913 ;;		 -> sec(80), 
+   914 ;;  x               1    8[COMMON] unsigned char 
+   915 ;;  aux             1    7[COMMON] unsigned char 
+   916 ;; Return value:  Size  Location     Type
+   917 ;;                  1    wreg      unsigned char 
+   918 ;; Registers used:
+   919 ;;		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+   920 ;; Tracked objects:
+   921 ;;		On entry : 0/0
+   922 ;;		On exit  : 0/0
+   923 ;;		Unchanged: 0/0
+   924 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+   925 ;;      Params:         1       0       0       0
+   926 ;;      Locals:         3       0       0       0
+   927 ;;      Temps:          3       0       0       0
+   928 ;;      Totals:         7       0       0       0
+   929 ;;Total ram usage:        7 bytes
+   930 ;; Hardware stack levels used:    1
+   931 ;; Hardware stack levels required when called:    1
+   932 ;; This function calls:
+   933 ;;		_antirrebote
+   934 ;; This function is called by:
+   935 ;;		_inicio
+   936 ;; This function uses a non-reentrant model
+   937 ;;
+   938                           
+   939                           
+   940                           ;psect for function _verificacion
+   941  06E1                     _verificacion:	
+   942                           
+   943                           ;Proyecto_Juego.c: 175:     char aux=0;
+   944                           
+   945                           ;incstack = 0
+   946                           ; Regs used in _verificacion: [wreg-fsr0h+status,2+status,0+pclath+cstack]
+   947  06E1  01F7               	clrf	verificacion@aux
+   948                           
+   949                           ;Proyecto_Juego.c: 176:     char x=1;
+   950  06E2  01F8               	clrf	verificacion@x
+   951  06E3  0AF8               	incf	verificacion@x,f
+   952                           
+   953                           ;Proyecto_Juego.c: 178:     while(x<=cantidad && aux==0){
+   954  06E4  2FE0               	goto	l1388
+   955  06E5                     l1266:	
+   956                           
+   957                           ;Proyecto_Juego.c: 180:         if(sec[x]==1){
+   958  06E5  0878               	movf	verificacion@x,w
+   959  06E6  00F3               	movwf	??_verificacion
+   960  06E7  0773               	addwf	??_verificacion,w
+   961  06E8  3EA0               	addlw	(low (_sec| 0))& (0+255)
+   962  06E9  0084               	movwf	4
+   963  06EA  1383               	bcf	3,7	;select IRP bank1
+   964  06EB  0800               	movf	0,w
+   965  06EC  00F4               	movwf	??_verificacion+1
+   966  06ED  0A84               	incf	4,f
+   967  06EE  0800               	movf	0,w
+   968  06EF  00F5               	movwf	??_verificacion+2
+   969  06F0  0374               	decf	??_verificacion+1,w
+   970  06F1  0475               	iorwf	??_verificacion+2,w
+   971  06F2  1D03               	btfss	3,2
+   972  06F3  2F22               	goto	l1296
+   973                           
+   974                           ;Proyecto_Juego.c: 182:             _delay((unsigned long)((1)*(4000000/4000.0)));
+   975  06F4  30C7               	movlw	199
+   976  06F5  00F3               	movwf	??_verificacion
+   977  06F6                     u1417:	
+   978  06F6  2EF7               	nop2
+   979  06F7  0BF3               	decfsz	??_verificacion,f
+   980  06F8  2EF6               	goto	u1417
+   981  06F9  2EFA               	nop2
+   982  06FA  2EFB               	nop2
+   983  06FB  2F01               	goto	l111
+   984  06FC                     l1270:	
+   985  06FC  1D05               	btfss	5,2	;volatile
+   986  06FD  1885               	btfsc	5,1	;volatile
+   987  06FE  2F05               	goto	l115
+   988  06FF  1805               	btfsc	5,0	;volatile
+   989  0700  2F05               	goto	l115
+   990  0701                     l111:	
+   991                           ;Proyecto_Juego.c: 185:             }
+   992                           
+   993                           
+   994                           ;Proyecto_Juego.c: 184:             while(RA3==0 && RA2==0 && RA1==0 && RA0==0){
+   995  0701  1283               	bcf	3,5	;RP0=0, select bank0
+   996  0702  1303               	bcf	3,6	;RP1=0, select bank0
+   997  0703  1D85               	btfss	5,3	;volatile
+   998  0704  2EFC               	goto	l1270
+   999  0705                     l115:	
+  1000                           
+  1001                           ;Proyecto_Juego.c: 187:             if(RA3==1){
+  1002  0705  1D85               	btfss	5,3	;volatile
+  1003  0706  2F1A               	goto	l116
+  1004                           
+  1005                           ;Proyecto_Juego.c: 188:                 antirrebote();
+  1006  0707  241B               	fcall	_antirrebote
+  1007                           
+  1008                           ;Proyecto_Juego.c: 189:                 RB1=1,RB5=1;
+  1009  0708  1283               	bcf	3,5	;RP0=0, select bank0
+  1010  0709  1303               	bcf	3,6	;RP1=0, select bank0
+  1011  070A  1486               	bsf	6,1	;volatile
+  1012  070B  1686               	bsf	6,5	;volatile
+  1013                           
+  1014                           ;Proyecto_Juego.c: 190:                 _delay((unsigned long)((120)*(4000000/4000.0)));
+  1015  070C  309C               	movlw	156
+  1016  070D  00F4               	movwf	??_verificacion+1
+  1017  070E  30D7               	movlw	215
+  1018  070F  00F3               	movwf	??_verificacion
+  1019  0710                     u1427:	
+  1020  0710  0BF3               	decfsz	??_verificacion,f
+  1021  0711  2F10               	goto	u1427
+  1022  0712  0BF4               	decfsz	??_verificacion+1,f
+  1023  0713  2F10               	goto	u1427
+  1024                           
+  1025                           ;Proyecto_Juego.c: 191:                 RB1=0,RB5=0;
+  1026  0714  1283               	bcf	3,5	;RP0=0, select bank0
+  1027  0715  1303               	bcf	3,6	;RP1=0, select bank0
+  1028  0716  1086               	bcf	6,1	;volatile
+  1029  0717  1286               	bcf	6,5	;volatile
+  1030                           
+  1031                           ;Proyecto_Juego.c: 192:                 aux=0;
+  1032  0718  01F7               	clrf	verificacion@aux
+  1033                           
+  1034                           ;Proyecto_Juego.c: 193:             }
+  1035  0719  2F21               	goto	l1294
+  1036  071A                     l116:	
+  1037                           ;Proyecto_Juego.c: 195:             else if(RA2==1 || RA1==1 || RA0==1) aux=1;
+  1038                           
+  1039  071A  1D05               	btfss	5,2	;volatile
+  1040  071B  1885               	btfsc	5,1	;volatile
+  1041  071C  2F1F               	goto	l120
+  1042  071D  1C05               	btfss	5,0	;volatile
+  1043  071E  2F21               	goto	l1294
+  1044  071F                     l120:	
+  1045  071F  01F7               	clrf	verificacion@aux
+  1046  0720  0AF7               	incf	verificacion@aux,f
+  1047  0721                     l1294:	
+  1048                           
+  1049                           ;Proyecto_Juego.c: 197:             antirrebote();
+  1050  0721  241B               	fcall	_antirrebote
+  1051  0722                     l1296:	
+  1052                           
+  1053                           ;Proyecto_Juego.c: 201:         if(sec[x]==2){
+  1054  0722  0878               	movf	verificacion@x,w
+  1055  0723  00F3               	movwf	??_verificacion
+  1056  0724  0773               	addwf	??_verificacion,w
+  1057  0725  3EA0               	addlw	(low (_sec| 0))& (0+255)
+  1058  0726  0084               	movwf	4
+  1059  0727  1383               	bcf	3,7	;select IRP bank1
+  1060  0728  0800               	movf	0,w
+  1061  0729  00F4               	movwf	??_verificacion+1
+  1062  072A  0A84               	incf	4,f
+  1063  072B  0800               	movf	0,w
+  1064  072C  00F5               	movwf	??_verificacion+2
+  1065  072D  3002               	movlw	2
+  1066  072E  0674               	xorwf	??_verificacion+1,w
+  1067  072F  0475               	iorwf	??_verificacion+2,w
+  1068  0730  1D03               	btfss	3,2
+  1069  0731  2F60               	goto	l1326
+  1070                           
+  1071                           ;Proyecto_Juego.c: 203:             _delay((unsigned long)((1)*(4000000/4000.0)));
+  1072  0732  30C7               	movlw	199
+  1073  0733  00F3               	movwf	??_verificacion
+  1074  0734                     u1437:	
+  1075  0734  2F35               	nop2
+  1076  0735  0BF3               	decfsz	??_verificacion,f
+  1077  0736  2F34               	goto	u1437
+  1078  0737  2F38               	nop2
+  1079  0738  2F39               	nop2
+  1080  0739  2F3F               	goto	l122
+  1081  073A                     l1300:	
+  1082  073A  1D05               	btfss	5,2	;volatile
+  1083  073B  1885               	btfsc	5,1	;volatile
+  1084  073C  2F43               	goto	l126
+  1085  073D  1805               	btfsc	5,0	;volatile
+  1086  073E  2F43               	goto	l126
+  1087  073F                     l122:	
+  1088                           ;Proyecto_Juego.c: 206:             }
+  1089                           
+  1090                           
+  1091                           ;Proyecto_Juego.c: 205:             while(RA3==0 && RA2==0 && RA1==0 && RA0==0){
+  1092  073F  1283               	bcf	3,5	;RP0=0, select bank0
+  1093  0740  1303               	bcf	3,6	;RP1=0, select bank0
+  1094  0741  1D85               	btfss	5,3	;volatile
+  1095  0742  2F3A               	goto	l1300
+  1096  0743                     l126:	
+  1097                           
+  1098                           ;Proyecto_Juego.c: 208:             if(RA2==1){
+  1099  0743  1D05               	btfss	5,2	;volatile
+  1100  0744  2F58               	goto	l127
+  1101                           
+  1102                           ;Proyecto_Juego.c: 209:                 antirrebote();
+  1103  0745  241B               	fcall	_antirrebote
+  1104                           
+  1105                           ;Proyecto_Juego.c: 210:                 RB0=1,RB5=1;
+  1106  0746  1283               	bcf	3,5	;RP0=0, select bank0
+  1107  0747  1303               	bcf	3,6	;RP1=0, select bank0
+  1108  0748  1406               	bsf	6,0	;volatile
+  1109  0749  1686               	bsf	6,5	;volatile
+  1110                           
+  1111                           ;Proyecto_Juego.c: 211:                 _delay((unsigned long)((120)*(4000000/4000.0)));
+  1112  074A  309C               	movlw	156
+  1113  074B  00F4               	movwf	??_verificacion+1
+  1114  074C  30D7               	movlw	215
+  1115  074D  00F3               	movwf	??_verificacion
+  1116  074E                     u1447:	
+  1117  074E  0BF3               	decfsz	??_verificacion,f
+  1118  074F  2F4E               	goto	u1447
+  1119  0750  0BF4               	decfsz	??_verificacion+1,f
+  1120  0751  2F4E               	goto	u1447
+  1121                           
+  1122                           ;Proyecto_Juego.c: 212:                 RB0=0,RB5=0;
+  1123  0752  1283               	bcf	3,5	;RP0=0, select bank0
+  1124  0753  1303               	bcf	3,6	;RP1=0, select bank0
+  1125  0754  1006               	bcf	6,0	;volatile
+  1126  0755  1286               	bcf	6,5	;volatile
+  1127                           
+  1128                           ;Proyecto_Juego.c: 213:                 aux=0;
+  1129  0756  01F7               	clrf	verificacion@aux
+  1130                           
+  1131                           ;Proyecto_Juego.c: 214:             }
+  1132  0757  2F5F               	goto	l1324
+  1133  0758                     l127:	
+  1134                           ;Proyecto_Juego.c: 216:             else if(RA3==1 || RA1==1 || RA0==1) aux=1;
+  1135                           
+  1136  0758  1D85               	btfss	5,3	;volatile
+  1137  0759  1885               	btfsc	5,1	;volatile
+  1138  075A  2F5D               	goto	l131
+  1139  075B  1C05               	btfss	5,0	;volatile
+  1140  075C  2F5F               	goto	l1324
+  1141  075D                     l131:	
+  1142  075D  01F7               	clrf	verificacion@aux
+  1143  075E  0AF7               	incf	verificacion@aux,f
+  1144  075F                     l1324:	
+  1145                           
+  1146                           ;Proyecto_Juego.c: 218:             antirrebote();
+  1147  075F  241B               	fcall	_antirrebote
+  1148  0760                     l1326:	
+  1149                           
+  1150                           ;Proyecto_Juego.c: 222:         if(sec[x]==3){
+  1151  0760  0878               	movf	verificacion@x,w
+  1152  0761  00F3               	movwf	??_verificacion
+  1153  0762  0773               	addwf	??_verificacion,w
+  1154  0763  3EA0               	addlw	(low (_sec| 0))& (0+255)
+  1155  0764  0084               	movwf	4
+  1156  0765  1383               	bcf	3,7	;select IRP bank1
+  1157  0766  0800               	movf	0,w
+  1158  0767  00F4               	movwf	??_verificacion+1
+  1159  0768  0A84               	incf	4,f
+  1160  0769  0800               	movf	0,w
+  1161  076A  00F5               	movwf	??_verificacion+2
+  1162  076B  3003               	movlw	3
+  1163  076C  0674               	xorwf	??_verificacion+1,w
+  1164  076D  0475               	iorwf	??_verificacion+2,w
+  1165  076E  1D03               	btfss	3,2
+  1166  076F  2F9E               	goto	l1356
+  1167                           
+  1168                           ;Proyecto_Juego.c: 224:             _delay((unsigned long)((1)*(4000000/4000.0)));
+  1169  0770  30C7               	movlw	199
+  1170  0771  00F3               	movwf	??_verificacion
+  1171  0772                     u1457:	
+  1172  0772  2F73               	nop2
+  1173  0773  0BF3               	decfsz	??_verificacion,f
+  1174  0774  2F72               	goto	u1457
+  1175  0775  2F76               	nop2
+  1176  0776  2F77               	nop2
+  1177  0777  2F7D               	goto	l133
+  1178  0778                     l1330:	
+  1179  0778  1D05               	btfss	5,2	;volatile
+  1180  0779  1885               	btfsc	5,1	;volatile
+  1181  077A  2F81               	goto	l137
+  1182  077B  1805               	btfsc	5,0	;volatile
+  1183  077C  2F81               	goto	l137
+  1184  077D                     l133:	
+  1185                           ;Proyecto_Juego.c: 227:             }
+  1186                           
+  1187                           
+  1188                           ;Proyecto_Juego.c: 226:             while(RA3==0 && RA2==0 && RA1==0 && RA0==0){
+  1189  077D  1283               	bcf	3,5	;RP0=0, select bank0
+  1190  077E  1303               	bcf	3,6	;RP1=0, select bank0
+  1191  077F  1D85               	btfss	5,3	;volatile
+  1192  0780  2F78               	goto	l1330
+  1193  0781                     l137:	
+  1194                           
+  1195                           ;Proyecto_Juego.c: 229:             if(RA1==1){
+  1196  0781  1C85               	btfss	5,1	;volatile
+  1197  0782  2F96               	goto	l138
+  1198                           
+  1199                           ;Proyecto_Juego.c: 230:                 antirrebote();
+  1200  0783  241B               	fcall	_antirrebote
+  1201                           
+  1202                           ;Proyecto_Juego.c: 231:                 RB2=1,RB5=1;
+  1203  0784  1283               	bcf	3,5	;RP0=0, select bank0
+  1204  0785  1303               	bcf	3,6	;RP1=0, select bank0
+  1205  0786  1506               	bsf	6,2	;volatile
+  1206  0787  1686               	bsf	6,5	;volatile
+  1207                           
+  1208                           ;Proyecto_Juego.c: 232:                 _delay((unsigned long)((120)*(4000000/4000.0)));
+  1209  0788  309C               	movlw	156
+  1210  0789  00F4               	movwf	??_verificacion+1
+  1211  078A  30D7               	movlw	215
+  1212  078B  00F3               	movwf	??_verificacion
+  1213  078C                     u1467:	
+  1214  078C  0BF3               	decfsz	??_verificacion,f
+  1215  078D  2F8C               	goto	u1467
+  1216  078E  0BF4               	decfsz	??_verificacion+1,f
+  1217  078F  2F8C               	goto	u1467
+  1218                           
+  1219                           ;Proyecto_Juego.c: 233:                 RB2=0,RB5=0;
+  1220  0790  1283               	bcf	3,5	;RP0=0, select bank0
+  1221  0791  1303               	bcf	3,6	;RP1=0, select bank0
+  1222  0792  1106               	bcf	6,2	;volatile
+  1223  0793  1286               	bcf	6,5	;volatile
+  1224                           
+  1225                           ;Proyecto_Juego.c: 234:                 aux=0;
+  1226  0794  01F7               	clrf	verificacion@aux
+  1227                           
+  1228                           ;Proyecto_Juego.c: 235:             }
+  1229  0795  2F9D               	goto	l1354
+  1230  0796                     l138:	
+  1231                           ;Proyecto_Juego.c: 237:             else if(RA3==1 || RA2==1 || RA0==1) aux=1;
+  1232                           
+  1233  0796  1D85               	btfss	5,3	;volatile
+  1234  0797  1905               	btfsc	5,2	;volatile
+  1235  0798  2F9B               	goto	l142
+  1236  0799  1C05               	btfss	5,0	;volatile
+  1237  079A  2F9D               	goto	l1354
+  1238  079B                     l142:	
+  1239  079B  01F7               	clrf	verificacion@aux
+  1240  079C  0AF7               	incf	verificacion@aux,f
+  1241  079D                     l1354:	
+  1242                           
+  1243                           ;Proyecto_Juego.c: 239:             antirrebote();
+  1244  079D  241B               	fcall	_antirrebote
+  1245  079E                     l1356:	
+  1246                           
+  1247                           ;Proyecto_Juego.c: 243:         if(sec[x]==4){
+  1248  079E  0878               	movf	verificacion@x,w
+  1249  079F  00F3               	movwf	??_verificacion
+  1250  07A0  0773               	addwf	??_verificacion,w
+  1251  07A1  3EA0               	addlw	(low (_sec| 0))& (0+255)
+  1252  07A2  0084               	movwf	4
+  1253  07A3  1383               	bcf	3,7	;select IRP bank1
+  1254  07A4  0800               	movf	0,w
+  1255  07A5  00F4               	movwf	??_verificacion+1
+  1256  07A6  0A84               	incf	4,f
+  1257  07A7  0800               	movf	0,w
+  1258  07A8  00F5               	movwf	??_verificacion+2
+  1259  07A9  3004               	movlw	4
+  1260  07AA  0674               	xorwf	??_verificacion+1,w
+  1261  07AB  0475               	iorwf	??_verificacion+2,w
+  1262  07AC  1D03               	btfss	3,2
+  1263  07AD  2FDC               	goto	l1386
+  1264                           
+  1265                           ;Proyecto_Juego.c: 245:             _delay((unsigned long)((1)*(4000000/4000.0)));
+  1266  07AE  30C7               	movlw	199
+  1267  07AF  00F3               	movwf	??_verificacion
+  1268  07B0                     u1477:	
+  1269  07B0  2FB1               	nop2
+  1270  07B1  0BF3               	decfsz	??_verificacion,f
+  1271  07B2  2FB0               	goto	u1477
+  1272  07B3  2FB4               	nop2
+  1273  07B4  2FB5               	nop2
+  1274  07B5  2FBB               	goto	l144
+  1275  07B6                     l1360:	
+  1276  07B6  1D05               	btfss	5,2	;volatile
+  1277  07B7  1885               	btfsc	5,1	;volatile
+  1278  07B8  2FBF               	goto	l148
+  1279  07B9  1805               	btfsc	5,0	;volatile
+  1280  07BA  2FBF               	goto	l148
+  1281  07BB                     l144:	
+  1282                           ;Proyecto_Juego.c: 248:             }
+  1283                           
+  1284                           
+  1285                           ;Proyecto_Juego.c: 247:             while(RA3==0 && RA2==0 && RA1==0 && RA0==0){
+  1286  07BB  1283               	bcf	3,5	;RP0=0, select bank0
+  1287  07BC  1303               	bcf	3,6	;RP1=0, select bank0
+  1288  07BD  1D85               	btfss	5,3	;volatile
+  1289  07BE  2FB6               	goto	l1360
+  1290  07BF                     l148:	
+  1291                           
+  1292                           ;Proyecto_Juego.c: 250:             if(RA0==1){
+  1293  07BF  1C05               	btfss	5,0	;volatile
+  1294  07C0  2FD4               	goto	l149
+  1295                           
+  1296                           ;Proyecto_Juego.c: 251:                 antirrebote();
+  1297  07C1  241B               	fcall	_antirrebote
+  1298                           
+  1299                           ;Proyecto_Juego.c: 252:                 RB3=1,RB5=1;
+  1300  07C2  1283               	bcf	3,5	;RP0=0, select bank0
+  1301  07C3  1303               	bcf	3,6	;RP1=0, select bank0
+  1302  07C4  1586               	bsf	6,3	;volatile
+  1303  07C5  1686               	bsf	6,5	;volatile
+  1304                           
+  1305                           ;Proyecto_Juego.c: 253:                 _delay((unsigned long)((120)*(4000000/4000.0)));
+  1306  07C6  309C               	movlw	156
+  1307  07C7  00F4               	movwf	??_verificacion+1
+  1308  07C8  30D7               	movlw	215
+  1309  07C9  00F3               	movwf	??_verificacion
+  1310  07CA                     u1487:	
+  1311  07CA  0BF3               	decfsz	??_verificacion,f
+  1312  07CB  2FCA               	goto	u1487
+  1313  07CC  0BF4               	decfsz	??_verificacion+1,f
+  1314  07CD  2FCA               	goto	u1487
+  1315                           
+  1316                           ;Proyecto_Juego.c: 254:                 RB3=0,RB5=0;
+  1317  07CE  1283               	bcf	3,5	;RP0=0, select bank0
+  1318  07CF  1303               	bcf	3,6	;RP1=0, select bank0
+  1319  07D0  1186               	bcf	6,3	;volatile
+  1320  07D1  1286               	bcf	6,5	;volatile
+  1321                           
+  1322                           ;Proyecto_Juego.c: 255:                 aux=0;
+  1323  07D2  01F7               	clrf	verificacion@aux
+  1324                           
+  1325                           ;Proyecto_Juego.c: 256:             }
+  1326  07D3  2FDB               	goto	l1384
+  1327  07D4                     l149:	
+  1328                           ;Proyecto_Juego.c: 258:             else if(RA3==1 || RA1==1 || RA2==1) aux=1;
+  1329                           
+  1330  07D4  1D85               	btfss	5,3	;volatile
+  1331  07D5  1885               	btfsc	5,1	;volatile
+  1332  07D6  2FD9               	goto	l153
+  1333  07D7  1D05               	btfss	5,2	;volatile
+  1334  07D8  2FDB               	goto	l1384
+  1335  07D9                     l153:	
+  1336  07D9  01F7               	clrf	verificacion@aux
+  1337  07DA  0AF7               	incf	verificacion@aux,f
+  1338  07DB                     l1384:	
+  1339                           
+  1340                           ;Proyecto_Juego.c: 260:             antirrebote();
+  1341  07DB  241B               	fcall	_antirrebote
+  1342  07DC                     l1386:	
+  1343                           
+  1344                           ;Proyecto_Juego.c: 264:         x++;
+  1345  07DC  3001               	movlw	1
+  1346  07DD  00F3               	movwf	??_verificacion
+  1347  07DE  0873               	movf	??_verificacion,w
+  1348  07DF  07F8               	addwf	verificacion@x,f
+  1349  07E0                     l1388:	
+  1350                           
+  1351                           ;Proyecto_Juego.c: 178:     while(x<=cantidad && aux==0){
+  1352  07E0  0878               	movf	verificacion@x,w
+  1353  07E1  0272               	subwf	verificacion@cantidad,w
+  1354  07E2  1C03               	skipc
+  1355  07E3  2FE7               	goto	l1392
+  1356  07E4  0877               	movf	verificacion@aux,w
+  1357  07E5  1903               	btfsc	3,2
+  1358  07E6  2EE5               	goto	l1266
+  1359  07E7                     l1392:	
+  1360                           
+  1361                           ;Proyecto_Juego.c: 266:     return aux;
+  1362  07E7  0877               	movf	verificacion@aux,w
+  1363  07E8  0008               	return
+  1364  07E9                     __end_of_verificacion:	
+  1365                           
+  1366                           	psect	text3
+  1367  041B                     __ptext3:	
+  1368 ;; *************** function _antirrebote *****************
+  1369 ;; Defined at:
+  1370 ;;		line 269 in file "Proyecto_Juego.c"
+  1371 ;; Parameters:    Size  Location     Type
+  1372 ;;		None
+  1373 ;; Auto vars:     Size  Location     Type
+  1374 ;;		None
+  1375 ;; Return value:  Size  Location     Type
+  1376 ;;                  1    wreg      void 
+  1377 ;; Registers used:
+  1378 ;;		wreg
+  1379 ;; Tracked objects:
+  1380 ;;		On entry : 0/0
+  1381 ;;		On exit  : 0/0
+  1382 ;;		Unchanged: 0/0
+  1383 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+  1384 ;;      Params:         0       0       0       0
+  1385 ;;      Locals:         0       0       0       0
+  1386 ;;      Temps:          2       0       0       0
+  1387 ;;      Totals:         2       0       0       0
+  1388 ;;Total ram usage:        2 bytes
+  1389 ;; Hardware stack levels used:    1
+  1390 ;; This function calls:
+  1391 ;;		Nothing
+  1392 ;; This function is called by:
+  1393 ;;		_main
+  1394 ;;		_inicio
+  1395 ;;		_verificacion
+  1396 ;; This function uses a non-reentrant model
+  1397 ;;
+  1398                           
+  1399                           
+  1400                           ;psect for function _antirrebote
+  1401  041B                     _antirrebote:	
+  1402  041B                     l1162:	
+  1403                           ;incstack = 0
+  1404                           ; Regs used in _antirrebote: [wreg]
+  1405                           
+  1406                           
+  1407                           ;Proyecto_Juego.c: 270:     _delay((unsigned long)((30)*(4000000/4000.0)));
+  1408  041B  3027               	movlw	39
+  1409  041C  00F1               	movwf	??_antirrebote+1
+  1410  041D  30F5               	movlw	245
+  1411  041E  00F0               	movwf	??_antirrebote
+  1412  041F                     u1497:	
+  1413  041F  0BF0               	decfsz	??_antirrebote,f
+  1414  0420  2C1F               	goto	u1497
+  1415  0421  0BF1               	decfsz	??_antirrebote+1,f
+  1416  0422  2C1F               	goto	u1497
+  1417                           
+  1418                           ;Proyecto_Juego.c: 271:     valores++;
+  1419  0423  3001               	movlw	1
+  1420  0424  1283               	bcf	3,5	;RP0=0, select bank0
+  1421  0425  1303               	bcf	3,6	;RP1=0, select bank0
+  1422  0426  07B7               	addwf	_valores,f
+  1423  0427  1803               	skipnc
+  1424  0428  0AB8               	incf	_valores+1,f
+  1425  0429  3000               	movlw	0
+  1426  042A  07B8               	addwf	_valores+1,f
+  1427                           
+  1428                           ;Proyecto_Juego.c: 272:     while(RA3==1 || RA2==1 || RA1==1 || RA0==1){
+  1429                           
+  1430                           ;Proyecto_Juego.c: 272:     while(RA3==1 || RA2==1 || RA1==1 || RA0==1){
+  1431  042B  1D85               	btfss	5,3	;volatile
+  1432  042C  1905               	btfsc	5,2	;volatile
+  1433  042D  2C1B               	goto	l1162
+  1434  042E  1885               	btfsc	5,1	;volatile
+  1435  042F  2C1B               	goto	l1162
+  1436  0430  1C05               	btfss	5,0	;volatile
+  1437  0431  0008               	return
+  1438  0432  2C1B               	goto	l1162
+  1439  0433                     __end_of_antirrebote:	
+  1440                           
+  1441                           	psect	text4
+  1442  0475                     __ptext4:	
+  1443 ;; *************** function _valor_aleatorio *****************
+  1444 ;; Defined at:
+  1445 ;;		line 286 in file "Proyecto_Juego.c"
+  1446 ;; Parameters:    Size  Location     Type
+  1447 ;;  contador        1    wreg     unsigned char 
+  1448 ;;  valor           2    0[COMMON] int 
+  1449 ;; Auto vars:     Size  Location     Type
+  1450 ;;  contador        1    5[COMMON] unsigned char 
+  1451 ;;  c               2    6[COMMON] int 
+  1452 ;; Return value:  Size  Location     Type
+  1453 ;;                  1    wreg      void 
+  1454 ;; Registers used:
+  1455 ;;		wreg, status,2, status,0
+  1456 ;; Tracked objects:
+  1457 ;;		On entry : 0/0
+  1458 ;;		On exit  : 0/0
+  1459 ;;		Unchanged: 0/0
+  1460 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+  1461 ;;      Params:         2       0       0       0
+  1462 ;;      Locals:         3       0       0       0
+  1463 ;;      Temps:          3       0       0       0
+  1464 ;;      Totals:         8       0       0       0
+  1465 ;;Total ram usage:        8 bytes
+  1466 ;; Hardware stack levels used:    1
+  1467 ;; This function calls:
+  1468 ;;		Nothing
+  1469 ;; This function is called by:
+  1470 ;;		_inicio
+  1471 ;; This function uses a non-reentrant model
+  1472 ;;
+  1473                           
+  1474                           
+  1475                           ;psect for function _valor_aleatorio
+  1476  0475                     _valor_aleatorio:	
+  1477                           
+  1478                           ;incstack = 0
+  1479                           ; Regs used in _valor_aleatorio: [wreg+status,2+status,0]
+  1480                           ;valor_aleatorio@contador stored from wreg
+  1481  0475  00F5               	movwf	valor_aleatorio@contador
+  1482                           
+  1483                           ;Proyecto_Juego.c: 287:     int c=1;
+  1484  0476  3001               	movlw	1
+  1485  0477  00F6               	movwf	valor_aleatorio@c
+  1486  0478  3000               	movlw	0
+  1487  0479  00F7               	movwf	valor_aleatorio@c+1
+  1488  047A                     l172:	
+  1489                           ;Proyecto_Juego.c: 295:     }
+  1490                           
+  1491                           ;Proyecto_Juego.c: 288:     while(c<contador+valores){
+  1492                           
+  1493                           
+  1494                           ;Proyecto_Juego.c: 288:     while(c<contador+valores){
+  1495  047A  0875               	movf	valor_aleatorio@contador,w
+  1496  047B  1283               	bcf	3,5	;RP0=0, select bank0
+  1497  047C  1303               	bcf	3,6	;RP1=0, select bank0
+  1498  047D  0737               	addwf	_valores,w
+  1499  047E  00F2               	movwf	??_valor_aleatorio
+  1500  047F  0838               	movf	_valores+1,w
+  1501  0480  1803               	skipnc
+  1502  0481  0A38               	incf	_valores+1,w
+  1503  0482  00F3               	movwf	??_valor_aleatorio+1
+  1504  0483  0877               	movf	valor_aleatorio@c+1,w
+  1505  0484  3A80               	xorlw	128
+  1506  0485  00F4               	movwf	??_valor_aleatorio+2
+  1507  0486  0873               	movf	??_valor_aleatorio+1,w
+  1508  0487  3A80               	xorlw	128
+  1509  0488  0274               	subwf	??_valor_aleatorio+2,w
+  1510  0489  1D03               	skipz
+  1511  048A  2C8D               	goto	u855
+  1512  048B  0872               	movf	??_valor_aleatorio,w
+  1513  048C  0276               	subwf	valor_aleatorio@c,w
+  1514  048D                     u855:	
+  1515  048D  1803               	btfsc	3,0
+  1516  048E  0008               	return
+  1517                           
+  1518                           ;Proyecto_Juego.c: 289:         c=c+valor_aleat;
+  1519  048F  1283               	bcf	3,5	;RP0=0, select bank0
+  1520  0490  1303               	bcf	3,6	;RP1=0, select bank0
+  1521  0491  0840               	movf	_valor_aleat,w
+  1522  0492  0776               	addwf	valor_aleatorio@c,w
+  1523  0493  00F6               	movwf	valor_aleatorio@c
+  1524  0494  0841               	movf	_valor_aleat+1,w
+  1525  0495  1803               	skipnc
+  1526  0496  0A41               	incf	_valor_aleat+1,w
+  1527  0497  0777               	addwf	valor_aleatorio@c+1,w
+  1528  0498  00F7               	movwf	valor_aleatorio@c+1
+  1529                           
+  1530                           ;Proyecto_Juego.c: 290:         c++;
+  1531  0499  3001               	movlw	1
+  1532  049A  07F6               	addwf	valor_aleatorio@c,f
+  1533  049B  1803               	skipnc
+  1534  049C  0AF7               	incf	valor_aleatorio@c+1,f
+  1535  049D  3000               	movlw	0
+  1536  049E  07F7               	addwf	valor_aleatorio@c+1,f
+  1537                           
+  1538                           ;Proyecto_Juego.c: 291:         valor_aleat++;
+  1539  049F  3001               	movlw	1
+  1540  04A0  07C0               	addwf	_valor_aleat,f
+  1541  04A1  1803               	skipnc
+  1542  04A2  0AC1               	incf	_valor_aleat+1,f
+  1543  04A3  3000               	movlw	0
+  1544  04A4  07C1               	addwf	_valor_aleat+1,f
+  1545                           
+  1546                           ;Proyecto_Juego.c: 292:         if(valor_aleat==5){
+  1547  04A5  3005               	movlw	5
+  1548  04A6  0640               	xorwf	_valor_aleat,w
+  1549  04A7  0441               	iorwf	_valor_aleat+1,w
+  1550  04A8  1D03               	btfss	3,2
+  1551  04A9  2C7A               	goto	l172
+  1552                           
+  1553                           ;Proyecto_Juego.c: 293:             valor_aleat=1;
+  1554  04AA  3001               	movlw	1
+  1555  04AB  00C0               	movwf	_valor_aleat
+  1556  04AC  3000               	movlw	0
+  1557  04AD  00C1               	movwf	_valor_aleat+1
+  1558  04AE  2C7A               	goto	l172
+  1559  04AF                     __end_of_valor_aleatorio:	
+  1560                           
+  1561                           	psect	text5
+  1562  0412                     __ptext5:	
+  1563 ;; *************** function _srand *****************
+  1564 ;; Defined at:
+  1565 ;;		line 6 in file "C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\rand.c"
+  1566 ;; Parameters:    Size  Location     Type
+  1567 ;;  x               2    0[COMMON] unsigned int 
+  1568 ;; Auto vars:     Size  Location     Type
+  1569 ;;		None
+  1570 ;; Return value:  Size  Location     Type
+  1571 ;;                  1    wreg      void 
+  1572 ;; Registers used:
+  1573 ;;		wreg
+  1574 ;; Tracked objects:
+  1575 ;;		On entry : 0/0
+  1576 ;;		On exit  : 0/0
+  1577 ;;		Unchanged: 0/0
+  1578 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+  1579 ;;      Params:         2       0       0       0
+  1580 ;;      Locals:         0       0       0       0
+  1581 ;;      Temps:          0       0       0       0
+  1582 ;;      Totals:         2       0       0       0
+  1583 ;;Total ram usage:        2 bytes
+  1584 ;; Hardware stack levels used:    1
+  1585 ;; This function calls:
+  1586 ;;		Nothing
+  1587 ;; This function is called by:
+  1588 ;;		_inicio
+  1589 ;; This function uses a non-reentrant model
+  1590 ;;
+  1591                           
+  1592                           
+  1593                           ;psect for function _srand
+  1594  0412                     _srand:	
+  1595                           
+  1596                           ;incstack = 0
+  1597                           ; Regs used in _srand: [wreg]
+  1598  0412  0870               	movf	srand@x,w
+  1599  0413  1283               	bcf	3,5	;RP0=0, select bank0
+  1600  0414  1303               	bcf	3,6	;RP1=0, select bank0
+  1601  0415  00BC               	movwf	_randx
+  1602  0416  0871               	movf	srand@x+1,w
+  1603  0417  00BD               	movwf	_randx+1
+  1604  0418  01BE               	clrf	_randx+2
+  1605  0419  01BF               	clrf	_randx+3
+  1606  041A  0008               	return
+  1607  041B                     __end_of_srand:	
+  1608                           
+  1609                           	psect	text6
+  1610  064E                     __ptext6:	
+  1611 ;; *************** function _secuencia *****************
+  1612 ;; Defined at:
+  1613 ;;		line 143 in file "Proyecto_Juego.c"
+  1614 ;; Parameters:    Size  Location     Type
+  1615 ;;  arreglo         1    wreg     PTR int 
+  1616 ;;		 -> sec(80), 
+  1617 ;;  tiempo          2    4[COMMON] int 
+  1618 ;;  contador        1    6[COMMON] unsigned char 
+  1619 ;; Auto vars:     Size  Location     Type
+  1620 ;;  arreglo         1   11[COMMON] PTR int 
+  1621 ;;		 -> sec(80), 
+  1622 ;;  j               2   12[COMMON] int 
+  1623 ;; Return value:  Size  Location     Type
+  1624 ;;                  1    wreg      void 
+  1625 ;; Registers used:
+  1626 ;;		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+  1627 ;; Tracked objects:
+  1628 ;;		On entry : 0/0
+  1629 ;;		On exit  : 0/0
+  1630 ;;		Unchanged: 0/0
+  1631 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+  1632 ;;      Params:         3       0       0       0
+  1633 ;;      Locals:         3       0       0       0
+  1634 ;;      Temps:          4       0       0       0
+  1635 ;;      Totals:        10       0       0       0
+  1636 ;;Total ram usage:       10 bytes
+  1637 ;; Hardware stack levels used:    1
+  1638 ;; Hardware stack levels required when called:    1
+  1639 ;; This function calls:
+  1640 ;;		_Delay_ms
+  1641 ;; This function is called by:
+  1642 ;;		_main
+  1643 ;;		_inicio
+  1644 ;; This function uses a non-reentrant model
+  1645 ;;
+  1646                           
+  1647                           
+  1648                           ;psect for function _secuencia
+  1649  064E                     _secuencia:	
+  1650                           
+  1651                           ;incstack = 0
+  1652                           ; Regs used in _secuencia: [wreg-fsr0h+status,2+status,0+pclath+cstack]
+  1653                           ;secuencia@arreglo stored from wreg
+  1654  064E  00FB               	movwf	secuencia@arreglo
+  1655                           
+  1656                           ;Proyecto_Juego.c: 144:     for(int j=0;j<=contador;j++){
+  1657  064F  01FC               	clrf	secuencia@j
+  1658  0650  01FD               	clrf	secuencia@j+1
+  1659  0651                     l1240:	
+  1660  0651  087D               	movf	secuencia@j+1,w
+  1661  0652  3A80               	xorlw	128
+  1662  0653  3C80               	sublw	128
+  1663  0654  1D03               	skipz
+  1664  0655  2E58               	goto	u835
+  1665  0656  087C               	movf	secuencia@j,w
+  1666  0657  0276               	subwf	secuencia@contador,w
+  1667  0658                     u835:	
+  1668  0658  1C03               	btfss	3,0
+  1669  0659  0008               	return
+  1670                           
+  1671                           ;Proyecto_Juego.c: 146:         if(arreglo[j]==1){
+  1672  065A  087C               	movf	secuencia@j,w
+  1673  065B  00F7               	movwf	??_secuencia
+  1674  065C  0777               	addwf	??_secuencia,w
+  1675  065D  077B               	addwf	secuencia@arreglo,w
+  1676  065E  00F8               	movwf	??_secuencia+1
+  1677  065F  0878               	movf	??_secuencia+1,w
+  1678  0660  0084               	movwf	4
+  1679  0661  1383               	bcf	3,7	;select IRP bank0
+  1680  0662  0800               	movf	0,w
+  1681  0663  00F9               	movwf	??_secuencia+2
+  1682  0664  0A84               	incf	4,f
+  1683  0665  0800               	movf	0,w
+  1684  0666  00FA               	movwf	??_secuencia+3
+  1685  0667  0379               	decf	??_secuencia+2,w
+  1686  0668  047A               	iorwf	??_secuencia+3,w
+  1687  0669  1D03               	btfss	3,2
+  1688  066A  2E78               	goto	l1208
+  1689                           
+  1690                           ;Proyecto_Juego.c: 147:             RB1=1,RB5=1;
+  1691  066B  1283               	bcf	3,5	;RP0=0, select bank0
+  1692  066C  1303               	bcf	3,6	;RP1=0, select bank0
+  1693  066D  1486               	bsf	6,1	;volatile
+  1694  066E  1686               	bsf	6,5	;volatile
+  1695                           
+  1696                           ;Proyecto_Juego.c: 148:             Delay_ms(tiempo);
+  1697  066F  0875               	movf	secuencia@tiempo+1,w
+  1698  0670  00F1               	movwf	Delay_ms@tiempo_de_delay+1
+  1699  0671  0874               	movf	secuencia@tiempo,w
+  1700  0672  00F0               	movwf	Delay_ms@tiempo_de_delay
+  1701  0673  2433               	fcall	_Delay_ms
+  1702                           
+  1703                           ;Proyecto_Juego.c: 149:             RB1=0,RB5=0;
+  1704  0674  1283               	bcf	3,5	;RP0=0, select bank0
+  1705  0675  1303               	bcf	3,6	;RP1=0, select bank0
+  1706  0676  1086               	bcf	6,1	;volatile
+  1707  0677  1286               	bcf	6,5	;volatile
+  1708  0678                     l1208:	
+  1709                           
+  1710                           ;Proyecto_Juego.c: 152:         if(arreglo[j]==2){
+  1711  0678  087C               	movf	secuencia@j,w
+  1712  0679  00F7               	movwf	??_secuencia
+  1713  067A  0777               	addwf	??_secuencia,w
+  1714  067B  077B               	addwf	secuencia@arreglo,w
+  1715  067C  00F8               	movwf	??_secuencia+1
+  1716  067D  0878               	movf	??_secuencia+1,w
+  1717  067E  0084               	movwf	4
+  1718  067F  1383               	bcf	3,7	;select IRP bank0
+  1719  0680  0800               	movf	0,w
+  1720  0681  00F9               	movwf	??_secuencia+2
+  1721  0682  0A84               	incf	4,f
+  1722  0683  0800               	movf	0,w
+  1723  0684  00FA               	movwf	??_secuencia+3
+  1724  0685  3002               	movlw	2
+  1725  0686  0679               	xorwf	??_secuencia+2,w
+  1726  0687  047A               	iorwf	??_secuencia+3,w
+  1727  0688  1D03               	btfss	3,2
+  1728  0689  2E97               	goto	l1218
+  1729                           
+  1730                           ;Proyecto_Juego.c: 153:             RB0=1,RB5=1;
+  1731  068A  1283               	bcf	3,5	;RP0=0, select bank0
+  1732  068B  1303               	bcf	3,6	;RP1=0, select bank0
+  1733  068C  1406               	bsf	6,0	;volatile
+  1734  068D  1686               	bsf	6,5	;volatile
+  1735                           
+  1736                           ;Proyecto_Juego.c: 154:             Delay_ms(tiempo);
+  1737  068E  0875               	movf	secuencia@tiempo+1,w
+  1738  068F  00F1               	movwf	Delay_ms@tiempo_de_delay+1
+  1739  0690  0874               	movf	secuencia@tiempo,w
+  1740  0691  00F0               	movwf	Delay_ms@tiempo_de_delay
+  1741  0692  2433               	fcall	_Delay_ms
+  1742                           
+  1743                           ;Proyecto_Juego.c: 155:             RB0=0,RB5=0;
+  1744  0693  1283               	bcf	3,5	;RP0=0, select bank0
+  1745  0694  1303               	bcf	3,6	;RP1=0, select bank0
+  1746  0695  1006               	bcf	6,0	;volatile
+  1747  0696  1286               	bcf	6,5	;volatile
+  1748  0697                     l1218:	
+  1749                           
+  1750                           ;Proyecto_Juego.c: 158:         if(arreglo[j]==3){
+  1751  0697  087C               	movf	secuencia@j,w
+  1752  0698  00F7               	movwf	??_secuencia
+  1753  0699  0777               	addwf	??_secuencia,w
+  1754  069A  077B               	addwf	secuencia@arreglo,w
+  1755  069B  00F8               	movwf	??_secuencia+1
+  1756  069C  0878               	movf	??_secuencia+1,w
+  1757  069D  0084               	movwf	4
+  1758  069E  1383               	bcf	3,7	;select IRP bank0
+  1759  069F  0800               	movf	0,w
+  1760  06A0  00F9               	movwf	??_secuencia+2
+  1761  06A1  0A84               	incf	4,f
+  1762  06A2  0800               	movf	0,w
+  1763  06A3  00FA               	movwf	??_secuencia+3
+  1764  06A4  3003               	movlw	3
+  1765  06A5  0679               	xorwf	??_secuencia+2,w
+  1766  06A6  047A               	iorwf	??_secuencia+3,w
+  1767  06A7  1D03               	btfss	3,2
+  1768  06A8  2EB6               	goto	l1228
+  1769                           
+  1770                           ;Proyecto_Juego.c: 159:             RB2=1,RB5=1;
+  1771  06A9  1283               	bcf	3,5	;RP0=0, select bank0
+  1772  06AA  1303               	bcf	3,6	;RP1=0, select bank0
+  1773  06AB  1506               	bsf	6,2	;volatile
+  1774  06AC  1686               	bsf	6,5	;volatile
+  1775                           
+  1776                           ;Proyecto_Juego.c: 160:             Delay_ms(tiempo);
+  1777  06AD  0875               	movf	secuencia@tiempo+1,w
+  1778  06AE  00F1               	movwf	Delay_ms@tiempo_de_delay+1
+  1779  06AF  0874               	movf	secuencia@tiempo,w
+  1780  06B0  00F0               	movwf	Delay_ms@tiempo_de_delay
+  1781  06B1  2433               	fcall	_Delay_ms
+  1782                           
+  1783                           ;Proyecto_Juego.c: 161:             RB2=0,RB5=0;
+  1784  06B2  1283               	bcf	3,5	;RP0=0, select bank0
+  1785  06B3  1303               	bcf	3,6	;RP1=0, select bank0
+  1786  06B4  1106               	bcf	6,2	;volatile
+  1787  06B5  1286               	bcf	6,5	;volatile
+  1788  06B6                     l1228:	
+  1789                           
+  1790                           ;Proyecto_Juego.c: 164:         if(arreglo[j]==4){
+  1791  06B6  087C               	movf	secuencia@j,w
+  1792  06B7  00F7               	movwf	??_secuencia
+  1793  06B8  0777               	addwf	??_secuencia,w
+  1794  06B9  077B               	addwf	secuencia@arreglo,w
+  1795  06BA  00F8               	movwf	??_secuencia+1
+  1796  06BB  0878               	movf	??_secuencia+1,w
+  1797  06BC  0084               	movwf	4
+  1798  06BD  1383               	bcf	3,7	;select IRP bank0
+  1799  06BE  0800               	movf	0,w
+  1800  06BF  00F9               	movwf	??_secuencia+2
+  1801  06C0  0A84               	incf	4,f
+  1802  06C1  0800               	movf	0,w
+  1803  06C2  00FA               	movwf	??_secuencia+3
+  1804  06C3  3004               	movlw	4
+  1805  06C4  0679               	xorwf	??_secuencia+2,w
+  1806  06C5  047A               	iorwf	??_secuencia+3,w
+  1807  06C6  1D03               	btfss	3,2
+  1808  06C7  2ED5               	goto	l103
+  1809                           
+  1810                           ;Proyecto_Juego.c: 165:             RB3=1,RB5=1;
+  1811  06C8  1283               	bcf	3,5	;RP0=0, select bank0
+  1812  06C9  1303               	bcf	3,6	;RP1=0, select bank0
+  1813  06CA  1586               	bsf	6,3	;volatile
+  1814  06CB  1686               	bsf	6,5	;volatile
+  1815                           
+  1816                           ;Proyecto_Juego.c: 166:             Delay_ms(tiempo);
+  1817  06CC  0875               	movf	secuencia@tiempo+1,w
+  1818  06CD  00F1               	movwf	Delay_ms@tiempo_de_delay+1
+  1819  06CE  0874               	movf	secuencia@tiempo,w
+  1820  06CF  00F0               	movwf	Delay_ms@tiempo_de_delay
+  1821  06D0  2433               	fcall	_Delay_ms
+  1822                           
+  1823                           ;Proyecto_Juego.c: 167:             RB3=0,RB5=0;
+  1824  06D1  1283               	bcf	3,5	;RP0=0, select bank0
+  1825  06D2  1303               	bcf	3,6	;RP1=0, select bank0
+  1826  06D3  1186               	bcf	6,3	;volatile
+  1827  06D4  1286               	bcf	6,5	;volatile
+  1828  06D5                     l103:	
+  1829                           ;Proyecto_Juego.c: 168:         }
+  1830                           
+  1831                           
+  1832                           ;Proyecto_Juego.c: 170:         Delay_ms(tiempo);
+  1833  06D5  0875               	movf	secuencia@tiempo+1,w
+  1834  06D6  00F1               	movwf	Delay_ms@tiempo_de_delay+1
+  1835  06D7  0874               	movf	secuencia@tiempo,w
+  1836  06D8  00F0               	movwf	Delay_ms@tiempo_de_delay
+  1837  06D9  2433               	fcall	_Delay_ms
+  1838                           
+  1839                           ;Proyecto_Juego.c: 171:     }
+  1840  06DA  3001               	movlw	1
+  1841  06DB  07FC               	addwf	secuencia@j,f
+  1842  06DC  1803               	skipnc
+  1843  06DD  0AFD               	incf	secuencia@j+1,f
+  1844  06DE  3000               	movlw	0
+  1845  06DF  07FD               	addwf	secuencia@j+1,f
+  1846  06E0  2E51               	goto	l1240
+  1847  06E1                     __end_of_secuencia:	
+  1848                           
+  1849                           	psect	text7
+  1850  0433                     __ptext7:	
+  1851 ;; *************** function _Delay_ms *****************
+  1852 ;; Defined at:
+  1853 ;;		line 278 in file "Proyecto_Juego.c"
+  1854 ;; Parameters:    Size  Location     Type
+  1855 ;;  tiempo_de_de    2    0[COMMON] int 
+  1856 ;; Auto vars:     Size  Location     Type
+  1857 ;;  i               1    3[COMMON] unsigned char 
+  1858 ;; Return value:  Size  Location     Type
+  1859 ;;                  1    wreg      void 
+  1860 ;; Registers used:
+  1861 ;;		wreg, status,2, status,0
+  1862 ;; Tracked objects:
+  1863 ;;		On entry : 0/0
+  1864 ;;		On exit  : 0/0
+  1865 ;;		Unchanged: 0/0
+  1866 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+  1867 ;;      Params:         2       0       0       0
+  1868 ;;      Locals:         1       0       0       0
+  1869 ;;      Temps:          1       0       0       0
+  1870 ;;      Totals:         4       0       0       0
+  1871 ;;Total ram usage:        4 bytes
+  1872 ;; Hardware stack levels used:    1
+  1873 ;; This function calls:
+  1874 ;;		Nothing
+  1875 ;; This function is called by:
+  1876 ;;		_secuencia
+  1877 ;; This function uses a non-reentrant model
+  1878 ;;
+  1879                           
+  1880                           
+  1881                           ;psect for function _Delay_ms
+  1882  0433                     _Delay_ms:	
+  1883                           
+  1884                           ;Proyecto_Juego.c: 279:     char i=1;
+  1885                           
+  1886                           ;incstack = 0
+  1887                           ; Regs used in _Delay_ms: [wreg+status,2+status,0]
+  1888  0433  01F3               	clrf	Delay_ms@i
+  1889  0434  0AF3               	incf	Delay_ms@i,f
+  1890  0435                     l1180:	
+  1891                           ;Proyecto_Juego.c: 280:     while(i<=tiempo_de_delay){
+  1892                           
+  1893                           
+  1894                           ;Proyecto_Juego.c: 280:     while(i<=tiempo_de_delay){
+  1895  0435  0871               	movf	Delay_ms@tiempo_de_delay+1,w
+  1896  0436  3A80               	xorlw	128
+  1897  0437  00F2               	movwf	??_Delay_ms
+  1898  0438  3080               	movlw	128
+  1899  0439  0272               	subwf	??_Delay_ms,w
+  1900  043A  1D03               	skipz
+  1901  043B  2C3E               	goto	u735
+  1902  043C  0873               	movf	Delay_ms@i,w
+  1903  043D  0270               	subwf	Delay_ms@tiempo_de_delay,w
+  1904  043E                     u735:	
+  1905  043E  1C03               	btfss	3,0
+  1906  043F  0008               	return
+  1907                           
+  1908                           ;Proyecto_Juego.c: 281:         _delay((unsigned long)((1)*(4000000/4000.0)));
+  1909  0440  30C7               	movlw	199
+  1910  0441  00F2               	movwf	??_Delay_ms
+  1911  0442                     u1507:	
+  1912  0442  2C43               	nop2
+  1913  0443  0BF2               	decfsz	??_Delay_ms,f
+  1914  0444  2C42               	goto	u1507
+  1915  0445  2C46               	nop2
+  1916  0446  2C47               	nop2
+  1917                           
+  1918                           ;Proyecto_Juego.c: 282:         i++;
+  1919  0447  3001               	movlw	1
+  1920  0448  00F2               	movwf	??_Delay_ms
+  1921  0449  0872               	movf	??_Delay_ms,w
+  1922  044A  07F3               	addwf	Delay_ms@i,f
+  1923  044B  2C35               	goto	l1180
+  1924  044C                     __end_of_Delay_ms:	
+  1925                           
+  1926                           	psect	text8
+  1927  044C                     __ptext8:	
+  1928 ;; *************** function _reseteo *****************
+  1929 ;; Defined at:
+  1930 ;;		line 132 in file "Proyecto_Juego.c"
+  1931 ;; Parameters:    Size  Location     Type
+  1932 ;;		None
+  1933 ;; Auto vars:     Size  Location     Type
+  1934 ;;		None
+  1935 ;; Return value:  Size  Location     Type
+  1936 ;;                  1    wreg      void 
+  1937 ;; Registers used:
+  1938 ;;		wreg
+  1939 ;; Tracked objects:
+  1940 ;;		On entry : 0/0
+  1941 ;;		On exit  : 0/0
+  1942 ;;		Unchanged: 0/0
+  1943 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+  1944 ;;      Params:         0       0       0       0
+  1945 ;;      Locals:         0       0       0       0
+  1946 ;;      Temps:          3       0       0       0
+  1947 ;;      Totals:         3       0       0       0
+  1948 ;;Total ram usage:        3 bytes
+  1949 ;; Hardware stack levels used:    1
+  1950 ;; This function calls:
+  1951 ;;		Nothing
+  1952 ;; This function is called by:
+  1953 ;;		_inicio
+  1954 ;; This function uses a non-reentrant model
+  1955 ;;
+  1956                           
+  1957                           
+  1958                           ;psect for function _reseteo
+  1959  044C                     _reseteo:	
+  1960                           
+  1961                           ;Proyecto_Juego.c: 134:     RB1=1,RB0=1,RB2=1,RB3=1,RB5=1;
+  1962                           
+  1963                           ;incstack = 0
+  1964                           ; Regs used in _reseteo: [wreg]
+  1965  044C  1283               	bcf	3,5	;RP0=0, select bank0
+  1966  044D  1303               	bcf	3,6	;RP1=0, select bank0
+  1967  044E  1486               	bsf	6,1	;volatile
+  1968  044F  1406               	bsf	6,0	;volatile
+  1969  0450  1506               	bsf	6,2	;volatile
+  1970  0451  1586               	bsf	6,3	;volatile
+  1971  0452  1686               	bsf	6,5	;volatile
+  1972                           
+  1973                           ;Proyecto_Juego.c: 136:     _delay((unsigned long)((1000)*(4000000/4000.0)));
+  1974  0453  3006               	movlw	6
+  1975  0454  00F2               	movwf	??_reseteo+2
+  1976  0455  3013               	movlw	19
+  1977  0456  00F1               	movwf	??_reseteo+1
+  1978  0457  30AD               	movlw	173
+  1979  0458  00F0               	movwf	??_reseteo
+  1980  0459                     u1517:	
+  1981  0459  0BF0               	decfsz	??_reseteo,f
+  1982  045A  2C59               	goto	u1517
+  1983  045B  0BF1               	decfsz	??_reseteo+1,f
+  1984  045C  2C59               	goto	u1517
+  1985  045D  0BF2               	decfsz	??_reseteo+2,f
+  1986  045E  2C59               	goto	u1517
+  1987  045F  2C60               	nop2
+  1988                           
+  1989                           ;Proyecto_Juego.c: 138:     RB1=0,RB0=0,RB2=0,RB3=0,RB5=0;
+  1990  0460  1283               	bcf	3,5	;RP0=0, select bank0
+  1991  0461  1303               	bcf	3,6	;RP1=0, select bank0
+  1992  0462  1086               	bcf	6,1	;volatile
+  1993  0463  1006               	bcf	6,0	;volatile
+  1994  0464  1106               	bcf	6,2	;volatile
+  1995  0465  1186               	bcf	6,3	;volatile
+  1996  0466  1286               	bcf	6,5	;volatile
+  1997                           
+  1998                           ;Proyecto_Juego.c: 140:     _delay((unsigned long)((500)*(4000000/4000.0)));
+  1999  0467  3003               	movlw	3
+  2000  0468  00F2               	movwf	??_reseteo+2
+  2001  0469  308A               	movlw	138
+  2002  046A  00F1               	movwf	??_reseteo+1
+  2003  046B  3055               	movlw	85
+  2004  046C  00F0               	movwf	??_reseteo
+  2005  046D                     u1527:	
+  2006  046D  0BF0               	decfsz	??_reseteo,f
+  2007  046E  2C6D               	goto	u1527
+  2008  046F  0BF1               	decfsz	??_reseteo+1,f
+  2009  0470  2C6D               	goto	u1527
+  2010  0471  0BF2               	decfsz	??_reseteo+2,f
+  2011  0472  2C6D               	goto	u1527
+  2012  0473  2C74               	nop2
+  2013  0474  0008               	return
+  2014  0475                     __end_of_reseteo:	
+  2015                           
+  2016                           	psect	text9
+  2017  04EE                     __ptext9:	
+  2018 ;; *************** function _rand *****************
+  2019 ;; Defined at:
+  2020 ;;		line 12 in file "C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\rand.c"
+  2021 ;; Parameters:    Size  Location     Type
+  2022 ;;		None
+  2023 ;; Auto vars:     Size  Location     Type
+  2024 ;;		None
+  2025 ;; Return value:  Size  Location     Type
+  2026 ;;                  2    0[BANK0 ] int 
+  2027 ;; Registers used:
+  2028 ;;		wreg, status,2, status,0, pclath, cstack
+  2029 ;; Tracked objects:
+  2030 ;;		On entry : 0/0
+  2031 ;;		On exit  : 0/0
+  2032 ;;		Unchanged: 0/0
+  2033 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+  2034 ;;      Params:         0       2       0       0
+  2035 ;;      Locals:         0       0       0       0
+  2036 ;;      Temps:          0       5       0       0
+  2037 ;;      Totals:         0       7       0       0
+  2038 ;;Total ram usage:        7 bytes
+  2039 ;; Hardware stack levels used:    1
+  2040 ;; Hardware stack levels required when called:    1
+  2041 ;; This function calls:
+  2042 ;;		___lmul
+  2043 ;; This function is called by:
+  2044 ;;		_inicio
+  2045 ;; This function uses a non-reentrant model
+  2046 ;;
+  2047                           
+  2048                           
+  2049                           ;psect for function _rand
+  2050  04EE                     _rand:	
+  2051                           
+  2052                           ;incstack = 0
+  2053                           ; Regs used in _rand: [wreg+status,2+status,0+pclath+cstack]
+  2054  04EE  1283               	bcf	3,5	;RP0=0, select bank0
+  2055  04EF  1303               	bcf	3,6	;RP1=0, select bank0
+  2056  04F0  083F               	movf	_randx+3,w
+  2057  04F1  00F3               	movwf	___lmul@multiplier+3
+  2058  04F2  083E               	movf	_randx+2,w
+  2059  04F3  00F2               	movwf	___lmul@multiplier+2
+  2060  04F4  083D               	movf	_randx+1,w
+  2061  04F5  00F1               	movwf	___lmul@multiplier+1
+  2062  04F6  083C               	movf	_randx,w
+  2063  04F7  00F0               	movwf	___lmul@multiplier
+  2064  04F8  3041               	movlw	65
+  2065  04F9  00F7               	movwf	___lmul@multiplicand+3
+  2066  04FA  30C6               	movlw	198
+  2067  04FB  00F6               	movwf	___lmul@multiplicand+2
+  2068  04FC  304E               	movlw	78
+  2069  04FD  00F5               	movwf	___lmul@multiplicand+1
+  2070  04FE  306D               	movlw	109
+  2071  04FF  00F4               	movwf	___lmul@multiplicand
+  2072  0500  24AF               	fcall	___lmul
+  2073  0501  0873               	movf	?___lmul+3,w
+  2074  0502  1283               	bcf	3,5	;RP0=0, select bank0
+  2075  0503  1303               	bcf	3,6	;RP1=0, select bank0
+  2076  0504  00BF               	movwf	_randx+3
+  2077  0505  0872               	movf	?___lmul+2,w
+  2078  0506  00BE               	movwf	_randx+2
+  2079  0507  0871               	movf	?___lmul+1,w
+  2080  0508  00BD               	movwf	_randx+1
+  2081  0509  0870               	movf	?___lmul,w
+  2082  050A  00BC               	movwf	_randx
+  2083  050B  3039               	movlw	57
+  2084  050C  07BC               	addwf	_randx,f
+  2085  050D  3030               	movlw	48
+  2086  050E  1803               	skipnc
+  2087  050F  3031               	movlw	49
+  2088  0510  07BD               	addwf	_randx+1,f
+  2089  0511  3000               	movlw	0
+  2090  0512  1803               	skipnc
+  2091  0513  3001               	movlw	1
+  2092  0514  07BE               	addwf	_randx+2,f
+  2093  0515  3000               	movlw	0
+  2094  0516  1803               	skipnc
+  2095  0517  3001               	movlw	1
+  2096  0518  07BF               	addwf	_randx+3,f
+  2097  0519  083C               	movf	_randx,w
+  2098  051A  00A2               	movwf	??_rand
+  2099  051B  083D               	movf	_randx+1,w
+  2100  051C  00A3               	movwf	??_rand+1
+  2101  051D  083E               	movf	_randx+2,w
+  2102  051E  00A4               	movwf	??_rand+2
+  2103  051F  083F               	movf	_randx+3,w
+  2104  0520  00A5               	movwf	??_rand+3
+  2105  0521  3010               	movlw	16
+  2106  0522  00A6               	movwf	??_rand+4
+  2107  0523                     u865:	
+  2108  0523  0D25               	rlf	??_rand+3,w
+  2109  0524  0CA5               	rrf	??_rand+3,f
+  2110  0525  0CA4               	rrf	??_rand+2,f
+  2111  0526  0CA3               	rrf	??_rand+1,f
+  2112  0527  0CA2               	rrf	??_rand,f
+  2113  0528  0BA6               	decfsz	??_rand+4,f
+  2114  0529  2D23               	goto	u865
+  2115  052A  30FF               	movlw	255
+  2116  052B  0522               	andwf	??_rand,w
+  2117  052C  00A0               	movwf	?_rand
+  2118  052D  307F               	movlw	127
+  2119  052E  0523               	andwf	??_rand+1,w
+  2120  052F  00A1               	movwf	?_rand+1
+  2121  0530  0008               	return
+  2122  0531                     __end_of_rand:	
+  2123                           
+  2124                           	psect	text10
+  2125  04AF                     __ptext10:	
+  2126 ;; *************** function ___lmul *****************
+  2127 ;; Defined at:
+  2128 ;;		line 15 in file "C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\Umul32.c"
+  2129 ;; Parameters:    Size  Location     Type
+  2130 ;;  multiplier      4    0[COMMON] unsigned long 
+  2131 ;;  multiplicand    4    4[COMMON] unsigned long 
+  2132 ;; Auto vars:     Size  Location     Type
+  2133 ;;  product         4    9[COMMON] unsigned long 
+  2134 ;; Return value:  Size  Location     Type
+  2135 ;;                  4    0[COMMON] unsigned long 
+  2136 ;; Registers used:
+  2137 ;;		wreg, status,2, status,0
+  2138 ;; Tracked objects:
+  2139 ;;		On entry : 0/0
+  2140 ;;		On exit  : 0/0
+  2141 ;;		Unchanged: 0/0
+  2142 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2
+  2143 ;;      Params:         8       0       0       0
+  2144 ;;      Locals:         4       0       0       0
+  2145 ;;      Temps:          1       0       0       0
+  2146 ;;      Totals:        13       0       0       0
+  2147 ;;Total ram usage:       13 bytes
+  2148 ;; Hardware stack levels used:    1
+  2149 ;; This function calls:
+  2150 ;;		Nothing
+  2151 ;; This function is called by:
+  2152 ;;		_rand
+  2153 ;; This function uses a non-reentrant model
+  2154 ;;
+  2155                           
+  2156                           
+  2157                           ;psect for function ___lmul
+  2158  04AF                     ___lmul:	
+  2159                           
+  2160                           ;incstack = 0
+  2161                           ; Regs used in ___lmul: [wreg+status,2+status,0]
+  2162  04AF  3000               	movlw	0
+  2163  04B0  00FC               	movwf	___lmul@product+3
+  2164  04B1  3000               	movlw	0
+  2165  04B2  00FB               	movwf	___lmul@product+2
+  2166  04B3  3000               	movlw	0
+  2167  04B4  00FA               	movwf	___lmul@product+1
+  2168  04B5  3000               	movlw	0
+  2169  04B6  00F9               	movwf	___lmul@product
+  2170  04B7                     l1184:	
+  2171  04B7  1C70               	btfss	___lmul@multiplier,0
+  2172  04B8  2CCD               	goto	l1188
+  2173  04B9  0874               	movf	___lmul@multiplicand,w
+  2174  04BA  07F9               	addwf	___lmul@product,f
+  2175  04BB  0875               	movf	___lmul@multiplicand+1,w
+  2176  04BC  1103               	clrz
+  2177  04BD  1803               	skipnc
+  2178  04BE  3E01               	addlw	1
+  2179  04BF  1D03               	btfss	3,2
+  2180  04C0  07FA               	addwf	___lmul@product+1,f
+  2181  04C1  0876               	movf	___lmul@multiplicand+2,w
+  2182  04C2  1103               	clrz
+  2183  04C3  1803               	skipnc
+  2184  04C4  3E01               	addlw	1
+  2185  04C5  1D03               	btfss	3,2
+  2186  04C6  07FB               	addwf	___lmul@product+2,f
+  2187  04C7  0877               	movf	___lmul@multiplicand+3,w
+  2188  04C8  1103               	clrz
+  2189  04C9  1803               	skipnc
+  2190  04CA  3E01               	addlw	1
+  2191  04CB  1D03               	btfss	3,2
+  2192  04CC  07FC               	addwf	___lmul@product+3,f
+  2193  04CD                     l1188:	
+  2194  04CD  3001               	movlw	1
+  2195  04CE  00F8               	movwf	??___lmul
+  2196  04CF                     u765:	
+  2197  04CF  1003               	clrc
+  2198  04D0  0DF4               	rlf	___lmul@multiplicand,f
+  2199  04D1  0DF5               	rlf	___lmul@multiplicand+1,f
+  2200  04D2  0DF6               	rlf	___lmul@multiplicand+2,f
+  2201  04D3  0DF7               	rlf	___lmul@multiplicand+3,f
+  2202  04D4  0BF8               	decfsz	??___lmul,f
+  2203  04D5  2CCF               	goto	u765
+  2204  04D6  3001               	movlw	1
+  2205  04D7                     u775:	
+  2206  04D7  1003               	clrc
+  2207  04D8  0CF3               	rrf	___lmul@multiplier+3,f
+  2208  04D9  0CF2               	rrf	___lmul@multiplier+2,f
+  2209  04DA  0CF1               	rrf	___lmul@multiplier+1,f
+  2210  04DB  0CF0               	rrf	___lmul@multiplier,f
+  2211  04DC  3EFF               	addlw	-1
+  2212  04DD  1D03               	skipz
+  2213  04DE  2CD7               	goto	u775
+  2214  04DF  0873               	movf	___lmul@multiplier+3,w
+  2215  04E0  0472               	iorwf	___lmul@multiplier+2,w
+  2216  04E1  0471               	iorwf	___lmul@multiplier+1,w
+  2217  04E2  0470               	iorwf	___lmul@multiplier,w
+  2218  04E3  1D03               	skipz
+  2219  04E4  2CB7               	goto	l1184
+  2220  04E5  087C               	movf	___lmul@product+3,w
+  2221  04E6  00F3               	movwf	?___lmul+3
+  2222  04E7  087B               	movf	___lmul@product+2,w
+  2223  04E8  00F2               	movwf	?___lmul+2
+  2224  04E9  087A               	movf	___lmul@product+1,w
+  2225  04EA  00F1               	movwf	?___lmul+1
+  2226  04EB  0879               	movf	___lmul@product,w
+  2227  04EC  00F0               	movwf	?___lmul
+  2228  04ED  0008               	return
+  2229  04EE                     __end_of___lmul:	
+  2230  007E                     btemp	set	126	;btemp
+  2231  007E                     wtemp0	set	126
+
+
+Data Sizes:
+    Strings     0
+    Constant    0
+    Data        6
+    BSS         87
+    Persistent  0
+    Stack       0
+
+Auto Spaces:
+    Space          Size  Autos    Used
+    COMMON           14     14      14
+    BANK0            80     21      34
+    BANK1            80      0      80
+    BANK2            48      0       0
+
+Pointer List with Targets:
+
+    verificacion@arreglo	PTR int  size(1) Largest target is 80
+		 -> sec(BANK1[80]), 
+
+    secuencia@arreglo	PTR int  size(1) Largest target is 80
+		 -> sec(BANK1[80]), 
+
+
+Critical Paths under _main in COMMON
+
+    _main->_secuencia
+    _inicio->_secuencia
+    _verificacion->_antirrebote
+    _secuencia->_Delay_ms
+    _rand->___lmul
+
+Critical Paths under _main in BANK0
+
+    _main->_inicio
+    _inicio->_rand
+
+Critical Paths under _main in BANK1
+
+    None.
+
+Critical Paths under _main in BANK2
+
+    None.
+
+Call Graph Tables:
+
+ ---------------------------------------------------------------------------------
+ (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+ ---------------------------------------------------------------------------------
+ (0) _main                                                 5     5      0    3296
+                                             16 BANK0      5     5      0
+                        _antirrebote
+                             _inicio
+                          _secuencia
+ ---------------------------------------------------------------------------------
+ (1) _inicio                                               9     7      2    2141
+                                              7 BANK0      9     7      2
+                        _antirrebote
+                               _rand
+                            _reseteo
+                          _secuencia
+                              _srand
+                    _valor_aleatorio
+                       _verificacion
+ ---------------------------------------------------------------------------------
+ (2) _verificacion                                         7     6      1     313
+                                              2 COMMON     7     6      1
+                        _antirrebote
+ ---------------------------------------------------------------------------------
+ (3) _antirrebote                                          2     2      0       0
+                                              0 COMMON     2     2      0
+ ---------------------------------------------------------------------------------
+ (2) _valor_aleatorio                                      8     6      2     145
+                                              0 COMMON     8     6      2
+ ---------------------------------------------------------------------------------
+ (2) _srand                                                2     0      2      98
+                                              0 COMMON     2     0      2
+ ---------------------------------------------------------------------------------
+ (1) _secuencia                                           10     7      3    1128
+                                              4 COMMON    10     7      3
+                           _Delay_ms
+ ---------------------------------------------------------------------------------
+ (2) _Delay_ms                                             4     2      2     426
+                                              0 COMMON     4     2      2
+ ---------------------------------------------------------------------------------
+ (2) _reseteo                                              3     3      0       0
+                                              0 COMMON     3     3      0
+ ---------------------------------------------------------------------------------
+ (2) _rand                                                 7     5      2     244
+                                              0 BANK0      7     5      2
+                             ___lmul
+ ---------------------------------------------------------------------------------
+ (3) ___lmul                                              13     5      8     244
+                                              0 COMMON    13     5      8
+ ---------------------------------------------------------------------------------
+ Estimated maximum stack depth 3
+ ---------------------------------------------------------------------------------
+
+ Call Graph Graphs:
+
+ _main (ROOT)
+   _antirrebote
+   _inicio
+     _antirrebote
+     _rand
+       ___lmul
+     _reseteo
+     _secuencia
+       _Delay_ms
+     _srand
+     _valor_aleatorio
+     _verificacion
+       _antirrebote
+   _secuencia
+     _Delay_ms
+
+ Address spaces:
+Name               Size   Autos  Total    Cost      Usage
+SFR3                 0      0       0       4        0.0%
+BITSFR3              0      0       0       4        0.0%
+BANK2               30      0       0       9        0.0%
+BITBANK2            30      0       0       8        0.0%
+SFR2                 0      0       0       5        0.0%
+BITSFR2              0      0       0       5        0.0%
+BANK1               50      0      50       7      100.0%
+BITBANK1            50      0       0       6        0.0%
+SFR1                 0      0       0       2        0.0%
+BITSFR1              0      0       0       2        0.0%
+BANK0               50     15      22       3       42.5%
+BITBANK0            50      0       0       5        0.0%
+SFR0                 0      0       0       1        0.0%
+BITSFR0              0      0       0       1        0.0%
+COMMON               E      E       E       1      100.0%
+BITCOMMON            E      0       0       0        0.0%
+CODE                 0      0       0       0        0.0%
+DATA                 0      0      80      10        0.0%
+ABS                  0      0      80       4        0.0%
+NULL                 0      0       0       0        0.0%
+STACK                0      0       0       2        0.0%
+EEDATA              80      0       0       0        0.0%
+
+
+Microchip Technology PIC Macro Assembler V2.05 build -831301201 
+Symbol Table                                                                                   Mon Sep 09 19:18:35 2019
+
+            ?_antirrebote 0070                         _t 0039               __CFG_CP$OFF 0000  
+                      l66 0573                        l87 061C                        fsr 0004  
+      inicio@tiempo_delay 002C                       l103 06D5                       l111 0701  
+                     l120 071F                       l122 073F                       l131 075D  
+                     l115 0705                       l116 071A                       l133 077D  
+                     l142 079B                       l126 0743                       l127 0758  
+                     l144 07BB                       l153 07D9                       l137 0781  
+                     l138 0796                       l172 047A                       l148 07BF  
+                     l149 07D4                       _RA0 0028                       _RA1 0029  
+                     _RB0 0030                       _RA2 002A                       _RB1 0031  
+                     _RA3 002B                       _RB2 0032                       _RB3 0033  
+                     _RB5 0035              __CFG_CPD$OFF 0000                       u735 043E  
+                     u835 0658                       u765 04CF                       u775 04D7  
+                     u855 048D                       u865 0523          valor_aleatorio@c 0076  
+                     _sec 00A0                       fsr0 0004                       indf 0000  
+            __CFG_LVP$OFF 0000                      l1300 073A                      l1208 0678  
+                    l1240 0651                      l1218 0697                      l1162 041B  
+                    l1330 0778                      l1180 0435                      l1228 06B6  
+                    l1324 075F                      l1500 058F                      l1326 0760  
+                    l1270 06FC                      l1502 0591                      l1510 05AD  
+                    l1184 04B7                      l1360 07B6                      l1504 0593  
+                    l1354 079D                      l1266 06E5                      l1450 0646  
+                    l1188 04CD                      l1356 079E                      l1508 0598  
+                    l1460 053B                      l1294 0721                      l1454 05C9  
+                    l1392 07E7                      l1384 07DB                      l1296 0722  
+                    l1448 0642                      l1386 07DC                      l1474 056F  
+                    l1388 07E0                      l1548 059F                      l1492 0585  
+                    l1484 0579                      l1476 0544                      l1496 058B  
+                    l1488 057F                      l1498 058D                      u1407 063C  
+                    u1417 06F6                      u1507 0442                      u1427 0710  
+                    u1517 0459                      u1437 0734                      u1527 046D  
+                    u1447 074E                      u1457 0772                      u1377 0555  
+                    u1467 078C                      u1387 0569                      u1477 07B0  
+                    u1397 0628                      u1487 07CA                      u1497 041F  
+                    _cont 003B                      _main 0531                      _rand 04EE  
+                    btemp 007E                      start 0000             __CFG_MCLRE$ON 0000  
+                   ?_main 0070                     ?_rand 0020             __CFG_WDTE$OFF 0000  
+                   _CMCON 001F                     _TRISA 0085                     _TRISB 0086  
+     ___lmul@multiplicand 0074                     _randx 003C                     _srand 0412  
+          __CFG_BOREN$OFF 0000           __end_of_reseteo 0475                     status 0003  
+                   wtemp0 007E          __end_of_Delay_ms 044C           __initialization 07E9  
+            __end_of_main 05BF              __end_of_rand 0531                    ??_main 0030  
+                  ??_rand 0022               inicio@error 002E                    ?_srand 0070  
+           verificacion@x 0078            __CFG_PWRTE$OFF 0000                    ___lmul 04AF  
+                  _inicio 05BF      __size_of_antirrebote 0018           _valor_aleatorio 0475  
+ valor_aleatorio@contador 0075                 ??_reseteo 0070                    srand@x 0070  
+ __end_of__initialization 07FE            __pcstackCOMMON 0070              __pidataBANK0 0404  
+           __end_of_srand 041B                 ?_Delay_ms 0070                   ??_srand 0072  
+              __pbssBANK0 0035                __pbssBANK1 00A0              inicio@tiempo 0027  
+ __end_of_valor_aleatorio 04AF                __pmaintext 0531                   ?___lmul 0070  
+      __size_of_secuencia 0093                   ?_inicio 0027            ___lmul@product 0079  
+              ??_Delay_ms 0072      verificacion@cantidad 0072      valor_aleatorio@valor 0070  
+         __size_of___lmul 003F           __size_of_inicio 008F                   __ptext1 05BF  
+                 __ptext2 06E1                   __ptext3 041B                   __ptext4 0475  
+                 __ptext5 0412                   __ptext6 064E                   __ptext7 0433  
+                 __ptext8 044C                   __ptext9 04EE                   _reseteo 044C  
+                 _valores 0037                   clrloop0 040B      end_of_initialization 07FE  
+       __end_of_secuencia 06E1                   inicio@i 002F                 Delay_ms@i 0073  
+        ?_valor_aleatorio 0070             ?_verificacion 0072             ??_antirrebote 0070  
+          __end_of___lmul 04EE            __end_of_inicio 064E       start_initialization 07E9  
+          ??_verificacion 0073         __size_of_Delay_ms 0019   Delay_ms@tiempo_de_delay 0070  
+                ??___lmul 0078               __pdataBANK0 003C                  ??_inicio 0029  
+     __end_of_antirrebote 0433                 ___latbits 0000             __pcstackBANK0 0020  
+              secuencia@j 007C       verificacion@arreglo 0076         secuencia@contador 0076  
+                ?_reseteo 0070            __size_of_srand 0009                 clear_ram0 040A  
+               _secuencia 064E           verificacion@aux 0077               _antirrebote 041B  
+    __end_of_verificacion 07E9                 _ult_valor 0035                 main@nivel 0033  
+                _Delay_ms 0433         ___lmul@multiplier 0070                ?_secuencia 0074  
+__size_of_valor_aleatorio 003A                  __ptext10 04AF          __size_of_reseteo 0029  
+        secuencia@arreglo 007B             __size_of_main 008E             __size_of_rand 0043  
+             ??_secuencia 0077     __size_of_verificacion 0108           secuencia@tiempo 0074  
+             _valor_aleat 0040         ??_valor_aleatorio 0072        __CFG_FOSC$INTOSCIO 0000  
+            _verificacion 06E1  

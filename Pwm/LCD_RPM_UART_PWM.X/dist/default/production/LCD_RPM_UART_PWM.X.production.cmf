@@ -1,0 +1,1407 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\aguat\AppData\Local\Temp\s9a4.o
+reset_vec CODE 0 0 0 3 2
+end_init CODE 0 10 10 3 2
+config CONFIG 4 2007 2007 1 2
+$dist/default/production\LCD_RPM_UART_PWM.X.production.o
+cinit CODE 0 13 13 10 2
+text1 CODE 0 E4F E4F 1B1 2
+text2 CODE 0 13C9 13C9 E 2
+text3 CODE 0 141C 141C 21 2
+text4 CODE 0 14B3 14B3 32 2
+text5 CODE 0 800 800 3C 2
+text6 CODE 0 13E8 13E8 13 2
+text7 CODE 0 13D7 13D7 11 2
+text8 CODE 0 143D 143D 22 2
+text9 CODE 0 13A9 13A9 7 2
+text10 CODE 0 1625 1625 71 2
+text11 CODE 0 23 23 2F5 2
+text12 CODE 0 145F 145F 23 2
+text13 CODE 0 13BB 13BB E 2
+text14 CODE 0 77A 77A 86 2
+text15 CODE 0 318 318 26E 2
+text16 CODE 0 170C 170C 79 2
+text17 CODE 0 1696 1696 76 2
+text18 CODE 0 139C 139C 6 2
+text19 CODE 0 1396 1396 6 2
+text20 CODE 0 BA9 BA9 105 2
+text21 CODE 0 AA4 AA4 105 2
+text22 CODE 0 94E 94E A3 2
+text23 CODE 0 1785 1785 7B 2
+text24 CODE 0 9F1 9F1 B3 2
+text25 CODE 0 CAE CAE 1A1 2
+text26 CODE 0 13FB 13FB 21 2
+text27 CODE 0 15B9 15B9 6C 2
+text28 CODE 0 1482 1482 31 2
+text29 CODE 0 83C 83C 80 2
+text30 CODE 0 1555 1555 64 2
+text31 CODE 0 151C 151C 39 2
+text32 CODE 0 14E5 14E5 37 2
+text33 CODE 0 13B0 13B0 B 2
+text34 CODE 0 8BC 8BC 92 2
+text35 CODE 0 13A2 13A2 7 2
+text36 CODE 0 1390 1390 6 2
+idataCOMMON CODE 0 3 3 1 2
+maintext CODE 0 586 586 1F4 2
+cstackCOMMON COMMON 1 70 70 6 1
+cstackBANK0 BANK0 1 20 20 50 1
+cstackBANK1 BANK1 1 A0 A0 29 1
+intentry CODE 0 4 4 C 2
+bssBANK1 BANK1 1 C9 C9 5 1
+strings STRING 0 1000 1000 44 2
+dataCOMMON COMMON 1 78 78 1 1
+bssCOMMON COMMON 1 76 76 2 1
+config CONFIG 4 2007 2007 1 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM CE-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK1 CE-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 1044-138F 2
+CONST 1800-1FFF 2
+ENTRY 1044-138F 2
+ENTRY 1800-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 1044-138F 2
+CODE 1800-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 79-7D 1
+EEDATA 2100-21FF 2
+STRCODE 1044-138F 2
+STRCODE 1800-1FFF 2
+STRING 1044-138F 2
+STRING 1800-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\LCD_RPM_UART_PWM.X.production.o
+13 cinit CODE >1092:C:\Users\aguat\AppData\Local\Temp\s9a4.s
+13 cinit CODE >1095:C:\Users\aguat\AppData\Local\Temp\s9a4.s
+13 cinit CODE >1130:C:\Users\aguat\AppData\Local\Temp\s9a4.s
+16 cinit CODE >1131:C:\Users\aguat\AppData\Local\Temp\s9a4.s
+17 cinit CODE >1135:C:\Users\aguat\AppData\Local\Temp\s9a4.s
+18 cinit CODE >1136:C:\Users\aguat\AppData\Local\Temp\s9a4.s
+19 cinit CODE >1137:C:\Users\aguat\AppData\Local\Temp\s9a4.s
+1A cinit CODE >1138:C:\Users\aguat\AppData\Local\Temp\s9a4.s
+1B cinit CODE >1139:C:\Users\aguat\AppData\Local\Temp\s9a4.s
+1C cinit CODE >1140:C:\Users\aguat\AppData\Local\Temp\s9a4.s
+1D cinit CODE >1143:C:\Users\aguat\AppData\Local\Temp\s9a4.s
+1E cinit CODE >1144:C:\Users\aguat\AppData\Local\Temp\s9a4.s
+1F cinit CODE >1150:C:\Users\aguat\AppData\Local\Temp\s9a4.s
+1F cinit CODE >1152:C:\Users\aguat\AppData\Local\Temp\s9a4.s
+20 cinit CODE >1153:C:\Users\aguat\AppData\Local\Temp\s9a4.s
+4 intentry CODE >178:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+1390 text36 CODE >69:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\UART_com.c
+1390 text36 CODE >71:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\UART_com.c
+1394 text36 CODE >72:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\UART_com.c
+1395 text36 CODE >73:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\UART_com.c
+13A2 text35 CODE >38:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\UART_com.c
+13A3 text35 CODE >40:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\UART_com.c
+13A5 text35 CODE >41:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\UART_com.c
+8BC text34 CODE >178:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+8BC text34 CODE >180:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+8BE text34 CODE >183:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+8C0 text34 CODE >185:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+8C2 text34 CODE >187:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+8C4 text34 CODE >188:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+8C5 text34 CODE >193:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+8C9 text34 CODE >196:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+8CA text34 CODE >197:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+8CE text34 CODE >198:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+8CF text34 CODE >199:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+8D0 text34 CODE >202:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+8D1 text34 CODE >203:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+8D5 text34 CODE >206:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+8D7 text34 CODE >210:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+8DF text34 CODE >211:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+8E5 text34 CODE >214:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+8F9 text34 CODE >216:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+90D text34 CODE >218:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+915 text34 CODE >220:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+919 text34 CODE >221:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+91D text34 CODE >224:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+925 text34 CODE >226:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+92D text34 CODE >227:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+92F text34 CODE >228:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+92F text34 CODE >229:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+943 text34 CODE >231:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+945 text34 CODE >235:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+13B0 text33 CODE >83:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+13B0 text33 CODE >85:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+13B1 text33 CODE >86:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+13B4 text33 CODE >87:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+13B7 text33 CODE >88:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+13BA text33 CODE >89:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+14E5 text32 CODE >37:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+14E6 text32 CODE >40:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+14E9 text32 CODE >43:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+14EB text32 CODE >44:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+14F0 text32 CODE >45:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+14F5 text32 CODE >46:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+14F8 text32 CODE >47:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+1506 text32 CODE >48:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+150B text32 CODE >50:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+1511 text32 CODE >52:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+151B text32 CODE >54:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+151C text31 CODE >59:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+151D text31 CODE >62:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+1520 text31 CODE >65:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+1522 text31 CODE >66:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+1527 text31 CODE >67:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+1528 text31 CODE >68:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+152D text31 CODE >69:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+1530 text31 CODE >70:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+153E text31 CODE >71:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+153F text31 CODE >72:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+1544 text31 CODE >74:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+154A text31 CODE >76:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+1554 text31 CODE >78:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+1555 text30 CODE >94:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+1555 text30 CODE >97:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+1556 text30 CODE >99:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+155E text30 CODE >100:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+155F text30 CODE >101:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+1567 text30 CODE >102:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+1568 text30 CODE >103:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+1570 text30 CODE >104:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+1571 text30 CODE >105:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+1579 text30 CODE >106:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+157A text30 CODE >107:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+158D text30 CODE >112:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+159B text30 CODE >113:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+15A2 text30 CODE >114:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+15AA text30 CODE >110:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+83C text29 CODE >6:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+83C text29 CODE >9:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+847 text29 CODE >11:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+84A text29 CODE >13:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+850 text29 CODE >14:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+85B text29 CODE >15:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+865 text29 CODE >18:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+86B text29 CODE >19:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+872 text29 CODE >20:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+878 text29 CODE >21:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+883 text29 CODE >22:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+889 text29 CODE >23:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+890 text29 CODE >24:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+896 text29 CODE >25:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+89D text29 CODE >26:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+8A3 text29 CODE >27:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+8AA text29 CODE >28:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+8B0 text29 CODE >29:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+8BB text29 CODE >32:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+1482 text28 CODE >121:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+1482 text28 CODE >123:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+1483 text28 CODE >125:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+1489 text28 CODE >126:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+148A text28 CODE >127:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+1490 text28 CODE >128:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+1491 text28 CODE >129:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+1497 text28 CODE >130:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+1498 text28 CODE >131:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+149E text28 CODE >132:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+149F text28 CODE >133:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+14B2 text28 CODE >134:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\LCD_control.c
+15B9 text27 CODE >62:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\float.c
+15B9 text27 CODE >64:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\float.c
+15C1 text27 CODE >65:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\float.c
+15C8 text27 CODE >67:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\float.c
+15CC text27 CODE >68:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\float.c
+15D4 text27 CODE >66:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\float.c
+15D9 text27 CODE >71:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\float.c
+15DD text27 CODE >72:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\float.c
+15E7 text27 CODE >73:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\float.c
+15EF text27 CODE >70:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\float.c
+15F4 text27 CODE >75:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\float.c
+15F8 text27 CODE >76:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\float.c
+15FA text27 CODE >77:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\float.c
+1602 text27 CODE >75:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\float.c
+1604 text27 CODE >79:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\float.c
+1606 text27 CODE >80:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\float.c
+160C text27 CODE >81:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\float.c
+160E text27 CODE >82:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\float.c
+1620 text27 CODE >83:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\float.c
+1623 text27 CODE >84:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\float.c
+1624 text27 CODE >86:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\float.c
+13FB text26 CODE >32:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\awtoft.c
+13FB text26 CODE >36:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\awtoft.c
+13FC text26 CODE >37:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\awtoft.c
+13FE text26 CODE >38:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\awtoft.c
+1403 text26 CODE >39:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\awtoft.c
+1405 text26 CODE >41:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\awtoft.c
+141B text26 CODE >42:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\awtoft.c
+CAE text25 CODE >8:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+CAE text25 CODE >26:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+CB3 text25 CODE >27:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+CB9 text25 CODE >28:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+CBA text25 CODE >29:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+CBB text25 CODE >33:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+CBE text25 CODE >35:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+CC1 text25 CODE >37:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+CC9 text25 CODE >40:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+CCA text25 CODE >42:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+CCB text25 CODE >43:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+CCC text25 CODE >46:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+CD4 text25 CODE >49:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+CD9 text25 CODE >50:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+CDF text25 CODE >51:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+CE0 text25 CODE >52:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+CE1 text25 CODE >56:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+CE4 text25 CODE >58:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+CE7 text25 CODE >60:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+CEF text25 CODE >63:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+CF0 text25 CODE >65:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+CF1 text25 CODE >66:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+CF2 text25 CODE >69:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+CFA text25 CODE >70:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+CFA text25 CODE >75:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+D00 text25 CODE >76:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+D08 text25 CODE >77:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+D0C text25 CODE >78:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+D10 text25 CODE >79:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+D19 text25 CODE >83:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+D1C text25 CODE >85:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+D25 text25 CODE >89:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+D37 text25 CODE >92:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+D3F text25 CODE >93:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+D47 text25 CODE >94:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+D4F text25 CODE >96:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+D50 text25 CODE >97:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+D54 text25 CODE >100:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+D57 text25 CODE >101:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+D60 text25 CODE >102:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+D69 text25 CODE >103:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+D6A text25 CODE >104:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+D6B text25 CODE >106:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+D74 text25 CODE >112:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+D84 text25 CODE >115:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+D85 text25 CODE >116:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+D93 text25 CODE >118:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+D97 text25 CODE >97:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+D98 text25 CODE >122:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+D9D text25 CODE >123:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+D9E text25 CODE >127:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+DA0 text25 CODE >128:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+DA9 text25 CODE >129:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+DAA text25 CODE >130:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+DAB text25 CODE >132:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+DB4 text25 CODE >133:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+DBA text25 CODE >127:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+DBB text25 CODE >139:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+DBC text25 CODE >140:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+DBE text25 CODE >141:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+DCF text25 CODE >145:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+DD2 text25 CODE >142:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+DD4 text25 CODE >150:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+DD7 text25 CODE >151:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+DE5 text25 CODE >152:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+DE7 text25 CODE >153:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+E00 text25 CODE >154:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+E06 text25 CODE >159:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+E11 text25 CODE >160:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+E17 text25 CODE >161:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+E1F text25 CODE >165:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+E2C text25 CODE >166:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+E30 text25 CODE >167:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+E38 text25 CODE >169:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+E39 text25 CODE >173:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+E3F text25 CODE >175:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+E41 text25 CODE >176:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+E42 text25 CODE >177:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+E43 text25 CODE >180:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+E47 text25 CODE >181:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+E47 text25 CODE >182:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcdiv.c
+9F1 text24 CODE >62:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\ftmul.c
+9F1 text24 CODE >67:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\ftmul.c
+A00 text24 CODE >68:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\ftmul.c
+A07 text24 CODE >69:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\ftmul.c
+A16 text24 CODE >70:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\ftmul.c
+A1D text24 CODE >71:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\ftmul.c
+A22 text24 CODE >72:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\ftmul.c
+A26 text24 CODE >73:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\ftmul.c
+A2A text24 CODE >74:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\ftmul.c
+A2E text24 CODE >75:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\ftmul.c
+A2F text24 CODE >77:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\ftmul.c
+A30 text24 CODE >78:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\ftmul.c
+A36 text24 CODE >79:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\ftmul.c
+A3C text24 CODE >134:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\ftmul.c
+A40 text24 CODE >136:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\ftmul.c
+A42 text24 CODE >137:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\ftmul.c
+A50 text24 CODE >138:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\ftmul.c
+A58 text24 CODE >139:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\ftmul.c
+A60 text24 CODE >140:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\ftmul.c
+A64 text24 CODE >143:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\ftmul.c
+A68 text24 CODE >145:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\ftmul.c
+A6A text24 CODE >146:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\ftmul.c
+A78 text24 CODE >147:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\ftmul.c
+A80 text24 CODE >148:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\ftmul.c
+A88 text24 CODE >149:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\ftmul.c
+A8C text24 CODE >156:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\ftmul.c
+AA3 text24 CODE >157:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\ftmul.c
+1785 text23 CODE >44:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fttol.c
+1785 text23 CODE >49:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fttol.c
+1794 text23 CODE >50:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fttol.c
+179D text23 CODE >51:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fttol.c
+17AF text23 CODE >52:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fttol.c
+17B0 text23 CODE >53:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fttol.c
+17B6 text23 CODE >54:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fttol.c
+17BD text23 CODE >55:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fttol.c
+17BF text23 CODE >56:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fttol.c
+17C1 text23 CODE >57:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fttol.c
+17C6 text23 CODE >60:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fttol.c
+17CF text23 CODE >61:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fttol.c
+17D6 text23 CODE >63:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fttol.c
+17DA text23 CODE >65:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fttol.c
+17DA text23 CODE >68:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fttol.c
+17DD text23 CODE >66:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fttol.c
+17E6 text23 CODE >67:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fttol.c
+17E8 text23 CODE >65:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fttol.c
+17E9 text23 CODE >70:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fttol.c
+17EC text23 CODE >71:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fttol.c
+17F7 text23 CODE >72:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fttol.c
+17FF text23 CODE >73:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fttol.c
+94E text22 CODE >10:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\xxtofl.c
+94F text22 CODE >15:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\xxtofl.c
+953 text22 CODE >16:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\xxtofl.c
+962 text22 CODE >17:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\xxtofl.c
+963 text22 CODE >19:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\xxtofl.c
+96B text22 CODE >20:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\xxtofl.c
+96B text22 CODE >21:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\xxtofl.c
+971 text22 CODE >22:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\xxtofl.c
+97A text22 CODE >23:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\xxtofl.c
+97E text22 CODE >24:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\xxtofl.c
+982 text22 CODE >25:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\xxtofl.c
+986 text22 CODE >26:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\xxtofl.c
+98F text22 CODE >24:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\xxtofl.c
+990 text22 CODE >29:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\xxtofl.c
+994 text22 CODE >30:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\xxtofl.c
+9A2 text22 CODE >31:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\xxtofl.c
+9AB text22 CODE >28:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\xxtofl.c
+9B0 text22 CODE >33:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\xxtofl.c
+9B4 text22 CODE >34:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\xxtofl.c
+9B6 text22 CODE >35:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\xxtofl.c
+9BF text22 CODE >33:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\xxtofl.c
+9C1 text22 CODE >37:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\xxtofl.c
+9C3 text22 CODE >38:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\xxtofl.c
+9CB text22 CODE >39:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\xxtofl.c
+9CD text22 CODE >40:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\xxtofl.c
+9E3 text22 CODE >41:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\xxtofl.c
+9E7 text22 CODE >42:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\xxtofl.c
+9E8 text22 CODE >43:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\xxtofl.c
+9F0 text22 CODE >44:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\xxtofl.c
+AA4 text21 CODE >47:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+AA5 text21 CODE >49:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+AB1 text21 CODE >53:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+AE0 text21 CODE >55:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+AE8 text21 CODE >57:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+B43 text21 CODE >61:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+B73 text21 CODE >62:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+B82 text21 CODE >64:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+B87 text21 CODE >72:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+B97 text21 CODE >87:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+B98 text21 CODE >90:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+BA8 text21 CODE >108:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+BA9 text20 CODE >153:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+BAA text20 CODE >155:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+BB6 text20 CODE >159:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+BE5 text20 CODE >161:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+BED text20 CODE >163:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+C48 text20 CODE >167:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+C78 text20 CODE >168:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+C87 text20 CODE >169:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+C8C text20 CODE >170:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+C9C text20 CODE >171:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+C9D text20 CODE >172:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+CAD text20 CODE >175:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+1396 text19 CODE >113:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+1396 text19 CODE >115:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+1398 text19 CODE >116:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+1399 text19 CODE >117:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+139A text19 CODE >118:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+139B text19 CODE >121:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+139C text18 CODE >180:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+139C text18 CODE >182:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+139E text18 CODE >183:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+139F text18 CODE >184:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+13A0 text18 CODE >185:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+13A1 text18 CODE >188:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+1696 text17 CODE >43:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fltol.c
+1696 text17 CODE >47:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fltol.c
+16A0 text17 CODE >48:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fltol.c
+16AA text17 CODE >49:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fltol.c
+16C1 text17 CODE >50:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fltol.c
+16C3 text17 CODE >51:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fltol.c
+16CB text17 CODE >52:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fltol.c
+16CE text17 CODE >53:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fltol.c
+16D0 text17 CODE >54:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fltol.c
+16D5 text17 CODE >57:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fltol.c
+16DF text17 CODE >58:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fltol.c
+16E7 text17 CODE >60:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fltol.c
+16EB text17 CODE >62:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fltol.c
+16EB text17 CODE >65:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fltol.c
+16EE text17 CODE >63:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fltol.c
+16F8 text17 CODE >64:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fltol.c
+16FB text17 CODE >62:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fltol.c
+16FC text17 CODE >67:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fltol.c
+16FF text17 CODE >68:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fltol.c
+170B text17 CODE >70:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\fltol.c
+170C text16 CODE >8:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+170C text16 CODE >13:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+173B text16 CODE >14:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+173F text16 CODE >18:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+1778 text16 CODE >19:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+177A text16 CODE >20:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+177B text16 CODE >21:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+177C text16 CODE >27:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+177E text16 CODE >30:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+1780 text16 CODE >31:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+1781 text16 CODE >32:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+1782 text16 CODE >35:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+1783 text16 CODE >36:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+1784 text16 CODE >40:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+318 text15 CODE >10:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+318 text15 CODE >21:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+31D text15 CODE >22:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+325 text15 CODE >23:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+326 text15 CODE >24:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+327 text15 CODE >28:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+32A text15 CODE >30:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+32D text15 CODE >32:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+335 text15 CODE >35:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+336 text15 CODE >37:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+337 text15 CODE >38:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+338 text15 CODE >41:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+340 text15 CODE >44:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+345 text15 CODE >46:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+348 text15 CODE >47:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+349 text15 CODE >49:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+351 text15 CODE >50:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+352 text15 CODE >51:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+353 text15 CODE >55:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+356 text15 CODE >57:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+359 text15 CODE >59:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+361 text15 CODE >62:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+362 text15 CODE >64:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+363 text15 CODE >65:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+364 text15 CODE >68:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+36C text15 CODE >69:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+36C text15 CODE >75:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+370 text15 CODE >77:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+372 text15 CODE >78:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+376 text15 CODE >81:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+37A text15 CODE >82:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+37E text15 CODE >83:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+382 text15 CODE >84:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+386 text15 CODE >85:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+38A text15 CODE >86:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+38E text15 CODE >87:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+392 text15 CODE >88:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+396 text15 CODE >89:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+39A text15 CODE >90:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+39E text15 CODE >91:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+3A2 text15 CODE >92:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+3A6 text15 CODE >93:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+3AA text15 CODE >94:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+3AE text15 CODE >95:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+3B2 text15 CODE >98:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+3B3 text15 CODE >100:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+3CB text15 CODE >101:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+3D9 text15 CODE >102:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+3E1 text15 CODE >103:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+3E5 text15 CODE >104:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+3E6 text15 CODE >106:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+3E6 text15 CODE >109:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+3E8 text15 CODE >110:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+3F2 text15 CODE >111:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+3F3 text15 CODE >113:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+3F5 text15 CODE >115:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+3F6 text15 CODE >116:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+3F7 text15 CODE >118:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+403 text15 CODE >119:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+408 text15 CODE >106:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+40E text15 CODE >121:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+40E text15 CODE >124:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+410 text15 CODE >127:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+413 text15 CODE >128:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+41C text15 CODE >132:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+430 text15 CODE >134:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+432 text15 CODE >135:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+434 text15 CODE >136:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+43E text15 CODE >137:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+43F text15 CODE >139:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+441 text15 CODE >141:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+442 text15 CODE >142:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+443 text15 CODE >144:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+44F text15 CODE >145:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+455 text15 CODE >153:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+469 text15 CODE >154:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+4C1 text15 CODE >155:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+4C5 text15 CODE >156:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+4C7 text15 CODE >157:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+4CA text15 CODE >158:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+4D9 text15 CODE >162:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+4E7 text15 CODE >163:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+4E7 text15 CODE >166:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+4F0 text15 CODE >167:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+4F9 text15 CODE >172:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+505 text15 CODE >173:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+507 text15 CODE >174:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+508 text15 CODE >176:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+50A text15 CODE >177:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+50C text15 CODE >180:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+50E text15 CODE >182:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+511 text15 CODE >183:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+513 text15 CODE >171:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+515 text15 CODE >192:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+516 text15 CODE >193:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+518 text15 CODE >194:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+51B text15 CODE >198:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+51E text15 CODE >195:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+520 text15 CODE >203:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+523 text15 CODE >204:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+531 text15 CODE >205:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+533 text15 CODE >206:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+55A text15 CODE >207:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+55D text15 CODE >208:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+561 text15 CODE >215:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+566 text15 CODE >216:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+56E text15 CODE >218:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+570 text15 CODE >219:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+571 text15 CODE >225:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+573 text15 CODE >226:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+574 text15 CODE >227:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+575 text15 CODE >230:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+579 text15 CODE >231:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+579 text15 CODE >232:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+582 text15 CODE >233:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+584 text15 CODE >234:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+585 text15 CODE >237:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcadd.c
+77A text14 CODE >127:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+77A text14 CODE >132:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+7A9 text14 CODE >135:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+7F6 text14 CODE >136:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+7F8 text14 CODE >137:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+7F9 text14 CODE >138:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+7FA text14 CODE >141:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+7FC text14 CODE >144:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+7FE text14 CODE >145:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+7FF text14 CODE >148:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Libreria pwm.c
+13BB text13 CODE >11:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\RPM.c
+13BB text13 CODE >14:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\RPM.c
+13BE text13 CODE >17:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\RPM.c
+13C0 text13 CODE >18:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\RPM.c
+13C1 text13 CODE >19:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\RPM.c
+13C2 text13 CODE >20:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\RPM.c
+13C3 text13 CODE >23:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\RPM.c
+13C4 text13 CODE >24:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\RPM.c
+13C5 text13 CODE >25:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\RPM.c
+13C7 text13 CODE >26:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\RPM.c
+13C8 text13 CODE >29:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\RPM.c
+145F text12 CODE >4:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\Umul8_16.c
+1460 text12 CODE >5:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\Umul8_16.c
+1462 text12 CODE >6:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\Umul8_16.c
+1469 text12 CODE >51:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\Umul8_16.c
+146B text12 CODE >52:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\Umul8_16.c
+1471 text12 CODE >53:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\Umul8_16.c
+1471 text12 CODE >54:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\Umul8_16.c
+1478 text12 CODE >55:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\Umul8_16.c
+147A text12 CODE >56:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\Umul8_16.c
+147D text12 CODE >59:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\Umul8_16.c
+1481 text12 CODE >60:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\Umul8_16.c
+23 text11 CODE >8:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+23 text11 CODE >17:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+28 text11 CODE >18:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+2E text11 CODE >19:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+2F text11 CODE >20:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+30 text11 CODE >24:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+33 text11 CODE >26:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+36 text11 CODE >28:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+3E text11 CODE >31:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+3F text11 CODE >33:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+40 text11 CODE >36:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+48 text11 CODE >39:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+4D text11 CODE >40:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+53 text11 CODE >41:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+54 text11 CODE >42:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+55 text11 CODE >45:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+58 text11 CODE >48:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+5B text11 CODE >50:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+63 text11 CODE >53:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+64 text11 CODE >54:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+65 text11 CODE >57:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+6D text11 CODE >65:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+72 text11 CODE >66:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+7B text11 CODE >119:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+89 text11 CODE >120:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+96 text11 CODE >121:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+A3 text11 CODE >122:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+B1 text11 CODE >123:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+CA text11 CODE >124:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+E3 text11 CODE >125:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+F1 text11 CODE >126:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+10A text11 CODE >127:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+123 text11 CODE >128:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+12C text11 CODE >129:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+13A text11 CODE >130:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+154 text11 CODE >131:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+162 text11 CODE >132:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+17C text11 CODE >133:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+185 text11 CODE >134:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+193 text11 CODE >135:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+1AD text11 CODE >136:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+1BB text11 CODE >137:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+1D5 text11 CODE >138:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+1E3 text11 CODE >139:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+1FD text11 CODE >140:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+20B text11 CODE >141:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+22E text11 CODE >145:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+247 text11 CODE >146:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+250 text11 CODE >149:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+25D text11 CODE >152:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+25F text11 CODE >153:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+268 text11 CODE >154:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+269 text11 CODE >155:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+26A text11 CODE >157:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+273 text11 CODE >158:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+279 text11 CODE >152:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+27A text11 CODE >163:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+27B text11 CODE >164:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+27D text11 CODE >165:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+28E text11 CODE >169:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+291 text11 CODE >166:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+293 text11 CODE >174:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+296 text11 CODE >175:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+2A4 text11 CODE >176:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+2A6 text11 CODE >177:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+2BF text11 CODE >178:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+2C5 text11 CODE >183:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+2D0 text11 CODE >184:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+2DA text11 CODE >185:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+2DB text11 CODE >187:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+2E8 text11 CODE >188:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+2F2 text11 CODE >190:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+2F3 text11 CODE >191:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+2F4 text11 CODE >194:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+2FA text11 CODE >195:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+302 text11 CODE >196:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+303 text11 CODE >197:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+304 text11 CODE >199:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+30B text11 CODE >200:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+30B text11 CODE >201:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+30F text11 CODE >203:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+317 text11 CODE >205:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\sprcmul.c
+1625 text10 CODE >39:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\RPM.c
+1625 text10 CODE >44:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\RPM.c
+162B text10 CODE >46:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\RPM.c
+162D text10 CODE >47:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\RPM.c
+162E text10 CODE >48:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\RPM.c
+162F text10 CODE >49:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\RPM.c
+1633 text10 CODE >52:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\RPM.c
+166F text10 CODE >53:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\RPM.c
+168F text10 CODE >56:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\RPM.c
+1695 text10 CODE >57:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\RPM.c
+13A9 text9 CODE >38:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\UART_com.c
+13AA text9 CODE >40:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\UART_com.c
+13AC text9 CODE >41:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\UART_com.c
+143D text8 CODE >52:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\UART_com.c
+143D text8 CODE >54:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\UART_com.c
+1449 text8 CODE >56:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\UART_com.c
+1457 text8 CODE >57:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\UART_com.c
+145E text8 CODE >54:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\UART_com.c
+13D7 text7 CODE >10:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\UART_com.c
+13D7 text7 CODE >12:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\UART_com.c
+13D8 text7 CODE >13:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\UART_com.c
+13D9 text7 CODE >14:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\UART_com.c
+13DA text7 CODE >15:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\UART_com.c
+13DB text7 CODE >16:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\UART_com.c
+13DC text7 CODE >17:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\UART_com.c
+13DD text7 CODE >18:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\UART_com.c
+13DF text7 CODE >19:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\UART_com.c
+13E1 text7 CODE >20:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\UART_com.c
+13E2 text7 CODE >21:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\UART_com.c
+13E3 text7 CODE >24:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\UART_com.c
+13E4 text7 CODE >25:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\UART_com.c
+13E6 text7 CODE >26:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\UART_com.c
+13E7 text7 CODE >29:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\UART_com.c
+13E8 text6 CODE >163:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+13E8 text6 CODE >165:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+13F3 text6 CODE >166:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+800 text5 CODE >5:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\lwdiv.c
+800 text5 CODE >13:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\lwdiv.c
+802 text5 CODE >14:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\lwdiv.c
+806 text5 CODE >15:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\lwdiv.c
+808 text5 CODE >16:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\lwdiv.c
+80A text5 CODE >17:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\lwdiv.c
+811 text5 CODE >18:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\lwdiv.c
+815 text5 CODE >16:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\lwdiv.c
+816 text5 CODE >21:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\lwdiv.c
+81D text5 CODE >22:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\lwdiv.c
+825 text5 CODE >23:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\lwdiv.c
+82B text5 CODE >24:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\lwdiv.c
+82C text5 CODE >26:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\lwdiv.c
+833 text5 CODE >27:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\lwdiv.c
+837 text5 CODE >29:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\lwdiv.c
+83B text5 CODE >30:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\lwdiv.c
+14B3 text4 CODE >5:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\lwmod.c
+14B3 text4 CODE >12:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\lwmod.c
+14B7 text4 CODE >13:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\lwmod.c
+14B9 text4 CODE >14:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\lwmod.c
+14BB text4 CODE >15:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\lwmod.c
+14C2 text4 CODE >16:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\lwmod.c
+14C6 text4 CODE >14:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\lwmod.c
+14C7 text4 CODE >19:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\lwmod.c
+14CF text4 CODE >20:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\lwmod.c
+14D5 text4 CODE >21:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\lwmod.c
+14DC text4 CODE >22:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\lwmod.c
+14E0 text4 CODE >24:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\lwmod.c
+14E4 text4 CODE >25:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\lwmod.c
+141C text3 CODE >15:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\Umul16.c
+141C text3 CODE >43:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\Umul16.c
+141E text3 CODE >45:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\Umul16.c
+1420 text3 CODE >46:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\Umul16.c
+1426 text3 CODE >47:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\Umul16.c
+142D text3 CODE >48:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\Umul16.c
+1434 text3 CODE >49:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\Umul16.c
+1438 text3 CODE >52:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\Umul16.c
+143C text3 CODE >53:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\Umul16.c
+13C9 text2 CODE >8:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\isdigit.c
+13CA text2 CODE >14:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\isdigit.c
+13D6 text2 CODE >15:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\isdigit.c
+E4F text1 CODE >505:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+E50 text1 CODE >550:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+E54 text1 CODE >553:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+E64 text1 CODE >555:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+E68 text1 CODE >558:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+E73 text1 CODE >559:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+E74 text1 CODE >563:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+E76 text1 CODE >565:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+E78 text1 CODE >596:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+E78 text1 CODE >597:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+E79 text1 CODE >598:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+E7D text1 CODE >601:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+E90 text1 CODE >614:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+E9E text1 CODE >615:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+EA0 text1 CODE >617:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+EB1 text1 CODE >618:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+EC8 text1 CODE >619:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+ED7 text1 CODE >843:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+ED7 text1 CODE >844:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+ED8 text1 CODE >845:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+ED9 text1 CODE >848:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+EF9 text1 CODE >1277:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+EFB text1 CODE >1285:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+F07 text1 CODE >1287:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+F09 text1 CODE >1288:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+F0D text1 CODE >1289:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+F13 text1 CODE >1312:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+F1F text1 CODE >1331:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+F21 text1 CODE >1332:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+F3A text1 CODE >1333:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+F42 text1 CODE >1371:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+F4A text1 CODE >1372:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+F50 text1 CODE >1407:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+F59 text1 CODE >1408:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+F65 text1 CODE >1410:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+F69 text1 CODE >1413:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+F6B text1 CODE >1418:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+F6F text1 CODE >1419:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+F7A text1 CODE >1441:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+F7E text1 CODE >1443:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+F90 text1 CODE >1450:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+F94 text1 CODE >1456:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+FA9 text1 CODE >1464:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+FAD text1 CODE >1465:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+FB8 text1 CODE >1498:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+FBC text1 CODE >1500:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+FC3 text1 CODE >1515:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+FEF text1 CODE >1550:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+FFA text1 CODE >1500:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+FFB text1 CODE >1564:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+FFF text1 CODE >1567:C:\Program Files (x86)\Microchip\xc8\pic\sources\c90\common\doprnt.c
+586 maintext CODE >49:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+586 maintext CODE >52:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+588 maintext CODE >53:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+58A maintext CODE >54:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+58D maintext CODE >57:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+592 maintext CODE >58:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+597 maintext CODE >59:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+59C maintext CODE >60:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+5A5 maintext CODE >61:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+5AF maintext CODE >72:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+5B5 maintext CODE >73:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+5C8 maintext CODE >74:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+5D9 maintext CODE >75:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+5EA maintext CODE >78:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+5EC maintext CODE >79:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+5ED maintext CODE >80:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+5EF maintext CODE >81:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+5F0 maintext CODE >84:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+5F2 maintext CODE >85:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+5F3 maintext CODE >91:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+5F5 maintext CODE >97:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+607 maintext CODE >98:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+613 maintext CODE >101:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+617 maintext CODE >103:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+625 maintext CODE >104:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+62B maintext CODE >105:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+63E maintext CODE >108:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+642 maintext CODE >110:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+647 maintext CODE >111:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+64E maintext CODE >112:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+667 maintext CODE >113:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+668 maintext CODE >116:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+66D maintext CODE >117:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+674 maintext CODE >118:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+68D maintext CODE >119:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+699 maintext CODE >123:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+69C maintext CODE >125:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+6A1 maintext CODE >126:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+6A6 maintext CODE >127:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+6B7 maintext CODE >128:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+6BA maintext CODE >129:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+6BB maintext CODE >132:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+6CD maintext CODE >135:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+6DE maintext CODE >136:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+6F5 maintext CODE >140:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+6FA maintext CODE >142:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+710 maintext CODE >143:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+721 maintext CODE >145:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+72D maintext CODE >148:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+740 maintext CODE >149:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+751 maintext CODE >151:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+75F maintext CODE >153:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+76A maintext CODE >154:C:\Users\aguat\Documents\MPLAB PROJECTS\Programas\LCD_RPM_UART_PWM.X\Main.c
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_T 76 0 COMMON 1 bssCOMMON dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___latbits 2 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___lwmod@counter 75 0 COMMON 1 cstackCOMMON dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of_PWM_init_1 2F0A 0 CODE 0 text16 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of_PWM_init_2 1000 0 CODE 0 text14 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__Hspace_0 1800 0 ABS 0 - -
+__Hspace_1 CE 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 400F 0 ABS 0 - -
+___awtoft@sign 75 0 COMMON 1 cstackCOMMON dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__end_of_LCD_xy 2966 0 CODE 0 text28 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_of_ventana 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_T1CONbits 10 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_on CA 0 BANK1 1 bssBANK1 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+_INTF 59 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_TMR1 E 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\aguat\AppData\Local\Temp\s9a4.o
+_freq CC 0 BANK1 1 bssBANK1 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_giro CB 0 BANK1 1 bssBANK1 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_main B0C 0 CODE 0 maintext dist/default/production\LCD_RPM_UART_PWM.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+start 20 0 CODE 0 init C:\Users\aguat\AppData\Local\Temp\s9a4.o
+___flmul@aexp 3C 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___flmul@bexp 3D 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___flmul@prod 42 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___flmul@sign 3B 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___flmul@temp 46 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_of___fladd 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_of___fldiv 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_of___flmul 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_of___fltol 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_of___ftmul 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_of___fttol 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_of___lwmod 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+?___wmul 20 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_LCD_date 2A38 0 CODE 0 text31 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_LCD_init 1078 0 CODE 0 text29 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+__size_of_PWM_Stop_1 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_of_PWM_Stop_2 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__HdataCOMMON 0 0 ABS 0 dataCOMMON -
+PWM_init_1@per B6 0 BANK1 1 cstackBANK1 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+PWM_init_2@per B6 0 BANK1 1 cstackBANK1 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\aguat\AppData\Local\Temp\s9a4.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\aguat\AppData\Local\Temp\s9a4.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\aguat\AppData\Local\Temp\s9a4.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\aguat\AppData\Local\Temp\s9a4.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\aguat\AppData\Local\Temp\s9a4.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\aguat\AppData\Local\Temp\s9a4.o
+__end_of_LCD_date 2AAA 0 CODE 0 text31 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of_LCD_init 1178 0 CODE 0 text29 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+wtemp0 7E 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+PWM_1@duty BC 0 BANK1 1 cstackBANK1 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_UART_array 287A 0 CODE 0 text8 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+PWM_2@duty BC 0 BANK1 1 cstackBANK1 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_UART_write 2752 0 CODE 0 text9 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+__pidataCOMMON 6 0 CODE 0 idataCOMMON dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___ftmul@f1 2B 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___ftmul@f2 2E 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___wmul@multiplicand 22 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of__Umul8_16 2904 0 CODE 0 text12 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+LCD_init@i 24 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_of__Umul8_16 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__LdataCOMMON 0 0 ABS 0 dataCOMMON -
+__size_of___awtoft 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of_antirrebote 27F6 0 CODE 0 text6 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_CCP1M2 BA 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_CCP1M3 BB 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_CCP2M2 EA 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_CCP2M3 EB 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_CCPR1L 15 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_CCPR2L 1B 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of___wmul 287A 0 CODE 0 text3 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of_ventana 129C 0 CODE 0 text34 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+main@rpm C7 0 BANK1 1 cstackBANK1 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+UART_array@cadena 20 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___fttol@f1 A0 0 BANK1 1 cstackBANK1 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+__size_of_sprintf 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___fldiv@aexp 61 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___fldiv@bexp 60 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___fldiv@sign 59 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___lwmod@divisor 27 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_of___ftpack 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__Umul8_16 28BE 0 CODE 0 text12 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of___fladd B0C 0 CODE 0 text15 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of___fldiv 1C9E 0 CODE 0 text25 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of___flmul 630 0 CODE 0 text11 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of___fltol 2E18 0 CODE 0 text17 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of___ftmul 1548 0 CODE 0 text24 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of___fttol 3000 0 CODE 0 text23 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of___lwdiv 1078 0 CODE 0 text5 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of___lwmod 29CA 0 CODE 0 text4 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_of_isdigit 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_of_LCD_command 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_INTEDG 40E 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__Umul8_16@multiplicand 20 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\aguat\AppData\Local\Temp\s9a4.o
+___stacklo 0 0 ABS 0 - C:\Users\aguat\AppData\Local\Temp\s9a4.o
+_dpowers 2020 0 STRING 0 strings dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_of_LCD_E 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_of_PWM_1 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_of_PWM_2 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of_UART_array 28BE 0 CODE 0 text8 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___lwdiv@quotient 25 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__LidataCOMMON 0 0 ABS 0 idataCOMMON -
+_LCD_xy 2904 0 CODE 0 text28 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___fladd@a 66 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___fladd@b 62 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___fldiv@a 48 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___fldiv@b 4C 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of_UART_write 2760 0 CODE 0 text9 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___flmul@a 32 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___flmul@b 2E 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+UART_write@dato 75 0 COMMON 1 cstackCOMMON dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___lwmod@dividend 29 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+start_initialization 26 0 CODE 0 cinit dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_of_PWM_init_1 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_of_PWM_init_2 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+PWM_1@pulso_alto B6 0 BANK1 1 cstackBANK1 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___awtoft 27F6 0 CODE 0 text26 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_TRISBbits 86 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_TRISCbits 87 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of___awtoft 2838 0 CODE 0 text26 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__pcstackBANK1 A0 0 BANK1 1 cstackBANK1 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___fttol@exp1 AC 0 BANK1 1 cstackBANK1 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___fttol@lval A8 0 BANK1 1 cstackBANK1 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_TMR1IF 60 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_TMR2ON 92 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___ftpack 2B72 0 CODE 0 text27 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___ftpack@arg 20 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___ftpack@exp 23 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_of_LCD_xy 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\aguat\AppData\Local\Temp\s9a4.o
+__end_of___ftpack 2C4A 0 CODE 0 text27 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 46 0 CODE 0 cinit -
+__end_of_LCD_array 2B72 0 CODE 0 text30 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__Hstack 0 0 STACK 2 stack -
+__stringbase 201E 0 STRING 0 strings dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___lwdiv@counter 24 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+LCD_xy@x 22 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+LCD_xy@y 24 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_of___xxtofl 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_of_LCD_array 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__Hmaintext 0 0 ABS 0 maintext -
+LCD_array@x 22 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+LCD_array@y 24 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___xxtofl@arg 2A 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___xxtofl@exp 29 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___xxtofl@val 20 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of_sprintf 2000 0 CODE 0 text1 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__end_of_isdigit 27AE 0 CODE 0 text2 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__Lcinit 26 0 CODE 0 cinit -
+__Lstack 0 0 STACK 2 stack -
+___flmul@grs 3E 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_PORTBbits 6 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_PORTDbits 8 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_INTCONbits B 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_LCD_array 2AAA 0 CODE 0 text30 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 20 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 20 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+___wmul 2838 0 CODE 0 text3 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__size_of_antirrebote 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_PR2 92 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__S0 1800 0 ABS 0 - -
+__S1 CE 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_pwm C9 0 BANK1 1 bssBANK1 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_of_RPM_init 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_of_RPM_read 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+saved_w 7E 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+PWM_2@pulso_alto B6 0 BANK1 1 cstackBANK1 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___awtoft@c 28 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__HidataCOMMON 0 0 ABS 0 idataCOMMON -
+sprintf@val 33 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___xxtofl 129C 0 CODE 0 text22 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_flanco 78 0 COMMON 1 dataCOMMON dist/default/production\LCD_RPM_UART_PWM.X.production.o
+LCD_command@cmd 75 0 COMMON 1 cstackCOMMON dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__Lintentry 8 0 CODE 0 intentry -
+__stringtab 2000 0 STRING 0 strings dist/default/production\LCD_RPM_UART_PWM.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\aguat\AppData\Local\Temp\s9a4.o
+LCD_date@date 75 0 COMMON 1 cstackCOMMON dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of___xxtofl 13E2 0 CODE 0 text22 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_of___wmul 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+_LCD_command 29CA 0 CODE 0 text32 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+?___awtoft 28 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_ventana 1178 0 CODE 0 text34 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+i1_UART_write 2744 0 CODE 0 text35 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_RCSTAbits 18 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_PIE1bits 8C 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_of_UART_array 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+sprintf@flag 35 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+sprintf@prec 31 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_of_UART_write 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___fladd@signs 6A 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext10 2C4A 0 CODE 0 text10 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext11 46 0 CODE 0 text11 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext12 28BE 0 CODE 0 text12 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext13 2776 0 CODE 0 text13 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext14 EF4 0 CODE 0 text14 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext15 630 0 CODE 0 text15 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext16 2E18 0 CODE 0 text16 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext17 2D2C 0 CODE 0 text17 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext18 2738 0 CODE 0 text18 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext19 272C 0 CODE 0 text19 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext20 1752 0 CODE 0 text20 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext21 1548 0 CODE 0 text21 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext22 129C 0 CODE 0 text22 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext23 2F0A 0 CODE 0 text23 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext24 13E2 0 CODE 0 text24 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext25 195C 0 CODE 0 text25 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext26 27F6 0 CODE 0 text26 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext27 2B72 0 CODE 0 text27 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext28 2904 0 CODE 0 text28 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext29 1078 0 CODE 0 text29 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext30 2AAA 0 CODE 0 text30 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext31 2A38 0 CODE 0 text31 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext32 29CA 0 CODE 0 text32 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext33 2760 0 CODE 0 text33 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext34 1178 0 CODE 0 text34 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext35 2744 0 CODE 0 text35 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext36 2720 0 CODE 0 text36 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___fladd 630 0 CODE 0 text15 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___fldiv 195C 0 CODE 0 text25 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___flmul 46 0 CODE 0 text11 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___fltol 2D2C 0 CODE 0 text17 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___ftmul 13E2 0 CODE 0 text24 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___fttol 2F0A 0 CODE 0 text23 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___lwdiv 1000 0 CODE 0 text5 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___lwmod 2966 0 CODE 0 text4 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__pmaintext B0C 0 CODE 0 maintext dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__Umul8_16@multiplier 28 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+?___ftpack 20 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_RPM_init 2776 0 CODE 0 text13 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_RPM_read 2C4A 0 CODE 0 text10 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+RPM_read@rpm 6C 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___wmul@multiplier 20 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___fldiv@grs 5C 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___fldiv@rem 55 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+PWM_init_1@frecuencia B0 0 BANK1 1 cstackBANK1 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___lwdiv@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of_RPM_init 2792 0 CODE 0 text13 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of_RPM_read 2D2C 0 CODE 0 text10 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___fldiv@new_exp 5A 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+PWM_1@aux B9 0 BANK1 1 cstackBANK1 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+PWM_1@per B3 0 BANK1 1 cstackBANK1 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+PWM_1@pwm BD 0 BANK1 1 cstackBANK1 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+PWM_2@aux B9 0 BANK1 1 cstackBANK1 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+PWM_2@per B3 0 BANK1 1 cstackBANK1 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+PWM_2@pwm BD 0 BANK1 1 cstackBANK1 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_PWM_Stop_1 272C 0 CODE 0 text19 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_PWM_Stop_2 2738 0 CODE 0 text18 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_ofi1_UART_write 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___fladd@grs 6D 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of__stringtab 2020 0 STRING 0 strings dist/default/production\LCD_RPM_UART_PWM.X.production.o
+main@buffer C2 0 BANK1 1 cstackBANK1 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+___ftmul@cntr 38 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__pbssCOMMON 76 0 COMMON 1 bssCOMMON dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___ftmul@sign 39 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__Umul8_16@product 24 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_PIR1bits C 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__Lend_init 20 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+___fltol@exp1 6F 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+end_of_initialization 3E 0 CODE 0 cinit dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__Hintentry 20 0 CODE 0 intentry -
+i1UART_write@dato 70 0 COMMON 1 cstackCOMMON dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__Lstrings 0 0 ABS 0 strings -
+___lwdiv@dividend 22 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+?___fladd 62 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+?___fldiv 48 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+?___flmul 2E 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+?___fltol A8 0 BANK1 1 cstackBANK1 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+?___ftmul 2B 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+?___fttol A0 0 BANK1 1 cstackBANK1 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+?___lwdiv 20 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+?___lwmod 27 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_ofi1_UART_write 2752 0 CODE 0 text35 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+__end_of_UART_init 27D0 0 CODE 0 text7 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of_UART_read 272C 0 CODE 0 text36 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_of_UART_init 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_of_UART_read 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext1 1C9E 0 CODE 0 text1 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext2 2792 0 CODE 0 text2 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext3 2838 0 CODE 0 text3 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext4 2966 0 CODE 0 text4 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext5 1000 0 CODE 0 text5 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext6 27D0 0 CODE 0 text6 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext7 27AE 0 CODE 0 text7 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext8 287A 0 CODE 0 text8 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__ptext9 2752 0 CODE 0 text9 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+?__Umul8_16 20 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_sprintf 1C9E 0 CODE 0 text1 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+?___xxtofl 20 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+sprintf@ap 32 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+sprintf@sp 38 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+LCD_array@date 26 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_isdigit 2792 0 CODE 0 text2 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___fladd@aexp 6B 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___fladd@bexp 6C 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__Umul8_16@word_mpld 26 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of_PWM_Stop_1 2738 0 CODE 0 text19 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of_PWM_Stop_2 2744 0 CODE 0 text18 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___fltol@sign1 6E 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_antirrebote 27D0 0 CODE 0 text6 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+_UART_init 27AE 0 CODE 0 text7 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_UART_read 2720 0 CODE 0 text36 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___fltol@f1 A8 0 BANK1 1 cstackBANK1 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+PWM_init_2@frecuencia B0 0 BANK1 1 cstackBANK1 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___ftmul@exp 34 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of__initialization 3E 0 CODE 0 cinit dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__Lclrtext 0 0 ABS 0 clrtext -
+___ftpack@sign 24 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_PWM_init_1 2E18 0 CODE 0 text16 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_PWM_init_2 EF4 0 CODE 0 text14 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_TXSTAbits 98 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_T2CKPS0 90 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_T2CKPS1 91 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+?_RPM_read 62 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+ventana@tecla 74 0 COMMON 1 cstackCOMMON dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__Hend_init 26 0 CODE 0 end_init -
+sprintf@c 39 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+sprintf@f 2B 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of_main EF4 0 CODE 0 maintext dist/default/production\LCD_RPM_UART_PWM.X.production.o
+isdigit@c 21 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of_LCD_E 2776 0 CODE 0 text33 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of_PWM_1 1752 0 CODE 0 text21 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of_PWM_2 195C 0 CODE 0 text20 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_CCP1X BD 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_CCP1Y BC 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_CCP2X ED 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_CCP2Y EC 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of_dpowers 2034 0 STRING 0 strings dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_LCD_E 2760 0 CODE 0 text33 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+?_sprintf 2B 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_isdigit$1228 20 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_PORTD 8 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_PWM_1 1548 0 CODE 0 text21 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_PWM_2 1752 0 CODE 0 text20 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_RCREG 1A 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_SPBRG 99 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_TRISB 86 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_TRISD 88 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_TXREG 19 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+interrupt_function 8 0 CODE 0 intentry dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_CCP1CON 17 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+_CCP2CON 1D 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___fttol@sign1 A7 0 BANK1 1 cstackBANK1 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+sprintf@width 36 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+RPM_read@freq 69 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__initialization 26 0 CODE 0 cinit dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___xxtofl@sign 28 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__pbssBANK1 C9 0 BANK1 1 bssBANK1 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__pdataCOMMON 78 0 COMMON 1 dataCOMMON dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__pstrings 2000 0 STRING 0 strings dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___wmul@product 24 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_of_LCD_date 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__size_of_LCD_init 0 0 ABS 0 - dist/default/production\LCD_RPM_UART_PWM.X.production.o
+__end_of_LCD_command 2A38 0 CODE 0 text32 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+___ftmul@f3_as_product 35 0 BANK0 1 cstackBANK0 dist/default/production\LCD_RPM_UART_PWM.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text1 0 E4F 1C9E 1B1 2
+text2 0 13C9 2792 E 2
+text3 0 141C 2838 21 2
+text4 0 14B3 2966 32 2
+text6 0 13E8 27D0 13 2
+text7 0 13D7 27AE 11 2
+text8 0 143D 287A 22 2
+text9 0 13A9 2752 7 2
+text10 0 1625 2C4A 71 2
+text12 0 145F 28BE 23 2
+text13 0 13BB 2776 E 2
+text16 0 170C 2E18 79 2
+text17 0 1696 2D2C 76 2
+text18 0 139C 2738 6 2
+text19 0 1396 272C 6 2
+text20 0 BA9 1752 105 2
+text21 0 AA4 1548 105 2
+text22 0 94E 129C A3 2
+text23 0 1785 2F0A 7B 2
+text24 0 9F1 13E2 B3 2
+text25 0 CAE 195C 1A1 2
+text26 0 13FB 27F6 21 2
+text27 0 15B9 2B72 6C 2
+text28 0 1482 2904 31 2
+text29 0 83C 1078 80 2
+text30 0 1555 2AAA 64 2
+text31 0 151C 2A38 39 2
+text32 0 14E5 29CA 37 2
+text33 0 13B0 2760 B 2
+text34 0 8BC 1178 92 2
+text35 0 13A2 2744 7 2
+text36 0 1390 2720 6 2
+cstackCOMMON 1 70 70 9 1
+cstackBANK0 1 20 20 50 1
+cstackBANK1 1 A0 A0 2E 1
+intentry 0 4 8 838 2
+reset_vec 0 0 0 4 2
+strings 0 1000 2000 44 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
